@@ -1,0 +1,150 @@
+from typing import Annotated, TypedDict, List
+from langgraph.graph import StateGraph, START
+from langgraph.graph.message import add_messages
+from langchain_openai import ChatOpenAI
+from langchain_anthropic import ChatAnthropic
+from langchain_core.tools import tool
+from langchain.chat_models import init_chat_model
+from mem0 import MemoryClient
+from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
+
+from helpers import add_memory, search_memory
+from prompts import system_prompt
+
+import logging
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+from logger import logger
+logger.setLevel(logging.INFO)
+
+client = MemoryClient(api_key=os.getenv("MEM0_API_KEY"))
+
+class ChatbotState(TypedDict):
+    memory: Dict[str, Any]
+    mem0_user_id: str
+    mem0_session_id: str
+    context: str
+
+    signed_in: bool
+
+    messages: Annotated[List[HumanMessage | AIMessage], add_messages]
+
+
+def get_memories(state: ChatbotState):
+    messages = state["messages"]
+    user_id = state["mem0_user_id"]
+    session_id = state["mem0_session_id"]
+
+    logger.info(f"User ID: {user_id}")
+    logger.info(f"Session ID: {session_id}")
+    logger.info(f"Signed In: {state['signed_in']}")
+    
+    if state["signed_in"]:
+        logger.info("Getting Session and Global Memories")
+
+        session_based_memories = client.search(messages[-1].content, user_id=user_id, session_id=session_id) 
+        global_memories = client.search(messages[-1].content, user_id=user_id)
+    else:
+        logger.info("Getting Session Memories only")
+        session_based_memories = client.search(messages[-1].content, user_id=user_id, session_id=session_id) 
+
+    context = "<MEMORY>Relevant information from previous conversations:\n"   
+
+    for session_memory in session_based_memories['results']:
+        context += f"Session Memory: {session_memory['memory']}\n"
+
+    if state["signed_in"]:
+        for global_memory in global_memories['results']:
+            context += f"Global Memory of the User: {global_memory['memory']}\n"
+
+    state['context'] = context + "</MEMORY>"
+    logger.info("Memories Extracted")
+
+    return state
+
+def chatbot(state: ChatbotState):
+    messages = state["messages"]
+    user_id = state["mem0_user_id"]
+    session_id = state["mem0_session_id"]
+
+    try:
+
+        llm = init_chat_model(model="openai:gpt-5.1", api_key=os.getenv("OPENAI_API_KEY"))
+        llm2 = init_chat_model(model="anthropic:claude-4-5-haiku-latest", api_key=os.getenv("ANTHROPIC_API_KEY"))
+
+        system_message = system_prompt.format(context=state['context'])
+
+        full_messages = [system_message] + messages
+        response = llm.invoke(full_messages).with_fallback(llm2)
+
+        # Store the interaction in Mem0
+        try:
+            interaction = [
+                {
+                    "role": "user",
+                    "content": messages[-1].content
+                },
+                {
+                    "role": "assistant", 
+                    "content": response.content
+                }
+            ]
+            result = client.add(interaction, user_id=user_id, session_id=session_id)
+            print(f"Memory saved: {len(result.get('results', []))} memories added")
+        except Exception as e:
+            print(f"Error saving memory: {e}")
+            
+        return {"messages": [response]}
+        
+    except Exception as e:
+        print(f"Error in chatbot: {e}")
+        # Fallback response without memory context
+        response = llm.invoke(messages)
+        return {"messages": [response]}
+
+
+graph_builder = StateGraph(ChatbotState)
+
+graph_builder.add_node("get_memories", get_memories)
+graph_builder.add_node("chatbot", chatbot)
+
+
+graph_builder.add_edge(START, "get_memories")
+graph_builder.add_edge("get_memories", "chatbot")
+graph_builder.add_edge("chatbot", "get_memories")
+
+compiled_graph = graph_builder.compile()
+
+def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, signed_in: bool):
+    config = {"configurable": {"thread_id": mem0_user_id}}
+    state = {
+                "messages": [HumanMessage(content=user_input)], 
+                "mem0_user_id": mem0_user_id,
+                "mem0_session_id": mem0_session_id,
+                "signed_in": signed_in,
+                "context": ""
+            }
+
+    for event in compiled_graph.stream(state, config):
+        for value in event.values():
+            if value.get("messages"):
+                return value["messages"][-1].content
+
+def main():
+    print("Welcome to DHs 2026! How can I assist you today?")   
+    mem0_user_id = "skh"  # You can generate or retrieve this based on your user management system
+    mem0_session_id = "skh-001"  # You can generate or retrieve this based on your user management system
+    signed_in = True
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() in ['quit', 'exit', 'bye']:
+            print("Thank you for contacting us. Have a great day!")
+            break
+        print("Customer Support:", run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in))
+
+if __name__ == "__main__":
+    main()
