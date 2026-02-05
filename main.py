@@ -1,8 +1,9 @@
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse 
+from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
 from agent import run_conversation
-
 from pydantic import BaseModel
+import os
 
 class ChatRequest(BaseModel):
     user_input: str
@@ -11,6 +12,7 @@ class ChatRequest(BaseModel):
     signed_in: bool
 
 app = FastAPI()
+templates = Jinja2Templates(directory="templates")
 
 @app.post("/chat")
 async def chat(request: Request):
@@ -21,9 +23,9 @@ async def chat(request: Request):
     signed_in = data["signed_in"]
     return HTMLResponse(run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in))
 
-@app.get("/")
-async def root():
-    return HTMLResponse("<h1>Welcome to DHs 2026!</h1><p>How can I assist you today?</p>")
+@app.get("/", response_class=HTMLResponse)
+async def root(request: Request):
+    return templates.TemplateResponse(request=request, name="index.html")
 
 
 if __name__ == "__main__":

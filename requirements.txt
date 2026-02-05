@@ -4,6 +4,10 @@ langchain_openai
 langchain_anthropic
 
 mem0ai
+# mem0ai-python
 
 python-dotenv
 fastapi
+
+jinja2
+uvicorn

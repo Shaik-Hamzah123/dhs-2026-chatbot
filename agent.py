@@ -1,4 +1,4 @@
-from typing import Annotated, TypedDict, List
+from typing import Annotated, TypedDict, List, Dict, Any
 from langgraph.graph import StateGraph, START
 from langgraph.graph.message import add_messages
 from langchain_openai import ChatOpenAI
@@ -8,8 +8,8 @@ from langchain.chat_models import init_chat_model
 from mem0 import MemoryClient
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
-from helpers import add_memory, search_memory
-from prompts import system_prompt
+# from helper import add_memory, search_memory
+from prompts import system_prompt_template
 
 import logging
 
@@ -34,52 +34,98 @@ class ChatbotState(TypedDict):
     messages: Annotated[List[HumanMessage | AIMessage], add_messages]
 
 
+# def get_memories(state: ChatbotState):
+#     messages = state["messages"]
+#     user_id = state["mem0_user_id"]
+#     session_id = state["mem0_session_id"]
+
+#     logger.info(f"User ID: {user_id}")
+#     logger.info(f"Session ID: {session_id}")
+#     logger.info(f"Signed In: {state['signed_in']}")
+    
+#     if state["signed_in"]:
+#         logger.info("Getting Session and Global Memories")
+#         try:
+#             session_based_memories = client.search(messages[-1].content, user_id=user_id, session_id=session_id) 
+#             global_memories = client.search(messages[-1].content, user_id=user_id)
+#         except Exception as e:
+#             logger.error(f"Error fetching memories: {e}")
+#             session_based_memories = {'results': []}
+#             global_memories = {'results': []}
+#     else:
+#         logger.info("Getting Session Memories only")
+#         try:
+#             session_based_memories = client.search(messages[-1].content, user_id=user_id, session_id=session_id)
+#         except Exception as e:
+#             logger.error(f"Error fetching memories: {e}")
+#             session_based_memories = {'results': []}
+
 def get_memories(state: ChatbotState):
     messages = state["messages"]
     user_id = state["mem0_user_id"]
-    session_id = state["mem0_session_id"]
+    run_id = state["mem0_session_id"]  # Use as run_id instead
 
     logger.info(f"User ID: {user_id}")
-    logger.info(f"Session ID: {session_id}")
+    logger.info(f"Run ID: {run_id}")
     logger.info(f"Signed In: {state['signed_in']}")
     
     if state["signed_in"]:
         logger.info("Getting Session and Global Memories")
-
-        session_based_memories = client.search(messages[-1].content, user_id=user_id, session_id=session_id) 
-        global_memories = client.search(messages[-1].content, user_id=user_id)
+        try:
+            # Session-based memories using run_id
+            session_based_memories = client.search(
+                messages[-1].content, 
+                filters={"AND": [{"user_id": user_id}, {"run_id": run_id}]}
+            )
+            # Global memories for user
+            global_memories = client.search(
+                messages[-1].content, 
+                filters={"user_id": user_id}
+            )
+        except Exception as e:
+            logger.error(f"Error fetching memories: {e}")
+            session_based_memories = {'results': []}
+            global_memories = {'results': []}
     else:
         logger.info("Getting Session Memories only")
-        session_based_memories = client.search(messages[-1].content, user_id=user_id, session_id=session_id) 
+        try:
+            session_based_memories = client.search(
+                messages[-1].content, 
+                filters={"AND": [{"user_id": user_id}, {"run_id": run_id}]}
+            )
+        except Exception as e:
+            logger.error(f"Error fetching memories: {e}")
+            session_based_memories = {'results': []}
 
     context = "<MEMORY>Relevant information from previous conversations:\n"   
 
-    for session_memory in session_based_memories['results']:
+    for session_memory in session_based_memories.get('results', []):
         context += f"Session Memory: {session_memory['memory']}\n"
 
-    if state["signed_in"]:
-        for global_memory in global_memories['results']:
+    if state["signed_in"] and 'global_memories' in locals():
+        for global_memory in global_memories.get('results', []):
             context += f"Global Memory of the User: {global_memory['memory']}\n"
 
     state['context'] = context + "</MEMORY>"
     logger.info("Memories Extracted")
 
-    return state
+    return {"context": state['context']}
 
 def chatbot(state: ChatbotState):
     messages = state["messages"]
     user_id = state["mem0_user_id"]
-    session_id = state["mem0_session_id"]
+    run_id = state["mem0_session_id"]
 
     try:
 
-        llm = init_chat_model(model="openai:gpt-5.1", api_key=os.getenv("OPENAI_API_KEY"))
+        llm = init_chat_model(model="openai:gpt-4.1", api_key=os.getenv("OPENAI_API_KEY"))
         llm2 = init_chat_model(model="anthropic:claude-4-5-haiku-latest", api_key=os.getenv("ANTHROPIC_API_KEY"))
 
-        system_message = system_prompt.format(context=state['context'])
+        system_message_content = system_prompt_template.format(query=messages[-1].content, context=state['context'])
+        system_message = SystemMessage(content=system_message_content)
 
-        full_messages = [system_message] + messages
-        response = llm.invoke(full_messages).with_fallback(llm2)
+        full_messages = [system_message]
+        response = llm.invoke(full_messages)
 
         # Store the interaction in Mem0
         try:
@@ -93,7 +139,7 @@ def chatbot(state: ChatbotState):
                     "content": response.content
                 }
             ]
-            result = client.add(interaction, user_id=user_id, session_id=session_id)
+            result = client.add(interaction, user_id=user_id, run_id=run_id)
             print(f"Memory saved: {len(result.get('results', []))} memories added")
         except Exception as e:
             print(f"Error saving memory: {e}")
@@ -131,7 +177,7 @@ def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, s
 
     for event in compiled_graph.stream(state, config):
         for value in event.values():
-            if value.get("messages"):
+            if value and value.get("messages"):
                 return value["messages"][-1].content
 
 def main():
