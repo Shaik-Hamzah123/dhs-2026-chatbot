@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
             display: flex;
             flex-direction: column;
         }
+
         .chat-container {
             flex: 1;
             overflow-y: auto;
@@ -22,20 +24,23 @@
             margin: 0 auto;
             width: 100%;
         }
+
         .message-card {
             margin-bottom: 1.5rem;
             border-radius: 1rem;
             padding: 1rem 1.5rem;
             max-width: 80%;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             animation: fadeIn 0.3s ease-in-out;
         }
+
         .user-message {
             background-color: #0d6efd;
             color: white;
             margin-left: auto;
             border-bottom-right-radius: 0.25rem;
         }
+
         .bot-message {
             background-color: white;
             color: #212529;
@@ -43,42 +48,58 @@
             border-bottom-left-radius: 0.25rem;
             border: 1px solid #dee2e6;
         }
+
         .input-area {
             background-color: white;
             border-top: 1px solid #dee2e6;
             padding: 2rem;
             border-radius: 1rem 1rem 0 0;
-            box-shadow: 0 -4px 12px rgba(0,0,0,0.03);
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.03);
         }
+
         .input-container {
             max-width: 900px;
             margin: 0 auto;
             position: relative;
         }
+
         .spinner-border {
             width: 1.5rem;
             height: 1.5rem;
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
-            background: #f1f1f1; 
+            background: #f1f1f1;
         }
+
         ::-webkit-scrollbar-thumb {
-            background: #c1c1c1; 
+            background: #c1c1c1;
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
-            background: #a8a8a8; 
+            background: #a8a8a8;
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -104,7 +125,8 @@
     <div class="input-area">
         <div class="input-container">
             <form id="chat-form" class="d-flex gap-2">
-                <input type="text" class="form-control form-control-lg shadow-sm border-0 bg-light" id="user-input" placeholder="Type your message here..." autocomplete="off" required>
+                <input type="text" class="form-control form-control-lg shadow-sm border-0 bg-light" id="user-input"
+                    placeholder="Type your message here..." autocomplete="off" required>
                 <button type="submit" class="btn btn-primary btn-lg px-4 shadow-sm" id="send-btn">
                     Send
                 </button>
@@ -140,7 +162,7 @@
             userMsgDiv.className = 'message-card user-message';
             userMsgDiv.textContent = message;
             chatHistory.appendChild(userMsgDiv);
-            
+
             // Clear input & disable
             userInput.value = '';
             userInput.disabled = true;
@@ -159,7 +181,7 @@
                         user_input: message,
                         mem0_user_id: mem0UserId,
                         mem0_session_id: mem0SessionId,
-                        signed_in: false 
+                        signed_in: false
                     })
                 });
 
@@ -170,11 +192,13 @@
                 // 3. Get HTML response
                 const htmlResponse = await response.text();
 
-                // 4. Add bot response
+                // 4. Add bot response container
                 const botMsgDiv = document.createElement('div');
                 botMsgDiv.className = 'message-card bot-message content-html';
-                botMsgDiv.innerHTML = htmlResponse; // Inject HTML directly
                 chatHistory.appendChild(botMsgDiv);
+
+                // 5. Typewriter effect
+                simulateStreaming(botMsgDiv, htmlResponse);
 
             } catch (error) {
                 console.error('Error:', error);
@@ -188,9 +212,68 @@
                 sendBtn.disabled = false;
                 sendBtn.textContent = 'Send';
                 userInput.focus();
-                scrollToBottom();
+                // scrollToBottom called inside simulateStreaming
             }
         });
+
+        function simulateStreaming(element, htmlContent) {
+            // Create a temporary container to parse the HTML
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = htmlContent;
+
+            // We want to extract text nodes and elements to stream them
+            // For a simple "word by word" stream of the *text* content while preserving HTML structure,
+            // it's complex. 
+            // A simpler approach for "word to word as if we are streaming it" 
+            // usually implies streaming the text.
+            // If the HTML is complex (lists, bolding), we might want to reveal it carefully.
+
+            // Approach: 
+            // 1. If it's simple text wrapped in tags, we can stream the text.
+            // 2. If it's complex HTML, we might need a more robust parser or just stream text content.
+
+            // Given the user said "print the word to word", let's try a robust text + html streamer.
+            // OR simpler: Just append words if it's mostly text.
+
+            // Let's implement a word-by-word Revealer. 
+            // NOTE: Since we receive HTML, stripping tags to stream text might lose formatting.
+            // But streaming raw HTML tags looks bad (<, b, r, >...).
+
+            // Better approach for "HTML":
+            // Render the HTML invisible, then reveal words? No, hard to control.
+
+            // Alternative:
+            // RegEx split by tags and words.
+
+            const tokenRegex = /(<[^>]*>|[^<>\s]+|\s+)/g;
+            const tokens = htmlContent.match(tokenRegex) || [];
+
+            let i = 0;
+
+            function typeNext() {
+                if (i < tokens.length) {
+                    const token = tokens[i];
+
+                    if (token.startsWith('<')) {
+                        // It's an HTML tag, append immediately without delay
+                        element.innerHTML += token;
+                        // Determine if we need to scroll (rendering a tag might change height)
+                        scrollToBottom();
+                        i++;
+                        typeNext(); // Recursive call immediately for tags
+                    } else {
+                        // It's text or whitespace, append and wait
+                        element.innerHTML += token;
+                        scrollToBottom();
+                        i++;
+                        setTimeout(typeNext, 100); // 20ms delay for text
+                    }
+                }
+            }
+
+            typeNext();
+        }
     </script>
 </body>
+
 </html>
