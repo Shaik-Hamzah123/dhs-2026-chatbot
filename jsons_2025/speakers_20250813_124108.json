@@ -1,0 +1,1245 @@
+{
+  "metadata": {
+    "total_speakers_found": 74,
+    "successful_scrapes": 74,
+    "failed_scrapes": 0,
+    "scraped_at": "2025-08-13T12:41:08.813160",
+    "base_url": "https://www.analyticsvidhya.com/datahacksummit-2025/"
+  },
+  "speakers": [
+    {
+      "name": "Pratyush Kumar",
+      "designation": "Co-Founder",
+      "company": "Sarvam AI",
+      "bio": "Dr. Pratyush Kumar is the Co-founder of Sarvam and a leading voice in India’s AI ecosystem. A two-time founder, he previously built AI4Bharat and OneFourth Labs, both instrumental in advancing open-source AI for Indian languages. AI conferences and journals. Prior to founding Sarvam, Dr. Kumar was a researcher at Microsoft Research and IBM, where he worked on cutting-edge problems in machine learning and natural language processing. He has published over 89 research papers at top-tier conferences and journals, contributing to both academic and applied advances in the field. Dr. Kumar holds degrees from IIT Bombay and ETH Zurich and continues to build AI that reaches every corner of the country.",
+      "linkedin": "https://www.linkedin.com/in/pratyush-kumar-8844a8a3/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Pratyush_Kumar.jpg",
+      "sessions": [
+        {
+          "type": "Keynote",
+          "title": "Building India’s AI Ecosystem: From Vision to Sovereignty"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/pratyush-kumar",
+      "scraped_at": "2025-08-13T12:37:25.023921",
+      "slug": "pratyush-kumar"
+    },
+    {
+      "name": "Manish Gupta",
+      "designation": "Senior Director",
+      "company": "Google DeepMind",
+      "bio": "Dr. Manish Gupta is a Senior Director at Google DeepMind, leading teams conducting research in AI across India and Japan. Previously, Manish has led VideoKen, a video technology startup, and the research centers for Xerox and IBM in India. As a Senior Manager at the IBM T.J. Watson Research Center in Yorktown Heights, New York, Manish led the team developing system software for the Blue Gene/L supercomputer. IBM was awarded a National Medal of Technology and Innovation for Blue Gene by US President Barack Obama in 2009. Manish holds a Ph.D. in Computer Science from the University of Illinois at Urbana Champaign. He has co-authored about 75 papers, with more than 8,000 citations in Google Scholar (and an h-index of 47), and has been granted 19 US patents. While at IBM, Manish received two Outstanding Technical Achievement Awards, an Outstanding Innovation Award and the Lou Gerstner Team Award for Client Excellence. Manish is a Fellow of ACM and the Indian National Academy of Engineering, and a recipient of a Distinguished Alumnus Award from IIT Delhi.",
+      "linkedin": "https://www.linkedin.com/in/manish-gupta-4556591/?originalSubdomain=in",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Manish_Gupta.jpg",
+      "sessions": [
+        {
+          "type": "Keynote",
+          "title": "Inclusive AI and Open Challenges"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/manish-gupta-2",
+      "scraped_at": "2025-08-13T12:37:27.581570",
+      "slug": "manish-gupta-2"
+    },
+    {
+      "name": "Dr. Geetha Manjunath",
+      "designation": "Founder and CEO",
+      "company": "NIRAMAI",
+      "bio": "Dr. Geetha Manjunath is the Founder, CEO and CTO of NIRAMAI Health Analytix, and has led the company to develop a breakthrough AI solution for detecting early stage breast cancer in a non-invasive radiation-free manner. Geetha is a Gold Medalist and PhD holder from Indian Institute of Science with management education from Kellogg Chicago. She comes with over 30 years of experience in IT innovation. Before starting NIRAMAI, Geetha was a Lab Director heading AI Research at Xerox and a Principle Scientist at Hewlett Packard Labs.Geetha has received many international and national recognition for her innovations and entrepreneurial work, including CSI Gold Medal, BIRAC WinER Award 2018 and is on the Forbes List of Top 20 Self-Made Women 2020. She was the winner of Women Health Innovation Showcase Asia in Singapore, Accenture Vahini Innovator of the Year Award from Economic Times and Women Entrepreneur of the Year 2020 by BioSpectrum India. Geetha is an inventor of 50+ US patents, a senior member of the IEEE and a Fellow of the Indian National Academy of Engineering (INAE).",
+      "linkedin": "https://www.linkedin.com/in/geetha-manjunath-82b8058/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Geetha.jpg",
+      "sessions": [
+        {
+          "type": "Keynote",
+          "title": "Responsible AI in Medical Imaging – A Case Study"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/geetha-manjunath",
+      "scraped_at": "2025-08-13T12:37:30.060246",
+      "slug": "geetha-manjunath"
+    },
+    {
+      "name": "Srikanth Velamakanni",
+      "designation": "Co-Founder, Group Chief Executive & Executive Vice-Chairman",
+      "company": "Fractal",
+      "bio": "Srikanth Velamakanni is the Co-founder and Group CEO of Fractal, a global AI firm powering decision-making for some of the most admired companies on the planet.Srikanth also serves as Vice-Chairman of NASSCOM, the apex body representing India’s $250 billion technology sector, where he helps shape the future of the country’s tech ecosystem. He is also a Founder and Trustee of Plaksha University, an institution reimagining engineering education, where he teaches a course on decision-making. He serves as the Non-Executive Chairman of IdeaForge, and holds Board positions at Metro Brands, BARC India, and NIIT Ltd.Srikanth’s leadership philosophy is rooted in extreme client-centricity and a long-term approach to value creation. He considers himself a lifelong student of mathematics and the behavioural sciences.",
+      "linkedin": "https://www.linkedin.com/in/srikanthvelamakanni/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/srikanth.jpg",
+      "sessions": [
+        {
+          "type": "Keynote",
+          "title": "Keynote Session"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/srikanth-velamakanni-2",
+      "scraped_at": "2025-08-13T12:37:32.538666",
+      "slug": "srikanth-velamakanni-2"
+    },
+    {
+      "name": "Joshua Starmer",
+      "designation": "Founder and CEO",
+      "company": "StatQuest",
+      "bio": "Dr. Joshua Starmer, the co-founder and CEO of Statsquest and previously working as lead AI educator at Lightning AI, is a distinguished figure in data science and is set to illuminate the stage at DataHack Summit 2025. With a Ph.D. in Biomathematics and an illustrious career spanning academia and industry, Dr. Starmer brings a wealth of expertise to the forefront of analytics. With a passion for translating complex concepts into actionable insights, Dr. Starmer's dynamic presentations promise to empower audiences with cutting-edge knowledge and strategic perspectives. Engage with Dr. Starmer at DataHack Summit to explore the future of data analytics in a transformative way.",
+      "linkedin": "https://www.linkedin.com/in/joshua-starmer-phd/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/JOSHUA_nDsBcRR.jpg",
+      "sessions": [
+        {
+          "type": "",
+          "title": "From Beginner to Expert: Learning LLMs, Reinforcement Learning & AI Agents"
+        },
+        {
+          "type": "Hack Sessions",
+          "title": "Quantifying Our Confidence in Neural Networks and AI"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/joshua-starmer-2",
+      "scraped_at": "2025-08-13T12:37:34.992737",
+      "slug": "joshua-starmer-2"
+    },
+    {
+      "name": "Luis Serrano",
+      "designation": "Founder and Chief Education Officer",
+      "company": "Serrano Academy",
+      "bio": "Luis Serrano is the author of the Amazon Bestseller Grokking Machine Learning, and the creator of the popular educational YouTube channel Serrano Academy, with over 170K followers and 7 million views. Luis has worked in artificial intelligence and language models at Google, Apple, and Cohere, and as a quantum AI research scientist at Zapata Computing. He has popular machine learning courses on platforms such as Udacity and Coursera. Luis has a PhD in mathematics from the University of Michigan, a masters and bachelors from the University of Waterloo, and did a postdoctoral fellowship at the University of Quebec at Montreal.",
+      "linkedin": "https://www.linkedin.com/in/luisgserrano/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Luis.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "A Visual Guide to Attention Mechanism in LLMs"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/luis-serrano",
+      "scraped_at": "2025-08-13T12:37:37.428744",
+      "slug": "luis-serrano"
+    },
+    {
+      "name": "Chi Wang",
+      "designation": "Co-creator and Co-founder",
+      "company": "AG2",
+      "bio": "Chi is founder of AG2 (formerly known as AutoGen), the open-source AgentOS to support agentic AI, and its parent open-source project FLAML, a fast library for AutoML & tuning. He has received multiple awards such as best paper of ICLR’24 LLM Agents Workshop, Open100, and SIGKDD Data Science/Data Mining PhD Dissertation Award. Chi runs the AG2 community with 20K+ members. He has 15+ years of research experience in Computer Science and work experience in Google DeepMind, Microsoft Research and Meta.",
+      "linkedin": "https://www.linkedin.com/in/chi-wang-autogen/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Chi_Wang_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "MassGen: Scaling AI Through Multi-Agent Collaboration"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/chi-wang",
+      "scraped_at": "2025-08-13T12:37:39.897627",
+      "slug": "chi-wang"
+    },
+    {
+      "name": "Miguel Otero Pedrido",
+      "designation": "ML Engineer|Founder",
+      "company": "The Neural Maze",
+      "bio": "Miguel Otero Pedrido is the founder of The Neural Maze, a hub for machine learning (ML) projects where concepts are explained step-by-step with code, articles, and video tutorials. He is a seasoned AI professional with extensive experience in developing and implementing AI solutions across various industries. Miguel has a strong background in machine learning, natural language processing, and computer vision, and has contributed to numerous projects that leverage AI to solve complex problems. Passionate about sharing his knowledge, he has mentored and taught, helping others understand and apply AI technologies effectively.",
+      "linkedin": "https://www.linkedin.com/in/migueloteropedrido/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Miguel_Otero_Pedrido_1.jpg",
+      "sessions": [
+        {
+          "type": "",
+          "title": "Building Intelligent Multimodal Agents: Integrating Vision, Speech & Language"
+        },
+        {
+          "type": "Hack Sessions",
+          "title": "Beyond PoCs: Building Real-World Agentic Systems"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/miguel-otero-pedrido",
+      "scraped_at": "2025-08-13T12:37:42.446728",
+      "slug": "miguel-otero-pedrido"
+    },
+    {
+      "name": "Qingyun Wu",
+      "designation": "Co-creator and Co-founder",
+      "company": "AG2",
+      "bio": "Dr. Qingyun Wu is the co-creator and co-founder of AG2 (formerly AutoGen), a leading open-source AI agent framework with a monthly downloads of over 700k and a vibrant community of over 20k AI agent developers. Qingyun is also an Assistant Professor at the College of Information Science and Technology at Penn State University. Qingyun got her Ph.D. in Computer Science from the University of Virginia in 2020. Qingyun received the 2019 SIGIR Best Paper Award, and ICLR 2024 LLM agent workshop Best Paper Award.",
+      "linkedin": "https://www.linkedin.com/in/qingyun-wu-183019a6/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/QingyunWu.jpg",
+      "sessions": [
+        {
+          "type": "",
+          "title": "Mastering Real-World Agentic AI Applications with AG2 (AutoGen)"
+        },
+        {
+          "type": "Hack Sessions",
+          "title": "Agentify Go-To-Market: Build Sales & Marketing AI Agents with MCP"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/qingyun-wu",
+      "scraped_at": "2025-08-13T12:37:45.008185",
+      "slug": "qingyun-wu"
+    },
+    {
+      "name": "Alessandro Romano",
+      "designation": "Senior Data Scientist",
+      "company": "Kuehne+Nagel",
+      "bio": "Alessandro Romano is a Senior Data Scientist at Kuehne + Nagel and an accomplished public speaker. With over 7 years of experience in data analysis, he brings deep technical expertise in implementing large language model (LLM) - based solutions across diverse industries.",
+      "linkedin": "https://www.linkedin.com/in/alessandro-romano-1990/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Alessandro_Romano.jpg",
+      "sessions": [
+        {
+          "type": "",
+          "title": "Mastering Real-World Multi-Agent Systems"
+        },
+        {
+          "type": "Hack Sessions",
+          "title": "From LLMs to Agentic AI: Solving New Problems with Multi-Agent Systems"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/alessandro-romano",
+      "scraped_at": "2025-08-13T12:37:47.519087",
+      "slug": "alessandro-romano"
+    },
+    {
+      "name": "Krishna Kumar Tiwari",
+      "designation": "Co-Founder & CTO",
+      "company": "Whilter AI",
+      "bio": "Krishna Kumar Tiwari is the Co-Founder & CTO of Whilter AI, a GenAI-powered platform transforming hyper-personalized marketing at scale. Named among the 40 Under 40 Data Scientists by Analytics India Magazine in 2020, Krishna brings over 15 years of experience in building AI-first products and platforms.He has held key roles at leading global organizations including IBM Research, Oracle, Samsung R&D, InMobi, and the Jio AI Center of Excellence, contributing to impactful innovations in enterprise AI and digital ecosystems.An alumnus of IIT Guwahati, Krishna also serves as a Mentor of Change with the Atal Innovation Mission, NITI Aayog, supporting India’s next generation of tech innovators.",
+      "linkedin": "https://www.linkedin.com/in/agentkk/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Krishna_Kumar_Tiwari.jpg",
+      "sessions": [
+        {
+          "type": "PowerTalk",
+          "title": "Zero to Million: How GenAI Agents are Changing Performance Marketing"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/krishna-kumar-tiwari",
+      "scraped_at": "2025-08-13T12:37:50.151164",
+      "slug": "krishna-kumar-tiwari"
+    },
+    {
+      "name": "David Zakkam",
+      "designation": "Data Science Director",
+      "company": "Uber",
+      "bio": "Director of Science at Uber, ex-Meta & Swiggy, and one of India’s Top 50 Data Science Leaders. With 21+ years of experience across 3 continents, David has delivered over $500M in yearly impact, built orgs from scratch, and shaped data-driven cultures at scale. An IIT Delhi & IIM Calcutta alum, he’s also a patent holder and a trusted voice in AI and analytics. Join him for a full-day workshop packed with insights, real-world lessons, and practical frameworks you won’t want to miss!",
+      "linkedin": "https://www.linkedin.com/in/david-zakkam/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/David_Zakkam.jpg",
+      "sessions": [
+        {
+          "type": "",
+          "title": "Agentic AI & Generative AI for Business Leaders"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/david-zakkam",
+      "scraped_at": "2025-08-13T12:37:52.608277",
+      "slug": "david-zakkam"
+    },
+    {
+      "name": "Ranjani Mani",
+      "designation": "Director and Country Head, Generative AI, India and South Asia",
+      "company": "Microsoft",
+      "bio": "Ranjani Mani is a technology enthusiast and avid reader who is committed to self-improvement. She believes that women can achieve great success in the tech industry and is dedicated to helping them break through the glass ceiling. With over 15 years of experience in data science, product management, consulting, and customer experience analytics, Ranjani has worked with some of the biggest names in tech, including Dell, Oracle, VMWare, Atlassian and now Microsoft.Ranjani’s academic achievements are impressive, having graduated top of her class with a Bachelor’s degree in Engineering, Electronics, and Communication. She then went on to earn a silver medal in her Masters in Business Administration from MICA, Ahmedabad.Ranjani’s values are centered around taking ownership, putting people first, starting with why, acting fast, failing quickly, iterating, and playing fair. She is passionate about solving user problems through building analytics capabilities, product strategy, and leadership. Currently, Ranjani leads a global team of Analytics Managers, Data Scientists, and Business Analysts at Microsoft, where she is responsible for building analytics capabilities and scaling teams.Ranjani writes extensively on topics such as technology, books, leadership, strategy, and analytics. She hopes to inspire and empower women to overcome the broken rung and scale into tech leadership roles to live up to their full potential.",
+      "linkedin": "https://www.linkedin.com/in/ranjanimani/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Rajni.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/ranjani-mani",
+      "scraped_at": "2025-08-13T12:37:55.044716",
+      "slug": "ranjani-mani"
+    },
+    {
+      "name": "Rohan Rao",
+      "designation": "Gen AI Expert",
+      "company": "Self Employed",
+      "bio": "Introducing Rohan Rao, a veteran Machine Learning professional! With a wealth of experience in data science and machine learning, Rohan is a seasoned contributor at the forefront of innovation. He brings a unique blend of AI and Machine Learning expertise and has built products across various industries over the years. With a track record of delivering impactful solutions, Rohan is passionate about leveraging data to drive business success. Get inspired by his insights and expertise at our data science event!",
+      "linkedin": "https://www.linkedin.com/in/magras193/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/ROHAN_IwkCvpA.jpg",
+      "sessions": [
+        {
+          "type": "PowerTalk",
+          "title": "How GenAI is Being Leveraged in the Web3 Ecosystems"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/rohan-rao-2",
+      "scraped_at": "2025-08-13T12:37:57.475930",
+      "slug": "rohan-rao-2"
+    },
+    {
+      "name": "Anand S",
+      "designation": "LLM Psychologist",
+      "company": "Straive",
+      "bio": "Anand is an LLM psychologist at Straive. (It's not an official title. He just calls himself that.) He co-founded Gramener, a data science company that narrates visual data stories, which Straive acquired. He is considered one of India's top 10 data scientists and is a regular TEDx speaker. More importantly, he has hand-transcribed every Calvin & Hobbes strip ever.",
+      "linkedin": "https://www.linkedin.com/in/sanand0/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Anand-s.png",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "RIP, Data Scientists"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/anand-s-2",
+      "scraped_at": "2025-08-13T12:38:00.135934",
+      "slug": "anand-s-2"
+    },
+    {
+      "name": "Kunal Jain",
+      "designation": "Founder & CEO",
+      "company": "Analytics Vidhya",
+      "bio": "Kunal Jain is the Founder & CEO of Analytics Vidhya, India’s largest Analytics and Data Science community. He has spent over 18 years in the data science field. His experience in leading and delivering data science projects ranges from mature markets like the United Kingdom to developing markets like India. Kunal is a renowned data science and AI figure who has helped countless individuals achieve their data science aspirations through his unique and unparalleled vision. Before starting Analytics Vidhya, he did his graduation & post-graduation from IIT Bombay and has worked with companies like Capital One & Aviva Life Insurance across different geographies.",
+      "linkedin": "https://www.linkedin.com/in/jaink/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/kunal.jpg",
+      "sessions": [
+        {
+          "type": "Hack Panel",
+          "title": "Vibe Coding Showdown: Building Applications with AI Assistants"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/kunal-jain-2",
+      "scraped_at": "2025-08-13T12:38:02.650956",
+      "slug": "kunal-jain-2"
+    },
+    {
+      "name": "Tanika Gupta",
+      "designation": "Director Data Science",
+      "company": "Sigmoid",
+      "bio": "Tanika Gupta is a seasoned Generative AI leader with over 13 years of expertise in spearheading AI innovation, shaping product strategy, and executing large-scale implementations across finance, technology, and consumer goods. As the Director of Data Science at Sigmoid, she spearheads multiple ML and Gen AI initiatives, driving innovation and measurable business outcomes. Previously, she served as Vice President of Machine Learning at JP Morgan Chase, leading the Fraud Modeling team for consumer cards.With extensive expertise in AI product development, scalable machine learning solutions, and strategic technical leadership, Tanika has built and led high-performing AI teams, filed multiple patents, and won industry-recognized AI hackathons, demonstrating her ability to drive innovation from ideation to execution.Beyond her technical expertise, she is an influential speaker at global AI conferences, a mentor in the AI community, and an advocate for women in AI and data science.",
+      "linkedin": "https://www.linkedin.com/in/tanika-gupta-78242423/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/TANIKA-GUPTA.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Vibe Coding in Action: Building Real Applications with AI Assistance"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/tanika-gupta-2",
+      "scraped_at": "2025-08-13T12:38:05.139466",
+      "slug": "tanika-gupta-2"
+    },
+    {
+      "name": "Dr. Kiran R",
+      "designation": "Vice President of Engineering",
+      "company": "Oracle",
+      "bio": "Dr Kiran R is the Vice President of Engineering at Oracle, where he drives the GenAI-first product suite for the Health group on Oracle Cloud Infrastructure (OCI). In his prior role as Partner Director & General Manager at Microsoft, he was the Co-pilot Engineering leader & the leader of Applied ML & ML Engineering in Microsoft Cloud Data Sciences on Azure. He has experience driving concept-completion-production ML projects, building out on-prem and on-the-cloud MLOps platforms while conceptualizing & scaling extensible ML services. He has a track record of driving impact through incorporation of ML into products & solutions. He was also Senior Director of ML at VMware.Kiran has 40+ filed & granted US patents. He is a Kaggle competitions grandmaster (one of ~100 WW) and had a highest WW rank of 7. He is a prize winner in the prestigious KDD Data Mining Cup. He is recipient of the CTO award at VMware and Innovator of the year award from Michael Dell in person.",
+      "linkedin": "https://www.linkedin.com/in/rkirana/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/kiran-r.jpg",
+      "sessions": [
+        {
+          "type": "PowerTalk",
+          "title": "Evaluating GenAI Models: Case Studies in Enterprise and Healthcare"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/dr-kiran-r-2",
+      "scraped_at": "2025-08-13T12:38:07.639928",
+      "slug": "dr-kiran-r-2"
+    },
+    {
+      "name": "Syed Quiser Ahmed",
+      "designation": "AVP and Head of Infosys Responsible AI Office",
+      "company": "Infosys",
+      "bio": "Syed is a recognised leader in Responsible and Ethical AI, driving global initiatives to shape AI governance by collaborating with policymakers, industry bodies, academia, and think tanks. At Infosys, he leads the development of robust technical, process, and policy guardrails that ensure AI solutions meet legal, security, and privacy standards. Syed’s influence extends globally as he champions the responsible adoption of AI.",
+      "linkedin": "https://www.linkedin.com/in/syedquiserahmed/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Syed.jpg",
+      "sessions": [
+        {
+          "type": "PowerTalk",
+          "title": "Onboarding AI Agents with Human Values"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/syed-quiser-ahmed",
+      "scraped_at": "2025-08-13T12:38:10.188340",
+      "slug": "syed-quiser-ahmed"
+    },
+    {
+      "name": "Gauri Kholkar",
+      "designation": "Machine Learning Engineer",
+      "company": "Pure Storage",
+      "bio": "Gauri is a seasoned Applied AI/ML Engineer with 8 years of experience, currently developing cutting-edge LLM applications for next-generation storage solutions within Pure Storage's Office of the CTO. Previously at Microsoft, she engineered responsible AI models and data pipelines for Bing, impacting over 100 million users. Her research in content moderation and multilingual model finetuning has been recognized at top AI conferences like AAAI 2023 and COLING 2025; her paper \"Socio-Culturally Aware Evaluation Framework for LLM-Based Content Moderation\" was accepted at COLING 2025. Gauri's expertise is further acknowledged through her service as a reviewer for top-tier venues like ICLR and ACL 2025. Gauri holds a Computer Science degree from BITS Pilani.",
+      "linkedin": "https://www.linkedin.com/in/gaurikholkar",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/auri_Pradipkumar.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Deploying GenAI Safely: Strategies for Trustworthy LLMs"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/gauri-kholkar",
+      "scraped_at": "2025-08-13T12:38:12.654751",
+      "slug": "gauri-kholkar"
+    },
+    {
+      "name": "Krishnakumar Menon",
+      "designation": "Technology Partner",
+      "company": "Tiger Analytics",
+      "bio": "Krishnakumar Menon is a Technology Partner with Tiger analytics, responsible for Engineering for Tiger's AI/ML PLatform Solutions. At Tiger he is responsible for the Development of Agentflow - an Agent Build Observe and Manage Platform that allows enterprises to scale the development and deployment of Agentic Solutions.Krishnakumar has more than a decade of experience in managing ML in Production , building platforms and Observability solutions across Industrials, Energy, Cleantech and BFSI Industries. Krishnakumar is an alumnus of IIT Madras and IIM Calcutta.",
+      "linkedin": "https://www.linkedin.com/in/menonkrishna/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Krishnakumar_Menon.jpg",
+      "sessions": [
+        {
+          "type": "PowerTalk",
+          "title": "Productionizing Agents : An Agent Factory Approach"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/krishnakumar-menon",
+      "scraped_at": "2025-08-13T12:38:15.175238",
+      "slug": "krishnakumar-menon"
+    },
+    {
+      "name": "Kuldeep Jiwani",
+      "designation": "VP, Head of AI Solutions",
+      "company": "ConcertAI",
+      "bio": "Kuldeep is currently the Head of AI Solutions at ConcertAI, where he leads the development of LLM, SLM, and Generative AI-based solutions focused on analyzing patient clinical notes for oncology researchers. With over two decades of experience in AI/ML research and high-performance computing architectures, he has successfully built numerous innovative, real-world AI products. Kuldeep has an active research background, with multiple publications in reputed international journals and granted U.S. patents.",
+      "linkedin": "https://www.linkedin.com/in/kuldeep-jiwani/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/KULDEEP_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Measuring Uncertainty in LLMs and Optimal Use of SLMs"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/kuldeep-jiwani-2",
+      "scraped_at": "2025-08-13T12:38:17.668564",
+      "slug": "kuldeep-jiwani-2"
+    },
+    {
+      "name": "Vijay Gabale",
+      "designation": "Co-Founder and CPO",
+      "company": "Infilect",
+      "bio": "Vijay Gabale is the Co-founder and Chief Technology and Product Officer at Infilect Inc., a pioneering force in global retail visual intelligence. Leveraging cutting-edge Image Recognition and AI technologies, Infilect aims to revolutionize the retail landscape by addressing CPG brands' complex challenges in real-time. Vijay Gabale earned his PhD from IIT Bombay, specializing in wireless platforms and AI systems. He has held critical roles in prominent global technology firms such as IBM Research, distinguishing himself as both a respected technocrat and a forward-thinking leader. Among his notable accomplishments are pioneering demonstrations of the world's inaugural voice network on Zigbee in the USA, groundbreaking contributions to Deep Neural Network architecture for multi-object detection, and his keynote address at the Heidelberg Laureate Forum in Germany, advocating for the societal advantages of AI. With over 6 patents granted and 15 research publications, he continues to drive innovation at the forefront of technology.With a wealth of experience in product development and partnerships, complemented by deep expertise in Image Recognition Technology and Artificial Intelligence, Vijay Gabale spearheads transformative innovation for CPG brands, retailers, and global distributors and merchandising firms on a large scale.",
+      "linkedin": "https://www.linkedin.com/in/vijaygabale/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/VIJAY_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Why GenAI and LLMs Fail and How Fine-Tuning Helps Them"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/vijay-gabale-2",
+      "scraped_at": "2025-08-13T12:38:20.132004",
+      "slug": "vijay-gabale-2"
+    },
+    {
+      "name": "Praveen Kumar GS",
+      "designation": "Senior Director",
+      "company": "Samsung R&D Institute",
+      "bio": "As the AI Leader and Senior Director of Engineering at Samsung Electronics, Praveen Kumar is responsible for creating a vision and strategy for AI in SRIB, especially in Generative and Agentic AI. He leads a group of over 200 talented AI engineers who are building the next-generation Assistant for Samsung AI Products with multimodal and conversational capabilities.With over 23 years of extensive experience in strategic leadership, stakeholder management, delivery of customer-focused products, building talent and teams from scratch, and customer relationship management, Praveen has successfully handled many \"Research to Market\" projects under high-pressure conditions, utilizing agile methodologies and hybrid architectures. He has also developed and maintained a network of AI champions and established research collaborations with government agencies and top IITs in the areas of Artificial Intelligence. Praveen is passionate about transforming AI strategy into products that deliver new impact and user experience to the world.",
+      "linkedin": "https://www.linkedin.com/in/praveenreddy007/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/praveen_Nm8gmgr.jpg",
+      "sessions": [
+        {
+          "type": "PowerTalk",
+          "title": "Agentic AI Meets Responsible AI: Designing Safe Autonomous Systems"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/praveen-kumar-gs",
+      "scraped_at": "2025-08-13T12:38:22.679906",
+      "slug": "praveen-kumar-gs"
+    },
+    {
+      "name": "Dipanjan Sarkar",
+      "designation": "Head of Artificial Intelligence & Community",
+      "company": "Analytics Vidhya",
+      "bio": "Dipanjan Sarkar is currently the Head of Artificial Intelligence & Community, Analytics Vidhya. He is also a published Author, and Consultant, boasting a decade of extensive expertise in Machine Learning, Deep Learning, Generative AI, Computer Vision, and Natural Language Processing. His leadership spans Fortune 100 enterprises to startups, crafting end-to-end AI products and pioneering Generative AI upskilling programs. A seasoned advisor, Dipanjan advises a diverse clientele, from Engineers and Architects to C-suite executives and PhDs, across Advanced Analytics, AI Strategy & Development. Recognitions include \"Top 10 Data Scientists in India, 2020,\" \"40 under 40 Data Scientists, 2021,\" \"Google Developer Expert in Machine Learning, 2019,\" and \"Top 50 AI Thought Leaders, Global AI Hub, 2022,\",  Google Champion Innovator title in Cloud AI\\ML, 2022 alongside global accolades including Top 100 Influential AI Voices in LinkedIn.",
+      "linkedin": "https://www.linkedin.com/in/dipanjans/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/DIPANJAN__N5ZeXXb.png",
+      "sessions": [
+        {
+          "type": "",
+          "title": "Mastering Intelligent Agents: A Deep Dive into Agentic AI"
+        },
+        {
+          "type": "Hack Sessions",
+          "title": "Building Effective Agentic AI Systems: Lessons from the Field"
+        },
+        {
+          "type": "Hack Panel",
+          "title": "AutoGen vs CrewAI vs LangGraph: Battle of the Agent Frameworks"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/dipanjan-sarkar",
+      "scraped_at": "2025-08-13T12:38:25.144387",
+      "slug": "dipanjan-sarkar"
+    },
+    {
+      "name": "Ruchi Awasthi",
+      "designation": "Machine Learning Engineer, CTO Office",
+      "company": "Pure Storage",
+      "bio": "Ruchi Awasthi is a seasoned Machine Learning Scientist at Pure Storage, where she works in the GenAI R&D team within the CTO Office, building scalable Generative AI products. She holds a Bachelor’s degree from IIT Roorkee and has published research in Biomedical Signal Processing and Control on attention-based deep learning for skin lesion segmentation. Previously, Ruchi was a Senior Data Scientist at Unacademy, leading efforts to deliver personalized recommendations to over 250,000 users daily. She has also held roles at JP Morgan Chase & Co., MakeMyTrip, and FlyNava, working on a range of data science problems across text, image, and statistical modeling.Her diverse experience spans early-stage startups to large multinational firms, with projects in recommendation systems, ranking algorithms, and infrastructure migration. Beyond her industry impact, Ruchi actively mentors over 40,000 followers on Instagram, sharing insights and career guidance in data science and Generative AI. With a strong foundation in machine learning and hands-on experience in deploying AI at scale, Ruchi is a leading voice driving innovation in AI applications across domains.",
+      "linkedin": "https://www.linkedin.com/in/ruchiawasthi63/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Ruchi.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Towards Sustainable AI: Effective LLM Compression Techniques"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/ruchi-awasthi",
+      "scraped_at": "2025-08-13T12:38:28.326393",
+      "slug": "ruchi-awasthi"
+    },
+    {
+      "name": "Harshad Khadilkar",
+      "designation": "Lead Data Scientist",
+      "company": "Tata Group",
+      "bio": "Harshad is a lead data scientist with the Tata Group, where his focus is on making generative AI more reliable and capable. He is also a visiting associate professor at IIT Bombay, where he teaches courses in the areas of control, optimization, and reinforcement learning. He has 12 years of experience applying intelligent algorithms to real-world applications in energy, transportation, supply chain, and finance. Harshad holds a BTech from IIT Bombay and SM and PhD degrees from the Massachusetts Institute of Technology.",
+      "linkedin": "https://www.linkedin.com/in/harshad-khadilkar-80609959/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/HARSHAD_kRC22Sf.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "LLMs Are Boring. How Can We Make Them More Interesting?"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/harshad-khadilkar-2",
+      "scraped_at": "2025-08-13T12:38:31.001520",
+      "slug": "harshad-khadilkar-2"
+    },
+    {
+      "name": "Arun Prakash Asokan",
+      "designation": "Associate Director Data Science",
+      "company": "Novartis",
+      "bio": "Arun Prakash Asokan, an esteemed AI thought leader and Intrapreneur, holds over 16 years of experience driving comprehensive AI programs across diverse domains. Recognized as a Scholar of Excellence from the Indian School of Business, he seamlessly integrates academic rigor with practical expertise, holding a Master's in Computer Science Engineering from BITS Pilani and completing an Advanced Management Program from ISB Hyderabad. Arun's passion for building AI products is evident through his leadership in transformative initiatives across industries like banking, marketing, healthcare, and pharma. He spearheads end-to-end AI programs, excels in translating raw problems into AI solutions that align with business goals, and has a proven track record of building end-to-end AI solutions that leverage state-of-the-art techniques. Arun has built several impactful GenAI-powered copilots and products in sensitive enterprise setups, helping numerous businesses achieve success. A Grand Winner of the Tableau International Contest, he pioneers Generative AI technologies, delivering numerous impactful tech talks, webinars, and workshops while also serving as an AI Visiting Faculty and Guest Lecturer, embodying a commitment to education and innovation in AI.",
+      "linkedin": "https://www.linkedin.com/in/arunprakashasokan/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/arun_0bRMJ3g.jpg",
+      "sessions": [
+        {
+          "type": "",
+          "title": "Agentic RAG Workshop: From Fundamentals to Real-World Implementations"
+        },
+        {
+          "type": "Hack Sessions",
+          "title": "Agentic Knowledge Augmented Generation: The Next Leap After RAG"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/arun-prakash-asokan-2",
+      "scraped_at": "2025-08-13T12:38:33.534837",
+      "slug": "arun-prakash-asokan-2"
+    },
+    {
+      "name": "Pavak Biswal",
+      "designation": "Senior Manager - Insights & Analytics, Data Products",
+      "company": "Dentsu Global Services",
+      "bio": "Pavak Biswal is a Senior Manager in Insights and Analytics at Dentsu Global Services and a 2025 “40 Under 40” awardee, recognized as one of India’s leading minds in Data Science and AI. With over 13 years of experience across retail, banking, telecom, and tech, Pavak has led high-impact solutions at the intersection of Machine Learning, Generative AI, and business transformation. His work blends deep technical expertise with a sharp business lens, making him a go-to expert for enterprise-scale AI transformation.Beyond work, he’s passionate about mountaineering, combat sports, and making music—always exploring ways to fuse his personal interests with his leadership skills, and continuously pushing his own boundaries in both walks of life.",
+      "linkedin": "https://www.linkedin.com/in/pavakbiswal/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Pavak_Biswal.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Saving Ananya: A Brand’s GenAI Playbook for Enhanced CX"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/pavak-biswal",
+      "scraped_at": "2025-08-13T12:38:36.026191",
+      "slug": "pavak-biswal"
+    },
+    {
+      "name": "Abhishek Sharma",
+      "designation": "Principal AI Engineer",
+      "company": "Dentsu Global Services",
+      "bio": "Abhishek Sharma is a data scientist, analytics consultant, developer, mentor, and community leader. He has over 14+ years of expertise developing data solutions in the retail, insurance, telecommunications, and utilities industries.",
+      "linkedin": "https://www.linkedin.com/in/abhisheksharma-/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Abhishek_Sharma.jpg",
+      "sessions": [
+        {
+          "type": "PowerTalk",
+          "title": "Building Blocks of Successful AI"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/abhishek-sharma-2",
+      "scraped_at": "2025-08-13T12:38:38.477332",
+      "slug": "abhishek-sharma-2"
+    },
+    {
+      "name": "Jayita Bhattacharyya",
+      "designation": "Data Scientist",
+      "company": "Deloitte",
+      "bio": "Jayita Bhattacharyya is a Data Scientist at Deloitte, where she builds AI-driven enterprise applications that optimise workflows across industry verticals. She fondly refers to herself as a “glorified if-else coder” who thrives within the dynamic world of Jupyter Notebooks. As a seasoned technical speaker and active member of the open-source community, Jayita is one of the organisers of BangPypers (Bangalore Python User Group). She frequently mentors at hackathons, including the recent Great Bangalore Hackathon, and is passionate about fostering collaboration and innovation through community engagement.",
+      "linkedin": "https://www.linkedin.com/in/jayita-bhattacharyya/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Jayita-1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Scaling Test-time Inference Compute & Advent of Reasoning Models"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/jayita-bhattacharyya-2",
+      "scraped_at": "2025-08-13T12:38:40.915362",
+      "slug": "jayita-bhattacharyya-2"
+    },
+    {
+      "name": "Bhaskarjit Sarmah",
+      "designation": "Head of Financial Services AI Research",
+      "company": "Domyn",
+      "bio": "Bhaskarjit Sarmah, Head of Financial Services AI Research at Domyn, leverages over 11 years of data science expertise across diverse industries. Previously, at BlackRock, he pioneered machine learning solutions to bolster liquidity risk analytics, uncover pricing opportunities in securities lending, and develop market regime change detection systems using network science. Bhaskarjit's proficiency extends to natural language processing and computer vision, enabling him to extract insights from unstructured data and deliver actionable reports. Committed to empowering investors and fostering superior financial outcomes, he embodies a strategic fusion of data-driven innovation and domain knowledge in the world's largest asset management firm.",
+      "linkedin": "https://www.linkedin.com/in/bhaskarjitsarmah/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Bhaskar_KImDKgk.png",
+      "sessions": [
+        {
+          "type": "",
+          "title": "AgentOps: Building and Deploying AI Agents"
+        },
+        {
+          "type": "Hack Sessions",
+          "title": "Detecting and Mitigating Risks in Agentic AI"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/bhaskarjit-sarmah-2",
+      "scraped_at": "2025-08-13T12:38:44.999936",
+      "slug": "bhaskarjit-sarmah-2"
+    },
+    {
+      "name": "Priyanka Choudhary",
+      "designation": "AI/ML Engineer, CTO Office",
+      "company": "Pure Storage",
+      "bio": "Priyanka Choudhary is a seasoned AI/ML Engineer at Pure Storage, where she works in the GenAI R&D team within the CTO Office, building scalable Generative AI products. She holds a Bachelor’s from IIT Delhi. Previously, as a Senior Data Science Associate at Publicis Sapient, Priyanka architected production-grade, cloud-agnostic AI/ML ecosystems on Kubernetes, leveraging Kubeflow, Terraform, and ArgoCD for robust MLOps automation.",
+      "linkedin": "https://www.linkedin.com/in/priyanka-choudhary-iitd/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Priyanka_Choudhary.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/priyanka-choudhary",
+      "scraped_at": "2025-08-13T12:38:47.439500",
+      "slug": "priyanka-choudhary"
+    },
+    {
+      "name": "Shubhradeep Nandi",
+      "designation": "Chief Data Scientist",
+      "company": "Government of Andhra Pradesh",
+      "bio": "Shubhradeep Nandi is a GenAI researcher and entrepreneur with over 16 years of professional experience, including more than a decade dedicated to Artificial Intelligence and Machine Learning. He is widely recognized for his pioneering contributions to applied Large Language Models (LLMs), with his research on LLM applications in Climate Science earning the prestigious ‘Highly Commendable Work’ recognition from IIM Bangalore. Named among India’s Top 7 GenAI Scientists, Shubhradeep has been lauded for his impactful GenAI innovations in Financial Fraud Management-most notably, developing a government-backed AI system to detect Non-Genuine Taxpayers. As the architect of the first Data Analytics Unit for Government, he transformed it into a model of success. He is also an Innovator in Residence at a global venture fund and is the founder of both a pioneering social payments startup and a deep-tech compliance platform. In addition to his research and ventures, Shubhradeep is a passionate mentor and advisor to emerging AI SaaS startups through leading VC platforms.",
+      "linkedin": "https://www.linkedin.com/in/shubhradeepnandi/?originalSubdomain=in",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Shubradeep_Nandi.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Aligning Responsible AI with Probabilistic World of LLMs & Agents"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/shubhradeep-nandi",
+      "scraped_at": "2025-08-13T12:38:50.241562",
+      "slug": "shubhradeep-nandi"
+    },
+    {
+      "name": "Satnam Singh",
+      "designation": "Chief Data Scientist",
+      "company": "Acalvio Technologies",
+      "bio": "Satnam is a highly experienced AI professional with over two decades of expertise in product development, from conception to execution. His collaborative approach and leadership have driven successful AI strategies across various organizations, notably as Chief Data Scientist at Acalvio. He is recognized for his ability to translate complex business concepts into practical AI solutions and has earned accolades, such as being named one of India's top 10 data scientists. He has more than 25 patents and 35 Technical papers to his credit. Satnam is also active on the global stage as a public speaker and author, and he has a passion for endurance sports like Ultra Running and Rock Climbing.",
+      "linkedin": "https://www.linkedin.com/in/satnamsinghdatascientist/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/satnam_Eyqhcor.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/satnam-singh-2",
+      "scraped_at": "2025-08-13T12:38:52.780199",
+      "slug": "satnam-singh-2"
+    },
+    {
+      "name": "Raghav Bali",
+      "designation": "Principal Data Scientist",
+      "company": "Delivery Hero",
+      "bio": "Raghav Bali is a Principal Data Scientist at Delivery Hero, a leading food delivery service headquartered in Berlin, Germany. With 13+ years of expertise, he specializes in research and development of enterprise-level solutions leveraging Machine Learning, Deep Learning, Natural Language Processing, and Recommendation Engines for practical business applications.Besides his professional endeavors, Raghav is an esteemed mentor and an accomplished public speaker. He has contributed to multiple peer-reviewed papers and authored more than 8 books, including the second edition of his well received book Generative AI with Python and Pytorch. Additionally, he holds co-inventor credits on multiple patents in healthcare, machine learning, deep learning, and natural language processing.",
+      "linkedin": "https://www.linkedin.com/in/baliraghav/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/raghav_2.jpg",
+      "sessions": [
+        {
+          "type": "",
+          "title": "Mastering LLMs: Training, Fine-Tuning, and Best Practices"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/raghav-bali-2",
+      "scraped_at": "2025-08-13T12:38:55.487997",
+      "slug": "raghav-bali-2"
+    },
+    {
+      "name": "Purva Porwal",
+      "designation": "AI Software Engineer",
+      "company": "JP Morgan Chase & Co.",
+      "bio": "Purva Porwal, well versed in AI, specializes in the field of Conversational AI and NLP. With over 9 years of diverse work experience in the field of Data and AI, presently working as AI Engineer Lead in JP Morgan & Chase. Led the development of a conversational AI chatbot for Chase banking app, now enhancing the experience of millions of users in real-world deployment. She is having work experience across domains such as telecommunication, finance in the field of Data Security & Privacy, NLP and Deep Learning. Beyond her professional pursuits, Purva is a mentor and guided various ML enthusiasts helping them to span into the field of Data Science.",
+      "linkedin": "https://www.linkedin.com/in/purvap",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/purva_1.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/purva-porwal",
+      "scraped_at": "2025-08-13T12:39:11.435238",
+      "slug": "purva-porwal"
+    },
+    {
+      "name": "Manoranjan Rajguru",
+      "designation": "AI Architect",
+      "company": "Microsoft",
+      "bio": "Manoranjan Rajguru is an AI Architect at Microsoft, specializing in Generative AI and Large Language Models. With over a decade of experience in AI and ML, he previously served as a Data Scientist at Amazon. Manoranjan is a prominent figure in the tech community, contributing over 30 articles to Medium and maintaining a LinkedIn following of 8,000 professionals. His expertise and thought leadership have significantly influenced technical advancements and shaped the AI landscape. Manoranjan's work continues to drive innovation and impact in the field of artificial intelligence.",
+      "linkedin": "https://www.linkedin.com/in/manoranjan-rajguru/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/MANORAJAN-RAJGURU.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "AI Voice Agent: The Future of Human-Computer Interaction"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/manoranjan-rajguru-2",
+      "scraped_at": "2025-08-13T12:39:15.464514",
+      "slug": "manoranjan-rajguru-2"
+    },
+    {
+      "name": "Nitin Agarwal",
+      "designation": "Principal Data Scientist",
+      "company": "Toast",
+      "bio": "Nitin is an accomplished Data Science leader with 14 years of experience at the intersection of Generative AI, Large Language Models, Machine Learning, and advanced analytics. He brings deep expertise in designing and deploying AI copilots that seamlessly integrate cutting-edge technology with user-centric design, driving measurable impact at scale. His work spans the full AI spectrum—from classical ML systems to state-of-the-art GenAI solutions—transforming how users engage with intelligent technology.",
+      "linkedin": "https://www.linkedin.com/in/agnitin/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Nitin_Agarwal_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Understanding AI Agents with MCP"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/nitin-agarwal",
+      "scraped_at": "2025-08-13T12:39:18.086451",
+      "slug": "nitin-agarwal"
+    },
+    {
+      "name": "Rutvik Acharya",
+      "designation": "Principal Data Scientist",
+      "company": "Atlassian",
+      "bio": "Rutvik Acharya, a seasoned Data Scientist with over 12 years of experience, is currently a Senior Data Scientist at Atlassian. He brings extensive expertise in end-to-end Machine Learning, Natural Language Processing (NLP), and Large Language Models (LLMs). As a pivotal member of Atlassian NLP and LLM initiatives, Rutvik is at the forefront of innovation, driving significant advancements and contributions to the industry. His profound knowledge and experience make him an invaluable guide in exploring cutting-edge data science solutions.",
+      "linkedin": "https://www.linkedin.com/in/rutvikacharya/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/rutvik_SbnM2HC.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/rutvik-acharya",
+      "scraped_at": "2025-08-13T12:39:20.612898",
+      "slug": "rutvik-acharya"
+    },
+    {
+      "name": "Kartik Nighania",
+      "designation": "MLOps Engineer",
+      "company": "Typewise",
+      "bio": "Kartik Nighania, an esteemed figure in AI, specializes in MLOps and is currently an engineer at Typewise in Europe. With over seven years of industry experience, Kartik's expertise spans diverse domains such as computer vision, reinforcement learning, NLP, and Gen AI systems. Previously, as Head of Engineering of a YCombinator-backed startup, Kartik spearheaded successful ventures in AI focusing on infrastructure scaling, team leadership, and MLOps implementation. His contributions to academia include publications in top journals and projects undertaken for the Government's Ministry of Human Resource Development (MHRD).",
+      "linkedin": "https://www.linkedin.com/in/kartik-nighania-765227145/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/KARTIK_1.png",
+      "sessions": [
+        {
+          "type": "",
+          "title": "LLMOps – Productionalizing Real-World Applications with LLMs and Agents"
+        },
+        {
+          "type": "Hack Sessions",
+          "title": "Agents at Scale: Engineering Reliable GenAI Systems for Production"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/kartik-nighania-2",
+      "scraped_at": "2025-08-13T12:39:23.358611",
+      "slug": "kartik-nighania-2"
+    },
+    {
+      "name": "Sanathraj Narayan",
+      "designation": "Data Science Manager",
+      "company": "Lam Research",
+      "bio": "Sanath Raj is an experienced AI/ML professional with over a decade of experience in designing and deploying machine learning solutions. With a strong background in data science, he has worked across industries, specializing in the industrialization of AI models for enterprise applications. Sanath has led multiple AI-driven initiatives and has deep expertise in frameworks like LangChain and AWS SageMaker, enabling organizations to build scalable and production-ready AI solutions. As a speaker at industry conferences, he has shared insights on optimizing LLM performance, embedding strategies, and real-world AI deployments. He also mentors professionals, helping them navigate the evolving landscape of AI and machine learning. Passionate about innovation, Sanath is currently working on integrating LLMs into enterprise workflows and writing a book on LangChain. His mission is to bridge the gap between research and real-world AI adoption, helping businesses unlock the full potential of generative AI.",
+      "linkedin": "https://www.linkedin.com/in/sanathrajnarayan/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/sanathraj-1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Mastering Agentic Workflows with LangGraph"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/sanathraj-narayan-2",
+      "scraped_at": "2025-08-13T12:39:25.902709",
+      "slug": "sanathraj-narayan-2"
+    },
+    {
+      "name": "Vignesh Kumar",
+      "designation": "AI Engineering Manager",
+      "company": "Ford Motor Company",
+      "bio": "Vignesh is the AI Services Lead at Ford, where he focuses on translating cutting-edge AI concepts into tangible products and integrated system features. His expertise spans a decade in data science, bridging advanced technical execution with strategic business objectives. He specialises in areas like advanced machine learning (CNNs, RNNs, Transformers), NLP (from sentiment analysis to LLM-powered applications), and building robust, scalable end-to-end MLOps pipelines on GCP. He is deeply engaged with the latest advancements in Generative AI and Explainable AI, ensuring model transparency and responsible AI practices. Beyond his role at Ford, he actively contributes to the AI community as a speaker and mentor, particularly within the Great Lakes ecosystem. Currently, he is expanding his skillset through a dual Master's program at IIT and IIM Indore, driven by a passion for shaping the future of AI through innovation and collaboration.",
+      "linkedin": "https://www.linkedin.com/in/vignesh-kumar-56555a94/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Vignesh_kumar.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Automating Vehicle Inspections with Multimodal AI and Gemini on GCP"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/vignesh-kumar",
+      "scraped_at": "2025-08-13T12:39:28.308125",
+      "slug": "vignesh-kumar"
+    },
+    {
+      "name": "Anshu Kumar",
+      "designation": "Lead Data Scientist",
+      "company": "Target India",
+      "bio": "Anshu Kumar is the Lead Data Scientist at Target India. He holds an M.Tech in Computer Science & Engineering from IIT Madras. With a career spanning roles at Walmart, VMware, and various startups, Anshu has designed and deployed machine learning solutions in e-commerce (search and recommendations) and social media marketing. His recent work focuses on utilizing LLMs and Vision LLMs to enhance product search. Additionally, Anshu is a published author with Packt and enjoys writing on Medium.",
+      "linkedin": "https://www.linkedin.com/in/anshu19/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/anshu_2_1_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Collaborative Multi-Agent Framework for Robust SEO Content Generation"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/anshu-kumar-2",
+      "scraped_at": "2025-08-13T12:39:30.819843",
+      "slug": "anshu-kumar-2"
+    },
+    {
+      "name": "Logesh Kumar Umapathi",
+      "designation": "Machine Learning Consultant",
+      "company": "BLACKBOX.AI",
+      "bio": "Logesh Kumar Umapathi is a Machine learning Engineer at Blackbox.ai. His work focuses on building agentic systems and models that help automate software development and improve developer productivity. He has led the development of state-of-the-art software engineering agents, and his research has been cited by leading ML labs including OpenAI , Meta and Microsoft . His interests include Code generation LLMs , Synthetic data generation with LLMs and alignment of code LLMs to Human preferences.",
+      "linkedin": "https://www.linkedin.com/in/logeshkumaru/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/logesh.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "From Language to Robotics: Practical Lessons Bridging LLMs, RL, and AI"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/logesh-kumar-umapathi",
+      "scraped_at": "2025-08-13T12:39:33.198028",
+      "slug": "logesh-kumar-umapathi"
+    },
+    {
+      "name": "Ayush Thakur",
+      "designation": "Machine Learning Engineer",
+      "company": "Weights & Biases",
+      "bio": "Ayush Thakur is a Manager, AI Engineer at Weights & Biases and a Google Developer Expert in Machine Learning. He leads open-source integrations at W&B to empower developers with industry standard MLOps and LLMOps tools. Passionate about large language models, Ayush spends his time exploring best practices, evaluation methods, and building real-world LLM applications.",
+      "linkedin": "https://www.linkedin.com/in/ayush-thakur-731914149/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Ayush_1_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "The Missing Piece of AI Apps: Evaluation"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/ayush-thakur-2",
+      "scraped_at": "2025-08-13T12:39:35.640501",
+      "slug": "ayush-thakur-2"
+    },
+    {
+      "name": "Aditya Iyengar",
+      "designation": "Technology Lead",
+      "company": "QuanHack Solutions",
+      "bio": "Aditya is a Certified Microsoft Data Engineer and Technology Lead at Quanhack, driving AI-powered innovation in software development. Specializing in Azure cloud engineering and Databricks administration, Aditya designs and manages robust cloud infrastructures and high-performance data platforms. Their expertise includes building end-to-end ETL solutions across Azure and AWS, working with tools like ADLS Gen2, Synapse Analytics, Azure Data Factory, and PySpark. Aditya also excels in InfraOps, deploying Azure Virtual Desktop environments and agile workflows. With a strong focus on compliance, they ensure adherence to GMP/GDP through rigorous validation protocols (IQ, OQ, PQ). Passionate about automation and operational excellence, Aditya transforms complex data challenges into scalable, secure, and value-driven business solutions.",
+      "linkedin": "https://www.linkedin.com/in/aditya-iyengar/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Aditya_Iyengar.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Empowering Data Insights with Large Language Models"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/aditya-iyengar",
+      "scraped_at": "2025-08-13T12:39:51.879447",
+      "slug": "aditya-iyengar"
+    },
+    {
+      "name": "Anuj Saini",
+      "designation": "Director Data Science",
+      "company": "RPX",
+      "bio": "Anuj Saini is a Subject Matter Expert in Natural Language Processing (NLP), Search Technologies, Statistics, Analytics, Modelling, Data Science, and Machine Learning, with a strong emphasis on Large Language Models (LLMs) and Generative AI.Anuj brings extensive experience in developing advanced AI systems, particularly NLP applications using state-of-the-art machine learning techniques across diverse domains such as e-commerce, investment banking, and insurance. His expertise includes cutting-edge AI technologies like ChatGPT, LangChain, LLama2, OpenAI Embeddings, and HuggingFace.Specializing in building intelligent Chatbots, Recommender Systems, Sentiment Analysis, and Semantic Technologies, Anuj leverages his proficiency in Python to deliver innovative solutions. With a proven track record in designing and implementing sophisticated LLM-driven applications, he is recognized as a leader in the field of Generative AI and NLP.",
+      "linkedin": "https://www.linkedin.com/in/anuj-saini-23666211/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/no_name_2_5LqLX2m.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Building Responsible AI Agents with Guardrails and Safety in Action"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/anuj-saini-2",
+      "scraped_at": "2025-08-13T12:39:54.981460",
+      "slug": "anuj-saini-2"
+    },
+    {
+      "name": "Nikhil Rana",
+      "designation": "Senior Technical Solutions Consultant, AI",
+      "company": "Google",
+      "bio": "Nikhil is an applied data science professional with over a decade of experience developing and implementing Machine Learning, Deep Learning, and NLP-based solutions for various industries, such as Finance and FMCG. He is passionate about using data science to solve real-world problems and is always looking for new ways to use data to positively impact the world.",
+      "linkedin": "https://www.linkedin.com/in/nikhilrana9/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Nikhil-Rana_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Bridging the AI Agent Gap: Interoperability with A2A and MCP Protocols"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/nikhil-rana-2",
+      "scraped_at": "2025-08-13T12:39:58.143740",
+      "slug": "nikhil-rana-2"
+    },
+    {
+      "name": "Daksh Varshneya",
+      "designation": "Senior Product Manager",
+      "company": "Rasa",
+      "bio": "With over 6 years of experience in the conversational AI field, Daksh Varshneya currently leads the machine learning product vertical at Rasa. Their journey began as a machine learning researcher, where they made significant contributions to open-source repositories including TensorFlow, scikit-learn, and Rasa OSS. Holding a Master's degree in Computer Science from IIIT Bangalore, Daksh now focuses on helping Fortune 500 enterprises successfully implement LLM-based conversational AI solutions at scale, enabling billions of end-user conversations annually. Their expertise bridges the gap between cutting-edge AI research and enterprise-level practical implementation.",
+      "linkedin": "https://www.linkedin.com/in/dakshvar/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/daksh_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Fast and Accurate Conversational Agents: Beyond Function Calling"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/daksh-varshneya",
+      "scraped_at": "2025-08-13T12:40:00.874057",
+      "slug": "daksh-varshneya"
+    },
+    {
+      "name": "Abhilash Kulkarni",
+      "designation": "Senior Analyst - Insights & Analytics, Data Products",
+      "company": "Dentsu Global Services",
+      "bio": "Abhilash Kulkarni is a Senior Analyst at Dentsu, where he builds and executes impactful solutions at the intersection of Generative AI, Machine Learning, and customer experience. With a five year track record of taking ideas from concept to completion, he is an expert at delivering measurable and sustainable business transformations.He is driven by a fascination with blending technical expertise with a keen end-user lens, solving complex problems by making technology feel intuitive and effective. Outside of his work, Abhilash is an aspiring novelist, using a different kind of problem solving to build worlds and narratives, a passion that fuels his creative approach to solving real world business challenges.",
+      "linkedin": "https://www.linkedin.com/in/abhilash-kulkarni-/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Abhilash_Kulkarni.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/abhilash-kulkarni",
+      "scraped_at": "2025-08-13T12:40:04.872790",
+      "slug": "abhilash-kulkarni"
+    },
+    {
+      "name": "Hitesh Nayak",
+      "designation": "Senior Director - Data Sciences",
+      "company": "Decision Foundry",
+      "bio": "A Data Science leader with 12 years of hands-on experience, Hitesh has built teams, models, training programs, business strategies—and the occasional production disaster. He’s worked across retail, e-commerce, finance, CPG, and manufacturing in organizations ranging from formal corporates to startup-style environments. Equally comfortable coding or storytelling with data, what drives him is seeing one good algorithm create real-world value—whether it’s his or his team’s.",
+      "linkedin": "https://www.linkedin.com/in/hitesh-nayak/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Hitesh.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Model Context Protocol in Media: Choosing the Right Metrics & Strategy"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/hitesh-nayak",
+      "scraped_at": "2025-08-13T12:40:07.354563",
+      "slug": "hitesh-nayak"
+    },
+    {
+      "name": "Saurav Agarwal",
+      "designation": "Solutions Architecture and Engineering",
+      "company": "NVIDIA",
+      "bio": "Saurav is an AI leader with 14 years of experience in Generative AI, Big Data Engineering, and Cloud Computing. He specializes in NVIDIA’s AI stack, delivering scalable solutions in LLMs, Conversational AI, and Data Science. Known for driving digital transformation across sectors, Saurav excels at building accurate, scalable, and reliable AI systems. His strategic focus empowers organizations to harness the full potential of GenAI, accelerating innovation and business growth through cutting-edge technology.",
+      "linkedin": "https://www.linkedin.com/in/sauravagarwal/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Saurav_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Full-Stack Agentic AI: Build, Evaluate, and Scale with NVIDIA Tools"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/saurav-agarwal",
+      "scraped_at": "2025-08-13T12:40:09.905340",
+      "slug": "saurav-agarwal"
+    },
+    {
+      "name": "Pradeep Kumar",
+      "designation": "Senior Software Engineer",
+      "company": "Emirates",
+      "bio": "Pradeep Kumar is a Dubai-based AI/ML Engineer and Software Leader with over 12 years of experience delivering scalable, intelligent systems across industries. Currently a Senior Software Engineer at Emirates Airlines, he architects agentic AI solutions that combine vision models and large language models (LLMs) to automate operational intelligence in aviation, one of the most regulated industries in the world. He holds a Master’s in Artificial Intelligence and Machine Learning from Liverpool John Moores University, UK, and has a strong track record of translating complex AI concepts into real-world applications that drive efficiency, safety, and innovation. A regular guest lecturer and speaker, Pradeep brings a unique blend of hands-on expertise and thought leadership to the evolving conversation around multi-modal, agentic, and responsible AI.",
+      "linkedin": "https://www.linkedin.com/in/prady00/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Pradeep_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "From Vision to Action: Multi-Modal Agentic AI in Real-World Use"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/pradeep-kumar",
+      "scraped_at": "2025-08-13T12:40:12.586597",
+      "slug": "pradeep-kumar"
+    },
+    {
+      "name": "Avinash Pathak",
+      "designation": "Senior AI Engineer",
+      "company": "NVIDIA",
+      "bio": "Avinash Pathak, Senior AI Engineer at NVIDIA, specializes in LLM Agents and LLM-based applications such as multimodal chatbots and GUI generation. With expertise spanning NLP and Large Language Models (LLMs), including seq2seq, LSTMs, BERT, and XLNET, he has also contributed to vision tasks like object detection and retail data analytics, developing models for the likelihood of buying and paying total price. His role at NVIDIA underscores his proficiency in cutting-edge AI technologies and his ability to innovate across diverse domains, exemplifying his commitment to advancing the field of artificial intelligence. He has two filed patents in the conversational AI field.",
+      "linkedin": "https://www.linkedin.com/in/avipathak99/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Avinash-Pathak-1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Agent to Agent Protocol: Benefits and Workflows"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/avinash-pathak-2",
+      "scraped_at": "2025-08-13T12:40:15.042594",
+      "slug": "avinash-pathak-2"
+    },
+    {
+      "name": "Manpreet Singh",
+      "designation": "Data & Applied Scientist II",
+      "company": "Microsoft",
+      "bio": "Manpreet Singh is a Data & Applied Scientist at Microsoft with close to seven years of experience advancing AI-driven solutions across cloud, enterprise analytics, and sales intelligence domains. He holds a B.Tech in Computer Science Engineering from SRM University and an MBA in Business Analytics (IB) from Symbiosis International University.Prior to Microsoft, Manpreet held key data science roles at Oracle, VMware, and Cognizant, where he developed propensity-to-buy solutions, identity risk detection, and contract compliance—leveraging both classical ML and deep learning approaches.He is the author and co-author of multiple peer-reviewed papers published in the Microsoft Journal of Applied Research (MSJAR) and RADIO, VMware’s internal R&D forum. His contributions extend to multiple patent filings with the USPTO. In addition, he is the creator of customdnn, a deep learning Python package designed to simplify the learning of neural networks, with over 80,000 downloads",
+      "linkedin": "https://www.linkedin.com/in/singhmanpreet2517/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Manpreet_Singh.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Building Real-Time Multi-Agent AI for Public Travel Systems"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/manpreet-singh",
+      "scraped_at": "2025-08-13T12:40:17.463547",
+      "slug": "manpreet-singh"
+    },
+    {
+      "name": "Shivaraj Mulimani",
+      "designation": "Security Data Scientist",
+      "company": "Acalvio Technologies",
+      "bio": "Shivaraj is a Data Scientist at Acalvio, specializing in cybersecurity with over 7 years of experience. He brings deep expertise in Machine Learning, Natural Language Processing, and research-driven development to build innovative AI solutions. Outside of work, Shivaraj is passionate about FPV drones and music.",
+      "linkedin": "https://www.linkedin.com/in/shivaraj-mulimani-3445b0a9/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Shivaraj_Mulimani.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Red Teaming GenAI: Securing Systems from the Inside Out"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/shivaraj-mulimani",
+      "scraped_at": "2025-08-13T12:40:19.922422",
+      "slug": "shivaraj-mulimani"
+    },
+    {
+      "name": "Dhruv Nair",
+      "designation": "Machine Learning Engineer",
+      "company": "Hugging Face",
+      "bio": "Dhruv Nair is a core maintainer for the Diffusers library at Hugging Face, where he works on democratizing access to diffusion models. He is a strong believer in the open development of AI, and is passionate about generative media and building tools for creators.",
+      "linkedin": "https://www.linkedin.com/in/dhruvnair/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Dhruv_Nair_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Creative AI Agents: Open Tools for Collaborative Media Creation"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/dhruv-nair",
+      "scraped_at": "2025-08-13T12:40:22.354061",
+      "slug": "dhruv-nair"
+    },
+    {
+      "name": "Abhishek Divekar",
+      "designation": "Senior Applied Scientist",
+      "company": "Amazon",
+      "bio": "Abhishek Divekar is a Senior Applied Scientist in Amazon's International Machine Learning team. His work has driven over half a billion dollars in revenue growth for Amazon and led to the deployment of 1,000+ ML models worldwide. He has authored multiple papers at Tier-1 AI conferences, pioneering fundamental research in areas including Synthetic Dataset Generation, Retrieval-Augmented Generation, and LLM-as-a-Judge, while also leading major open-source scientific projects. Abhishek earned his MS in Computer Science from The University of Texas at Austin and holds a B.Tech. from VJTI, Mumbai.",
+      "linkedin": "https://www.linkedin.com/in/ardivekar/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/abhishek_2.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "The Promise and Pitfalls of Synthetic Data Generation"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/abhishek-divekar",
+      "scraped_at": "2025-08-13T12:40:25.592321",
+      "slug": "abhishek-divekar"
+    },
+    {
+      "name": "Gyan Prakash Tripathi",
+      "designation": "Senior Manager -AI Projects",
+      "company": "Analytics Vidhya",
+      "bio": "Gyan is a Computer Science major with over five years of experience in analytics, artificial intelligence, and data science. Currently, he leads the AI Projects vertical at Analytics Vidhya, where he spearheads initiatives that bridge the gap between cutting-edge AI research and practical business applications. Previously, he led the analytics team at Analytics Vidhya, driving data-driven strategies and solutions across various domains.With a strong foundation in both technical and business aspects, he has collaborated closely with industry leaders to address complex challenges using AI and data. His team is currently developingOpenEngage, an AI-driven ultra-personalized marketing engine designed to revolutionize customer engagement and experience.",
+      "linkedin": "https://www.linkedin.com/in/prakashthegyan/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/gyan_1.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/gyan-prakash-tripathi",
+      "scraped_at": "2025-08-13T12:40:28.704700",
+      "slug": "gyan-prakash-tripathi"
+    },
+    {
+      "name": "Pranjal Singh",
+      "designation": "Staff Data Scientist",
+      "company": "Udaan",
+      "bio": "Pranjal comes with more than a decade-long career in Data Science and AI, with a profound understanding across various ML domains. His area of expertise extends to fraud prevention, generative AI, recommendations, search algorithms, and route optimization. A holder of two patents and contributor to multiple academic publications in NLP and ML.",
+      "linkedin": "https://www.linkedin.com/in/pranjalsingh/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Pranjal.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Architecting AI: Practical Patterns for Multi-Agentic Workflows"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/pranjal-singh",
+      "scraped_at": "2025-08-13T12:40:34.441664",
+      "slug": "pranjal-singh"
+    },
+    {
+      "name": "Prakalp Somawanshi",
+      "designation": "Principal AI Engineer",
+      "company": "Shell",
+      "bio": "Prakalp Somawanshi, currently a Principal AI Engineer at Shell Technology Center, holds a Bachelor's in Instrumentation and Control from the University of Pune and a Master's in Control & Computing from IIT Bombay. He gained valuable experience at Computational Research Laboratories, Pune, focusing on cryptography and high-performance computing after his master's. With nearly a decade at Shell, he's contributed extensively to diverse areas like geophysical algorithms, machine learning, machine vision, and reservoir modeling. In his role as a Principal AI Engineer, Prakalp primarily contributes to developing solutions in the realms of IoT and edge technologies, while also spearheading the creation of advanced edge compute capabilities.",
+      "linkedin": "https://www.linkedin.com/in/prakalpsomawanshi/?originalSubdomain=in",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Prakalp.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Multi-Modal GenAI for Energy Infrastructure Inspection Reports"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/prakalp-somawanshi",
+      "scraped_at": "2025-08-13T12:40:37.673820",
+      "slug": "prakalp-somawanshi"
+    },
+    {
+      "name": "Hrushikesh Dokala",
+      "designation": "Software Engineer",
+      "company": "Atlan",
+      "bio": "Hrushikesh is a Software Engineer at Atlan, where he focuses on building intelligent systems that transform how teams search, understand, and interact with complex data. His work involves designing AI-powered search experiences and agentic frameworks that enable contextual, conversational, and explainable interactions in enterprise environments.",
+      "linkedin": "https://www.linkedin.com/in/hrushikeshdokala/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Hrushikesh_Dokala_EDJevnW.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/hrushikesh-dokala",
+      "scraped_at": "2025-08-13T12:40:40.855199",
+      "slug": "hrushikesh-dokala"
+    },
+    {
+      "name": "Aashay Sachdeva",
+      "designation": "Founding Team/ML",
+      "company": "Sarvam AI",
+      "bio": "Aashay Sachdeva is a dynamic data scientist and a pivotal member of the founding team at Sarvam AI, where he specializes in machine learning (ML) and artificial intelligence (AI) solutions. With five years of diverse experience spanning healthcare, creatives, and gaming industries, Aashay has honed his expertise in building real-time ML systems that not only enhance operational efficiency but also drive significant business impact. He is currently working as a ML engineer at Sarvam AI in the models team that involves spearheading the development of a full-stack platform for Generative AI, where he leverages cutting-edge technologies and frameworks.",
+      "linkedin": "https://www.linkedin.com/in/aashay-sachdeva-020806b7/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/aashay_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Post‑Training Is Back: From Prompts to Policies"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/aashay-sachdeva",
+      "scraped_at": "2025-08-13T12:40:43.343554",
+      "slug": "aashay-sachdeva"
+    },
+    {
+      "name": "Deepak Sharma",
+      "designation": "Senior Machine Learning Engineer",
+      "company": "Google DeepMind",
+      "bio": "Deepak Sharma is a Senior Machine Learning Engineer at Google DeepMind, where he works on improving the composite AI system powering Gemini App and building AI applications using Gemini models. His career is marked by a consistent record of delivering high-impact, data-driven solutions across the e-commerce, retail, saas and manufacturing sectors. Prior to Google, Deepak led the creation of a competitive price optimization solution at Walmart, led the development of an ML platform to support supply chains for SMBs, developed a patented real-time brake monitoring application at Robert Bosch etc. Deepak possesses deep expertise in machine learning, optimization, and building complex ML systems, and he holds a Master of Science from the University of Michigan and a Bachelor of Technology from IIT Bombay.",
+      "linkedin": "https://www.linkedin.com/in/deepaksharma09/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/deepak_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Human-In-The-Loop Agentic Systems"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/deepak-sharma",
+      "scraped_at": "2025-08-13T12:40:45.823549",
+      "slug": "deepak-sharma"
+    },
+    {
+      "name": "Ashish Tripathy",
+      "designation": "CTO and Co-Founder",
+      "company": "Pype AI",
+      "bio": "Ashish is the founder of Pype AI (pypeai.com), a platform to help developers build self-learning AI agents. His open-source experimentation studio, Agensight, integrates seamlessly with any agentic framework (Autogen, LangGraph, etc.) and supports all modalities (voice, image, text) to enable continuous post-production improvement of those agents.With over 12 years of experience in Data, ML, and AI, his work at companies like LinkedIn and SAP includes machine-learning solutions for fraud detection and disinformation prevention, as well as designing multi-agent frameworks for business workflow automation. He is a staunch advocate for applying rigorous engineering practices to prompt engineering and actively consults startups for building robust evals for AI agents. Ashish holds patents in user behavior profiling and large-scale duplicate-content detection on social media.",
+      "linkedin": "https://www.linkedin.com/in/ashish-tripathy-70a30863/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/ashish_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Building a Scalable Healthcare Voice AI Contact Center with Pipecat"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/ashish-tripathy",
+      "scraped_at": "2025-08-13T12:40:48.223538",
+      "slug": "ashish-tripathy"
+    },
+    {
+      "name": "Pankaj Agarwal",
+      "designation": "Senior Software Engineer - Machine Learning",
+      "company": "Uber",
+      "bio": "Pankaj Agarwal is a seasoned Machine Learning Engineer with nearly 12 years of experience designing and deploying data-driven solutions at scale. Currently at Uber, he focuses on building advanced search and recommendation systems for UberEats, tackling complex problems in personalization and information retrieval.Pankaj’s previous roles at Compass, Myntra (a Flipkart Group company), and FICO have centered around developing robust machine learning pipelines and predictive models across e-commerce and financial domains. He has also published research at top-tier conferences such as KDD, contributing to the academic and applied ML community alike.Pankaj holds a Bachelor of Technology from the Indian Institute of Technology, Kharagpur, and a Master’s in Computer Science from Georgia Tech. His expertise spans machine learning, deep learning, and statistical analysis, with hands-on skills across Python, SQL, Hive, MongoDB, and modern cloud platforms.",
+      "linkedin": "https://www.linkedin.com/in/pankaj-agarwal-b5762318/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Pankaj_Agarwal_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Search Query Optimization Using Retrieval-Augmented Generation (RAG)"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/pankaj-agarwal",
+      "scraped_at": "2025-08-13T12:40:50.818575",
+      "slug": "pankaj-agarwal"
+    },
+    {
+      "name": "Anuvrat Parashar",
+      "designation": "Founder",
+      "company": "Essentia",
+      "bio": "Anuvrat is a 15-year engineering veteran and fractional CTO who has scaled technical teams at dozens of early-stage startups. He is the Founder of Essentia and expert in transforming growing companies from 5 to 50+ engineers.He specializes in helping non-technical founders build world-class engineering teams and technical roadmaps. He is a regular speaker on engineering leadership and startup scaling at developer conferences across India.He is an active mentor at PyDelhi, Elixir Delhi, and other tech communities, and is passionate about developing India's next generation of technical leaders.",
+      "linkedin": "https://www.linkedin.com/in/anuvratparashar/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/anuvrat.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/anuvrat-parashar",
+      "scraped_at": "2025-08-13T12:40:53.433329",
+      "slug": "anuvrat-parashar"
+    },
+    {
+      "name": "Praneeth Paikray",
+      "designation": "Senior Generative AI Specialist",
+      "company": "Manpower Group",
+      "bio": "Praneeth Paikray is a Senior Generative AI Specialist at Manpower Group, bringing 8 years of experience in data science across financial services, enterprise technology, and workforce solutions. His expertise lies in architecting AI solutions that directly impact business metrics, focusing on three key pillars: enhancing revenue through fine-tuned LLMs and recommender systems for upsell paths and margin gains; providing Board-Room Insights via aspect-sentiment analysis, forecasting, and conversational analytics for data-backed strategy; and enabling enterprise AI to Scale with Slides through cloud-native AI/ML pipelines and hands-on leadership, ensuring explainability for executives.Praneeth's foundational education includes an MTech in Data Science from BITS Pilani (2021-2023) and a BTech in Electrical Engineering from OUTR (2013-2017), supplemented by continuous learning in Event-Driven Agentic Document Workflows and AI Agents Fundamentals. His career trajectory showcases a progression from Systems Engineer at TCS (2017-2019) and Data Science Developer at Dell (2019-2021), to Data Scientist and Senior Data Scientist at Fidelity (2021-2025), culminating in his current role leading GenAI initiatives at ManpowerGroup since 2025. This journey reflects his consistent ability to translate data science theory into measurable business outcomes and production deployments.",
+      "linkedin": "https://www.linkedin.com/in/praneeth-paikray/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Praneeth_1.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Adaptive Email Agents with DSPy: From Static Prompts to Smart Learning"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/praneeth-paikray",
+      "scraped_at": "2025-08-13T12:40:56.174505",
+      "slug": "praneeth-paikray"
+    },
+    {
+      "name": "Mohammad Sanad Zaki Rizvi",
+      "designation": "Senior AI Scientist",
+      "company": "Analytics Vidhya",
+      "bio": "Sanad is a Senior AI Scientist at Analytics Vidhya and a published researcher specializing in Natural Language Processing. With experience across top research labs including Google Research, Microsoft Research, and the University of Edinburgh, his work spans hallucination mitigation in LLMs, multilingual NLP, and low-resource language modeling. He has also designed and taught popular MOOCs in NLP and Deep Learning. Sanad is passionate about open-source NLP tools, responsible AI, and making state-of-the-art research accessible to all.",
+      "linkedin": "https://www.linkedin.com/in/mohd-sanad-zaki-rizvi-0238b5a6/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/IDK.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/mohammad-sanad-zaki-rizvi",
+      "scraped_at": "2025-08-13T12:40:58.633083",
+      "slug": "mohammad-sanad-zaki-rizvi"
+    },
+    {
+      "name": "Anand Mishra",
+      "designation": "Chief Technology Officer",
+      "company": "Analytics Vidhya",
+      "bio": "Anand Mishra is the Chief Technology Officer at Analytics Vidhya, known for his result-oriented, customer-centric approach. With over a decade of experience, he has led data science teams across companies like HT Media, Tickled Media, and Infoedge. At HT Media, his team revamped recommendation systems, boosting mailer response by 200% and cold calling revenue by 30%. Anand holds a dual B.Tech and M.Tech in Electrical Engineering from IIT Kanpur. His expertise spans machine learning, decision optimization, and large-scale image and data processing across global research internships.",
+      "linkedin": "https://www.linkedin.com/in/anand--mishra/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/ANAND_1.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/anand-mishra-2",
+      "scraped_at": "2025-08-13T12:41:01.124858",
+      "slug": "anand-mishra-2"
+    },
+    {
+      "name": "Karan Sindwani",
+      "designation": "Senior Applied Scientist",
+      "company": "Amazon Web Services",
+      "bio": "Karan Sindwani is a Senior Applied Scientist at AWS, with a decade of experience in machine learning and applied AI. His journey began in 2014 with his first academic paper, and since then, he has worked across a range of domains—from recommender systems and conversational agents at an AI startup , to cutting-edge computer vision research during his MS in Data Science at Columbia University, where he specialized in image inpainting. Since joining Amazon in 2020, Karan has played a key role in the launch of AWS Panorama, enhancing Amazon Personalize with graph-based recommendation systems.",
+      "linkedin": "https://www.linkedin.com/in/karansindwani/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Karan_Sindwani.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "From Idea to Production with GenAI : Realizing the Art of the Possible"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/karan-sindwani",
+      "scraped_at": "2025-08-13T12:41:03.626223",
+      "slug": "karan-sindwani"
+    },
+    {
+      "name": "Ravi RS Nadimpalli",
+      "designation": "Growth PM",
+      "company": "AWONE",
+      "bio": "Ravi RS Nadimpalli brings a one-of-a-kind blend of product leadership, public policy innovation, and hands-on startup, enterprise product (Growth) experience. He has been in AI space for 4+ years now, and adapted to Vibe coding through LLMs, he experiments with Lovable, Bolt, Cursor every week and calls himself, \"Vibe Coder with Product Sense\" With over a decade of work across Government, startups, and global enterprises like NTT Data and BYJU's FutureSchool, Ravi is known for getting his hands dirty building, scaling, and transforming systems from the ground up. Having built Product & Ecosystem Initiatives for Government of India, Ravi is on a mission to monetize India’s digital public infrastructure. He also serves as a Growth PM at AWONE, helping scale AI and data solutions across industry sectors. From re-architecting legacy systems using microservices to securing funding from Meta for immersive education initiatives, Ravi’s track record is full of high-impact projects. His work has spanned EdTech, GovTech, Cyber Security, eCommerce, and public policy—making him a powerhouse of practical insights for anyone aspiring to work in today's evolving tech and policy landscapes. Ravi is passionate about vocationalizing higher education, gamifying entrepreneurship, and bridging institutional gaps through ethical, tech-enabled design. Fun Fact: He once failed 13 SSB interviews and still made a thriving career by reinventing himself at every stage. His philosophy? \"Perfection is the enemy of progress.\"",
+      "linkedin": "https://www.linkedin.com/in/ever-loyal/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Ravi.jpg",
+      "sessions": [],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/ravi-rs-nadimpalli",
+      "scraped_at": "2025-08-13T12:41:06.102083",
+      "slug": "ravi-rs-nadimpalli"
+    },
+    {
+      "name": "Mayank Aggarwal",
+      "designation": "Co-Founder & CEO",
+      "company": "evolvue AI",
+      "bio": "Mayank Aggarwal is the Co-founder & CEO of evolvue AI, and also leads strategic AI consulting initiatives at CreateHQ Consulting, where he helps organizations harness the transformative power of AI across verticals. With over 7 years of experience spanning industry, research, and academia, Mayank has established himself as a voice in applied machine learning, data engineering, and large-scale AI system design.",
+      "linkedin": "https://www.linkedin.com/in/mayank953/",
+      "image_url": "https://av-eks-dhs2024.s3.amazonaws.com/media/speakers/Mayank_Aggarwal.jpg",
+      "sessions": [
+        {
+          "type": "Hack Sessions",
+          "title": "Automate Everything: Building Agentic AI Workflows with No-Code Tools"
+        }
+      ],
+      "profile_url": "https://www.analyticsvidhya.com/datahacksummit-2025/speakers/mayank-aggarwal",
+      "scraped_at": "2025-08-13T12:41:08.811149",
+      "slug": "mayank-aggarwal"
+    }
+  ]
+}
