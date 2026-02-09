@@ -118,7 +118,7 @@ def chatbot(state: ChatbotState):
 
     try:
 
-        llm = init_chat_model(model="openai:gpt-4.1", api_key=os.getenv("OPENAI_API_KEY"))
+        llm = init_chat_model(model="openai:gpt-4.1-mini", api_key=os.getenv("OPENAI_API_KEY"))
         llm2 = init_chat_model(model="anthropic:claude-4-5-haiku-latest", api_key=os.getenv("ANTHROPIC_API_KEY"))
 
         system_message_content = system_prompt_template.format(query=messages[-1].content, context=state['context'])
