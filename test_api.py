@@ -16,7 +16,7 @@ async def root():
 
 @app.post("/chat")
 async def chat(request: ChatRequest):
-    response = run_conversation(
+    response = await run_conversation(
         request.user_input, 
         request.mem0_user_id, 
         request.mem0_session_id, 

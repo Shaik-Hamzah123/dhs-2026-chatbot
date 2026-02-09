@@ -23,7 +23,7 @@ async def chat(request: Request):
     mem0_session_id = data["mem0_session_id"]
     signed_in = data["signed_in"]
     image_data = data.get("image_data")
-    return HTMLResponse(run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in, image_data))
+    return HTMLResponse(await run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in, image_data))
 
 @app.get("/", response_class=HTMLResponse)
 async def root(request: Request):

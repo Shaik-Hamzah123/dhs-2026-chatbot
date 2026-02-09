@@ -301,7 +301,6 @@
 
                 // 4. Get Markdown response
                 const markdownResponse = await response.text();
-                const htmlResponse = marked.parse(markdownResponse);
 
                 // 5. Add bot response container
                 const botMsgDiv = document.createElement('div');
@@ -309,7 +308,8 @@
                 chatHistory.appendChild(botMsgDiv);
 
                 // 6. Typewriter effect
-                simulateStreaming(botMsgDiv, htmlResponse);
+                simulateStreaming(botMsgDiv, markdownResponse);
+                // botMsgDiv.innerHTML = htmlResponse;
 
             } catch (error) {
                 console.error('Error:', error);
@@ -327,10 +327,10 @@
             }
         });
 
-        function simulateStreaming(element, htmlContent) {
+        function simulateStreaming(element, markdownContent) {
             // Create a temporary container to parse the HTML
             const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = htmlContent;
+            tempDiv.innerHTML = markdownContent;
 
             // We want to extract text nodes and elements to stream them
             // For a simple "word by word" stream of the *text* content while preserving HTML structure,
@@ -356,29 +356,26 @@
             // Alternative:
             // RegEx split by tags and words.
 
-            const tokenRegex = /(<[^>]*>|[^<>\s]+|\s+)/g;
-            const tokens = htmlContent.match(tokenRegex) || [];
-
             let i = 0;
 
             function typeNext() {
-                if (i < tokens.length) {
-                    const token = tokens[i];
+                if (i < markdownContent.length) {
+                    const token = markdownContent.slice(0, i);
 
-                    if (token.startsWith('<')) {
-                        // It's an HTML tag, append immediately without delay
-                        element.innerHTML += token;
-                        // Determine if we need to scroll (rendering a tag might change height)
-                        scrollToBottom();
-                        i++;
-                        typeNext(); // Recursive call immediately for tags
-                    } else {
-                        // It's text or whitespace, append and wait
-                        element.innerHTML += token;
-                        scrollToBottom();
-                        i++;
-                        setTimeout(typeNext, 50); // 20ms delay for text
-                    }
+                    // if (token.startsWith('<')) {
+                    //     // It's an HTML tag, append immediately without delay
+                    //     element.innerHTML += token;
+                    //     // Determine if we need to scroll (rendering a tag might change height)
+                    //     scrollToBottom();
+                    //     i++;
+                    //     typeNext(); // Recursive call immediately for tags
+                    // } else {
+                    // It's text or whitespace, append and wait
+                    element.innerHTML = marked.parse(token);
+                    scrollToBottom();
+                    i++;
+                    setTimeout(typeNext, 10); // 20ms delay for text
+                    // }
                 }
             }
 

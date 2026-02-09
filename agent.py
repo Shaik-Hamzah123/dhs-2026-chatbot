@@ -11,6 +11,9 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 # from helper import add_memory, search_memory
 from prompts import system_prompt_template
 
+from agent_sdk import main_agent, Runner
+import asyncio
+
 import logging
 
 import os
@@ -60,7 +63,7 @@ class ChatbotState(TypedDict):
 #             logger.error(f"Error fetching memories: {e}")
 #             session_based_memories = {'results': []}
 
-def get_memories(state: ChatbotState):
+async def get_memories(state: ChatbotState):
     messages = state["messages"]
     user_id = state["mem0_user_id"]
     run_id = state["mem0_session_id"]  # Use as run_id instead
@@ -111,31 +114,84 @@ def get_memories(state: ChatbotState):
 
     return {"context": state['context']}
 
-def chatbot(state: ChatbotState):
+# def chatbot(state: ChatbotState):
+#     messages = state["messages"]
+#     user_id = state["mem0_user_id"]
+#     run_id = state["mem0_session_id"]
+
+#     try:
+
+#         llm = init_chat_model(model="openai:gpt-4.1-mini", api_key=os.getenv("OPENAI_API_KEY"))
+#         llm2 = init_chat_model(model="anthropic:claude-4-5-haiku-latest", api_key=os.getenv("ANTHROPIC_API_KEY"))
+
+#         system_message_content = system_prompt_template.format(query=messages[-1].content, context=state['context'])
+#         system_message = SystemMessage(content=system_message_content)
+
+#         # Prepare user message content (Text only as requested)
+#         user_message = HumanMessage(content=messages[-1].content)
+        
+#         # Let's be safer:
+#         history = messages[:-1][-6:] if len(messages) > 1 else []
+#         full_messages = [system_message] + history + [user_message]
+
+#         response = llm.invoke(full_messages)
+
+#         # Store the interaction in Mem0
+#         try:
+#             # Handle image storage if present (new logic)
+#             if state.get("image_data"):
+#                 image_message = {
+#                     "role": "user",
+#                     "content": {
+#                         "type": "image_url",
+#                         "image_url": {
+#                             "url": f"data:image/jpeg;base64,{state['image_data']}"
+#                         }
+#                     }
+#                 }
+#                 client.add([image_message], user_id=user_id, run_id=run_id)
+#                 logger.info("Image memory saved")
+
+#             interaction = [
+#                 {
+#                     "role": "user",
+#                     "content": messages[-1].content
+#                 },
+#                 {
+#                     "role": "assistant", 
+#                     "content": response.content
+#                 }
+#             ]
+#             result = client.add(interaction, user_id=user_id, run_id=run_id)
+#             logger.info(f"Text Interaction memory saved: {len(result.get('results', []))} memories added")
+#         except Exception as e:
+#             logger.error(f"Error saving memory: {e}")
+            
+#         return {"messages": [response]}
+        
+#     except Exception as e:
+#         logger.error(f"Error in chatbot: {e}")
+#         # Fallback response without memory context
+#         response = llm.invoke(messages)
+#         return {"messages": [response]}
+
+async def chatbot(state: ChatbotState):
     messages = state["messages"]
     user_id = state["mem0_user_id"]
     run_id = state["mem0_session_id"]
+    context = state.get("context", "")
 
     try:
-
-        llm = init_chat_model(model="openai:gpt-4.1-mini", api_key=os.getenv("OPENAI_API_KEY"))
-        llm2 = init_chat_model(model="anthropic:claude-4-5-haiku-latest", api_key=os.getenv("ANTHROPIC_API_KEY"))
-
-        system_message_content = system_prompt_template.format(query=messages[-1].content, context=state['context'])
-        system_message = SystemMessage(content=system_message_content)
-
-        # Prepare user message content (Text only as requested)
-        user_message = HumanMessage(content=messages[-1].content)
+        query = messages[-1].content
+        # Combine user query with memory context for the agent
+        full_query = f"Memory Context: {context}\n\nMessages History: {messages}\n\nUser Query: {query}\n\n"
         
-        # Let's be safer:
-        history = messages[:-1][-6:] if len(messages) > 1 else []
-        full_messages = [system_message] + history + [user_message]
-
-        response = llm.invoke(full_messages)
-
+        result = await Runner.run(main_agent, full_query)
+        response_content = result.final_output
+        
         # Store the interaction in Mem0
         try:
-            # Handle image storage if present (new logic)
+            # Handle image storage if present
             if state.get("image_data"):
                 image_message = {
                     "role": "user",
@@ -152,25 +208,26 @@ def chatbot(state: ChatbotState):
             interaction = [
                 {
                     "role": "user",
-                    "content": messages[-1].content
+                    "content": query
                 },
                 {
                     "role": "assistant", 
-                    "content": response.content
+                    "content": response_content
                 }
             ]
-            result = client.add(interaction, user_id=user_id, run_id=run_id)
-            logger.info(f"Text Interaction memory saved: {len(result.get('results', []))} memories added")
+            client.add(interaction, user_id=user_id, run_id=run_id)
+            logger.info("Interaction memory saved")
         except Exception as e:
             logger.error(f"Error saving memory: {e}")
-            
+
+        response = AIMessage(content=response_content)
         return {"messages": [response]}
-        
+
     except Exception as e:
         logger.error(f"Error in chatbot: {e}")
-        # Fallback response without memory context
-        response = llm.invoke(messages)
-        return {"messages": [response]}
+        # Fallback
+        return {"messages": [AIMessage(content="I'm sorry, I encountered an error processing your request.")]}
+        
 
 
 graph_builder = StateGraph(ChatbotState)
@@ -185,7 +242,7 @@ graph_builder.add_edge("chatbot", "get_memories")
 
 compiled_graph = graph_builder.compile()
 
-def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, signed_in: bool, image_data: str | None = None):
+async def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, signed_in: bool, image_data: str | None = None):
     config = {"configurable": {"thread_id": mem0_user_id}}
     state = {
                 "messages": [HumanMessage(content=user_input)], 
@@ -196,12 +253,12 @@ def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, s
                 "context": ""
             }
 
-    for event in compiled_graph.stream(state, config):
+    async for event in compiled_graph.astream(state, config):
         for value in event.values():
             if value and value.get("messages"):
                 return value["messages"][-1].content
 
-def main():
+async def main():
     print("Welcome to DHS 2026! How can I assist you today?")   
     mem0_user_id = "skh"  # You can generate or retrieve this based on your user management system
     mem0_session_id = "skh-001"  # You can generate or retrieve this based on your user management system
@@ -211,7 +268,8 @@ def main():
         if user_input.lower() in ['quit', 'exit', 'bye']:
             print("Thank you for contacting us. Have a great day!")
             break
-        print("Customer Support:", run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in))
+        response = await run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in)
+        print("Customer Support:", response)
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

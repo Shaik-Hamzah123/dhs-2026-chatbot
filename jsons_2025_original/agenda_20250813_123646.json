@@ -1,4 +1,9 @@
 {
+  "metadata": {
+    "scraped_at": "2025-08-13T12:36:46.837936",
+    "source_url": "https://www.analyticsvidhya.com/datahacksummit-2025/",
+    "total_items": 30
+  },
   "sessions": [
     {
       "title": "Registration",
@@ -25,7 +30,7 @@
       "type": "session"
     },
     {
-      "title": "Responsible AI in Medical Imaging \u2013 A Case Study",
+      "title": "Responsible AI in Medical Imaging – A Case Study",
       "time": "10:20AM - 11:20AM",
       "location": "ChatGPT",
       "session_url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/responsible-ai-in-medical-imaging-a-case-study",
@@ -229,7 +234,7 @@
       "type": "session"
     },
     {
-      "title": "Building India\u2019s AI Ecosystem",
+      "title": "Building India’s AI Ecosystem",
       "time": "11:35AM - 12:35PM",
       "location": "ChatGPT",
       "session_url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/building-indias-ai-ecosystem-from-vision-to-sovereignty",
@@ -313,7 +318,7 @@
       "type": "session"
     },
     {
-      "title": "LLMOps \u2013 Productionalizing Real-World Applications with LLMs and Agents",
+      "title": "LLMOps – Productionalizing Real-World Applications with LLMs and Agents",
       "time": "09:30AM - 05:30PM",
       "location": "La Marvella:- 2nd Block, Jayanagar, Bengaluru",
       "session_url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/llmops-productionalizing-real-world-applications-with-llms-2",
@@ -393,7 +398,7 @@
           "type": "session"
         },
         {
-          "title": "Responsible AI in Medical Imaging \u2013 A Case Study",
+          "title": "Responsible AI in Medical Imaging – A Case Study",
           "time": "10:20AM - 11:20AM",
           "location": "ChatGPT",
           "session_url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/responsible-ai-in-medical-imaging-a-case-study",
@@ -613,7 +618,7 @@
           "type": "session"
         },
         {
-          "title": "Building India\u2019s AI Ecosystem",
+          "title": "Building India’s AI Ecosystem",
           "time": "11:35AM - 12:35PM",
           "location": "ChatGPT",
           "session_url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/building-indias-ai-ecosystem-from-vision-to-sovereignty",
@@ -705,7 +710,7 @@
           "type": "session"
         },
         {
-          "title": "LLMOps \u2013 Productionalizing Real-World Applications with LLMs and Agents",
+          "title": "LLMOps – Productionalizing Real-World Applications with LLMs and Agents",
           "time": "09:30AM - 05:30PM",
           "location": "La Marvella:- 2nd Block, Jayanagar, Bengaluru",
           "session_url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/llmops-productionalizing-real-world-applications-with-llms-2",
