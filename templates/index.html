@@ -7,6 +7,7 @@
     <title>DHS 2026 Chatbot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -97,6 +98,51 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #a8a8a8;
         }
+
+        /* Markdown Styling */
+        .bot-message h1,
+        .bot-message h2,
+        .bot-message h3 {
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .bot-message h1 {
+            font-size: 1.5rem;
+        }
+
+        .bot-message h2 {
+            font-size: 1.25rem;
+        }
+
+        .bot-message h3 {
+            font-size: 1.1rem;
+        }
+
+        .bot-message strong,
+        .bot-message b {
+            font-weight: 600;
+        }
+
+        .bot-message a {
+            color: #0d6efd;
+            text-decoration: underline;
+        }
+
+        .bot-message ul,
+        .bot-message ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .bot-message p {
+            margin-bottom: 0.75rem;
+        }
+
+        .bot-message p:last-child {
+            margin-bottom: 0;
+        }
     </style>
 </head>
 
@@ -141,7 +187,18 @@
     <!-- Input Area -->
     <div class="input-area">
         <div class="input-container">
-            <form id="chat-form" class="d-flex gap-2">
+            <form id="chat-form" class="d-flex gap-2 align-items-center">
+                <input type="file" id="image-upload" accept="image/jpeg,image/png,image/webp" style="display: none;">
+                <button type="button" class="btn btn-outline-secondary btn-lg" id="upload-btn" title="Upload Image">
+                    <i class="bi bi-image"></i> 🖼️
+                </button>
+                <div id="image-preview-container" class="position-relative d-none" style="width: 60px; height: 60px;">
+                    <img id="image-preview" src="" class="img-thumbnail"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <button type="button" id="remove-image"
+                        class="btn btn-danger btn-sm position-absolute top-0 end-0 p-0"
+                        style="line-height:1; width:20px; height:20px;">×</button>
+                </div>
                 <input type="text" class="form-control form-control-lg shadow-sm border-0 bg-light" id="user-input"
                     placeholder="Type your message here..." autocomplete="off" required>
                 <button type="submit" class="btn btn-primary btn-lg px-4 shadow-sm" id="send-btn">
@@ -162,6 +219,36 @@
 
         const mem0UserIdInput = document.getElementById('mem0-user-id-input');
         const mem0SessionIdInput = document.getElementById('mem0-session-id-input');
+        const imageUpload = document.getElementById('image-upload');
+        const uploadBtn = document.getElementById('upload-btn');
+        const imagePreviewContainer = document.getElementById('image-preview-container');
+        const imagePreview = document.getElementById('image-preview');
+        const removeImageBtn = document.getElementById('remove-image');
+
+        let currentImageBase64 = null;
+
+        uploadBtn.addEventListener('click', () => imageUpload.click());
+
+        imageUpload.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    currentImageBase64 = event.target.result.split(',')[1];
+                    imagePreview.src = event.target.result;
+                    imagePreviewContainer.classList.remove('d-none');
+                    uploadBtn.classList.add('d-none');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        removeImageBtn.addEventListener('click', () => {
+            currentImageBase64 = null;
+            imageUpload.value = '';
+            imagePreviewContainer.classList.add('d-none');
+            uploadBtn.classList.remove('d-none');
+        });
 
         // Generate random session IDs for memory as defaults
         mem0UserIdInput.value = "user_" + Math.random().toString(36).substr(2, 9);
@@ -201,23 +288,27 @@
                         user_input: message,
                         mem0_user_id: mem0UserIdInput.value,
                         mem0_session_id: mem0SessionIdInput.value,
-                        signed_in: false
+                        signed_in: false,
+                        image_data: currentImageBase64
                     })
                 });
 
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
+                // 3. Reset image
+                currentImageBase64 = null;
+                imagePreviewContainer.classList.add('d-none');
+                uploadBtn.classList.remove('d-none');
+                imageUpload.value = '';
 
-                // 3. Get HTML response
-                const htmlResponse = await response.text();
+                // 4. Get Markdown response
+                const markdownResponse = await response.text();
+                const htmlResponse = marked.parse(markdownResponse);
 
-                // 4. Add bot response container
+                // 5. Add bot response container
                 const botMsgDiv = document.createElement('div');
                 botMsgDiv.className = 'message-card bot-message content-html';
                 chatHistory.appendChild(botMsgDiv);
 
-                // 5. Typewriter effect
+                // 6. Typewriter effect
                 simulateStreaming(botMsgDiv, htmlResponse);
 
             } catch (error) {

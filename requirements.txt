@@ -11,3 +11,5 @@ fastapi
 
 jinja2
 uvicorn
+
+openai-agents

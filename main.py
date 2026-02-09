@@ -10,6 +10,7 @@ class ChatRequest(BaseModel):
     mem0_user_id: str
     mem0_session_id: str
     signed_in: bool
+    image_data: str | None = None
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
@@ -21,7 +22,8 @@ async def chat(request: Request):
     mem0_user_id = data["mem0_user_id"]
     mem0_session_id = data["mem0_session_id"]
     signed_in = data["signed_in"]
-    return HTMLResponse(run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in))
+    image_data = data.get("image_data")
+    return HTMLResponse(run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in, image_data))
 
 @app.get("/", response_class=HTMLResponse)
 async def root(request: Request):

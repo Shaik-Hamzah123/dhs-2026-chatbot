@@ -30,7 +30,7 @@ class ChatbotState(TypedDict):
     context: str
 
     signed_in: bool
-
+    image_data: str | None
     messages: Annotated[List[HumanMessage | AIMessage], add_messages]
 
 
@@ -124,11 +124,31 @@ def chatbot(state: ChatbotState):
         system_message_content = system_prompt_template.format(query=messages[-1].content, context=state['context'])
         system_message = SystemMessage(content=system_message_content)
 
-        full_messages = [system_message]
+        # Prepare user message content (Text only as requested)
+        user_message = HumanMessage(content=messages[-1].content)
+        
+        # Let's be safer:
+        history = messages[:-1][-6:] if len(messages) > 1 else []
+        full_messages = [system_message] + history + [user_message]
+
         response = llm.invoke(full_messages)
 
         # Store the interaction in Mem0
         try:
+            # Handle image storage if present (new logic)
+            if state.get("image_data"):
+                image_message = {
+                    "role": "user",
+                    "content": {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{state['image_data']}"
+                        }
+                    }
+                }
+                client.add([image_message], user_id=user_id, run_id=run_id)
+                logger.info("Image memory saved")
+
             interaction = [
                 {
                     "role": "user",
@@ -140,14 +160,14 @@ def chatbot(state: ChatbotState):
                 }
             ]
             result = client.add(interaction, user_id=user_id, run_id=run_id)
-            print(f"Memory saved: {len(result.get('results', []))} memories added")
+            logger.info(f"Text Interaction memory saved: {len(result.get('results', []))} memories added")
         except Exception as e:
-            print(f"Error saving memory: {e}")
+            logger.error(f"Error saving memory: {e}")
             
         return {"messages": [response]}
         
     except Exception as e:
-        print(f"Error in chatbot: {e}")
+        logger.error(f"Error in chatbot: {e}")
         # Fallback response without memory context
         response = llm.invoke(messages)
         return {"messages": [response]}
@@ -165,13 +185,14 @@ graph_builder.add_edge("chatbot", "get_memories")
 
 compiled_graph = graph_builder.compile()
 
-def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, signed_in: bool):
+def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, signed_in: bool, image_data: str | None = None):
     config = {"configurable": {"thread_id": mem0_user_id}}
     state = {
                 "messages": [HumanMessage(content=user_input)], 
                 "mem0_user_id": mem0_user_id,
                 "mem0_session_id": mem0_session_id,
                 "signed_in": signed_in,
+                "image_data": image_data,
                 "context": ""
             }
 
@@ -181,7 +202,7 @@ def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, s
                 return value["messages"][-1].content
 
 def main():
-    print("Welcome to DHs 2026! How can I assist you today?")   
+    print("Welcome to DHS 2026! How can I assist you today?")   
     mem0_user_id = "skh"  # You can generate or retrieve this based on your user management system
     mem0_session_id = "skh-001"  # You can generate or retrieve this based on your user management system
     signed_in = True
