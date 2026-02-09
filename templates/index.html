@@ -110,6 +110,23 @@
             </a>
             <span class="badge bg-light text-secondary rounded-pill border">Beta</span>
         </div>
+        <div class="container mt-2">
+            <div class="row g-2">
+                <div class="col-md-6">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-text">User ID</span>
+                        <input type="text" id="mem0-user-id-input" class="form-control" placeholder="Enter User ID">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-text">Session ID</span>
+                        <input type="text" id="mem0-session-id-input" class="form-control"
+                            placeholder="Enter Session ID">
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <!-- Chat Area -->
@@ -143,9 +160,12 @@
         const chatHistory = document.getElementById('chat-history');
         const sendBtn = document.getElementById('send-btn');
 
-        // Generate random session IDs for memory (simplified for this demo)
-        const mem0UserId = "user_" + Math.random().toString(36).substr(2, 9);
-        const mem0SessionId = "session_" + Math.random().toString(36).substr(2, 9);
+        const mem0UserIdInput = document.getElementById('mem0-user-id-input');
+        const mem0SessionIdInput = document.getElementById('mem0-session-id-input');
+
+        // Generate random session IDs for memory as defaults
+        mem0UserIdInput.value = "user_" + Math.random().toString(36).substr(2, 9);
+        mem0SessionIdInput.value = "session_" + Math.random().toString(36).substr(2, 9);
 
         // Scroll to bottom
         function scrollToBottom() {
@@ -179,8 +199,8 @@
                     },
                     body: JSON.stringify({
                         user_input: message,
-                        mem0_user_id: mem0UserId,
-                        mem0_session_id: mem0SessionId,
+                        mem0_user_id: mem0UserIdInput.value,
+                        mem0_session_id: mem0SessionIdInput.value,
                         signed_in: false
                     })
                 });
@@ -266,7 +286,7 @@
                         element.innerHTML += token;
                         scrollToBottom();
                         i++;
-                        setTimeout(typeNext, 100); // 20ms delay for text
+                        setTimeout(typeNext, 50); // 20ms delay for text
                     }
                 }
             }
