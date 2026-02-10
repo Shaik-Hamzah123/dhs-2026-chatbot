@@ -9,7 +9,7 @@ class ChatRequest(BaseModel):
     user_input: str
     mem0_user_id: str
     mem0_session_id: str
-    signed_in: bool
+    signed_in: bool | None = None
     image_data: str | None = None
 
 app = FastAPI()
@@ -21,7 +21,10 @@ async def chat(request: Request):
     user_input = data["user_input"]
     mem0_user_id = data["mem0_user_id"]
     mem0_session_id = data["mem0_session_id"]
-    signed_in = data["signed_in"]
+    if mem0_user_id:
+        signed_in = True
+    else:
+        signed_in = False
     image_data = data.get("image_data")
     return HTMLResponse(await run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in, image_data))
 

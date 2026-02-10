@@ -9,9 +9,9 @@ from mem0 import MemoryClient
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
 # from helper import add_memory, search_memory
-from prompts import system_prompt_template
+from prompts import * 
 
-from agent_sdk import main_agent, Runner
+from agent_sdk import get_main_agent, Runner
 import asyncio
 
 import logging
@@ -81,10 +81,15 @@ async def get_memories(state: ChatbotState):
                 filters={"AND": [{"user_id": user_id}, {"run_id": run_id}]}
             )
             # Global memories for user
-            global_memories = client.search(
-                messages[-1].content, 
-                filters={"user_id": user_id}
-            )
+            search_query = "Retrieve all existing memories"
+            try:
+                global_memories = client.search(
+                    search_query, 
+                    filters={"user_id": user_id, "limit": 10}
+                )
+            except Exception as e:
+                logger.error(f"Error fetching global memories: {e}")
+                global_memories = {'results': []}
         except Exception as e:
             logger.error(f"Error fetching memories: {e}")
             session_based_memories = {'results': []}
@@ -183,10 +188,10 @@ async def chatbot(state: ChatbotState):
 
     try:
         query = messages[-1].content
-        # Combine user query with memory context for the agent
-        full_query = f"Memory Context: {context}\n\nMessages History: {messages}\n\nUser Query: {query}\n\n"
+        # Use get_main_agent to dynamically format instructions with context and history
+        agent = get_main_agent(context, messages)
         
-        result = await Runner.run(main_agent, full_query)
+        result = await Runner.run(agent, query)
         response_content = result.final_output
         
         # Store the interaction in Mem0
@@ -242,7 +247,11 @@ graph_builder.add_edge("chatbot", "get_memories")
 
 compiled_graph = graph_builder.compile()
 
-async def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, signed_in: bool, image_data: str | None = None):
+async def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, signed_in: bool | None = None, image_data: str | None = None):
+    # Derive signed_in from mem0_user_id if not provided
+    # if signed_in is None:
+    #     signed_in = bool(mem0_user_id and mem0_user_id.strip())
+    
     config = {"configurable": {"thread_id": mem0_user_id}}
     state = {
                 "messages": [HumanMessage(content=user_input)], 

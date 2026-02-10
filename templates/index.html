@@ -371,10 +371,10 @@
                     //     typeNext(); // Recursive call immediately for tags
                     // } else {
                     // It's text or whitespace, append and wait
-                    element.innerHTML = marked.parse(token);
+                    element.innerHTML = marked.parse(token);    
                     scrollToBottom();
                     i++;
-                    setTimeout(typeNext, 10); // 20ms delay for text
+                    setTimeout(typeNext, 50); // 20ms delay for text
                     // }
                 }
             }

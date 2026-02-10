@@ -8,7 +8,7 @@ class ChatRequest(BaseModel):
     user_input: str
     mem0_user_id: str
     mem0_session_id: str
-    signed_in: bool
+    signed_in: bool | None = None
 
 @app.get("/")
 async def root():
