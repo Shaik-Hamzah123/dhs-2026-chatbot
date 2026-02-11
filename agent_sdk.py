@@ -29,7 +29,7 @@ class IsDHSRelevant(BaseModel):
     reasoning: str
 
 guardrail_agent = Agent( 
-    name="Guardrail check",
+    name="Guardrail Check",
     instructions="""You are the DHS 2026 AI Assistant. Check if the user is asking you to do something related to DHS 2026.
 
     Remember, salutations, grettings, of such conversation should be allowed
@@ -43,6 +43,8 @@ guardrail_agent = Agent(
     - Fun activities at the event
     - Location of the DHS Sessions and Workshops
     - Dates and timings related to the events 
+    - Ticket prices and discounts
+    - Allow chat related queries
 
     Be Lenient in your responses
 
