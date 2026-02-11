@@ -60,7 +60,7 @@ async def dhs_guardrail(
     result = await Runner.run(guardrail_agent, input, context=ctx.context)
 
     return GuardrailFunctionOutput(
-        output_info=result.final_output, 
+        output_info=result.final_output.reasoning, 
         tripwire_triggered=not result.final_output.is_dhs_relevant,
     )
 
@@ -117,17 +117,47 @@ async def workshop_information(query: str) -> str:
     return result.final_output
 
 
+@function_tool
+async def overall_information(query: str) -> str:
+    overall_agent = Agent(
+        name = "DHS Session Agent",
+        instructions = overall_agent_prompt,
+        model="gpt-4.1-mini",
+    )
+
+    result = await Runner.run(overall_agent, query)
+    # print(result.final_output)
+
+    return result.final_output
 
 
 
 def get_main_agent(memory_context: str, messages: list) -> Agent:
+    # Format messages into a readable conversation history
+    formatted_messages = ""
+    if messages:
+        formatted_messages = "\n".join([
+            f"{'User' if hasattr(msg, 'type') and msg.type == 'human' else 'Assistant'}: {msg.content}"
+            for msg in messages[:-1]  # Exclude the current message as it's the query
+        ])
+    else:
+        formatted_messages = "No previous conversation history."
+    
     return Agent(
         name = "DHS Agent",
-        instructions = main_agent_prompt.format(memory_context=memory_context, messages=messages),
+        instructions = main_agent_prompt.format(memory_context=memory_context, messages=formatted_messages),
         model = "gpt-4.1-mini",
-        tools = [agenda_information, session_information, speakers_information, workshop_information],
-        input_guardrails=[dhs_guardrail]
+        tools = [agenda_information, session_information, speakers_information, workshop_information]
+        # input_guardrails=[dhs_guardrail]
     )
+
+    # return Agent(
+    #     name = "DHS Agent",
+    #     instructions = main_agent_prompt.format(memory_context=memory_context, messages=formatted_messages),
+    #     model = "gpt-5-mini",
+    #     tools = [overall_information],
+    #     input_guardrails=[dhs_guardrail]
+    # )
 
 async def main(query):
     # For standalone testing, pass empty context and history

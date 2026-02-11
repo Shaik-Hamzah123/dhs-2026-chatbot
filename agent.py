@@ -5,7 +5,7 @@ from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 from langchain_core.tools import tool
 from langchain.chat_models import init_chat_model
-from mem0 import MemoryClient
+from mem0 import MemoryClient, Memory
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
 # from helper import add_memory, search_memory
@@ -191,8 +191,9 @@ async def chatbot(state: ChatbotState):
         # Use get_main_agent to dynamically format instructions with context and history
         agent = get_main_agent(context, messages)
         
-        result = await Runner.run(agent, query)
+        result = await Runner.run(agent, query, context=state['context'], input_guardrails=[dhs_guardrail])
         response_content = result.final_output
+        guardrail_response = result.input_guardrail_results
         
         # Store the interaction in Mem0
         try:
@@ -225,13 +226,16 @@ async def chatbot(state: ChatbotState):
         except Exception as e:
             logger.error(f"Error saving memory: {e}")
 
+        if guardrail_response:
+            response_content = guardrail_response.message
+
         response = AIMessage(content=response_content)
         return {"messages": [response]}
 
     except Exception as e:
         logger.error(f"Error in chatbot: {e}")
         # Fallback
-        return {"messages": [AIMessage(content="I'm sorry, I encountered an error processing your request.")]}
+        return {"messages": [AIMessage(content="I'm sorry, Could you please rephrase your query? I'm not able to process your request.")]}
         
 
 

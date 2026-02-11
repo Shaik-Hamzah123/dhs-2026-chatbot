@@ -1,0 +1,410 @@
+{
+  "workshops": [
+    {
+      "title": "Mastering Intelligent Agents: A Deep Dive into Agentic AI",
+      "instructor": "Dipanjan Sarkar",
+      "instructor_designation": "Head of Artificial Intelligence & Community",
+      "instructor_company": "Analytics Vidhya",
+      "description": "New to the world of Agentic AI and want to quickly get proficient in the key aspects of learning, building, deploying and monitoring Agentic AI Systems? This is the workshop for you! In this workshop you will get a comprehensive coverage of the breadth as well as deep dive into the depth of the vast world of Agentic AI Systems. Over the course of six modules, you will spend the entire day focusing on the following key areas: While we want to keep the discussions as framework and tool-agnostic as possible, since 90% of the workshop will be hands-on focused; we will be using LangChain and LangGraph (currently the leading framework used in the industry)  for most of the hands-on demos for building Agents and also a bit of CrewAI. While the focus of the workshop is more on building Agentic AI Systems we will also showcase how you can build a basic web service or API on top of an Agent using FastAPI and deploy and monitor it using frameworks like LangFuse or Arize AI Phoenix. Important Note:You may need to register for some platforms like Tavily, WeatherAPI etc for the workshop (no billing needed), we will send the instructions ahead of time. That will be essential for running the hands-on code demos live along with the instructor in the session. Additional Points",
+      "date": "August 20-23, 2025",
+      "time": "09:30 AM - 05:30 PM",
+      "venue": "Sheraton Grand, Dr. Rajkumar Road Malleswaram",
+      "modules": [
+        {
+          "title": "Module 1: Introduction To Generative & Agentic AI",
+          "content": "This module will cover the essentials of Generative AI as a nice recap or refresher for everyone to be on the same foundational level and then we will dive into the essential concepts and components of Agentic AI SystemsWhirlwind tour of Generative AIRecap of Prompting LLMs & RAG SystemsIntroduction to Agentic AI SystemsKey components of Agentic AI Systems - LLM, Tools, Memory, Prompts, Routers, WorkflowsCurrent tool landscape in Agentic AITool Calling or Function Calling - The workhorse of Agentic AI SystemsHands-on: Prompting and RAG with LangChainHands-on: Tool Calling for Agentic AI with LangChain"
+        },
+        {
+          "title": "Module 2: Building Basic Agentic AI Systems",
+          "content": "This module will build on the tool-calling aspects from the previous module and will teach you how to build basic tool-use Agents using LangChain, LangGraph & CrewAI and the ReAct pattern.Introduction to LangGraph and key componentsHands-on: Build a ReAct Tool-Use Agent with LangGraphHands-on: Build a ReAct Tool-Use Agent with CrewAIHands-on: Build a Text2SQL Data Assistant Agent using LangGraph"
+        },
+        {
+          "title": "Module 3: Memory Management & Building Conversational Agentic AI Systems",
+          "content": "This module will focus on how to manage short-term and long-term memory for Agentic AI Systems, how to store, manage and retrieve conversational history and agent workflow history for such systems. We will also look at in-memory and external memory management schemes and leverage these to build conversational Agentic AI Systems with LangGraph, LangMemIntroduction to short-term and long-term memoryThreads, memory snapshots, long-term memory storesManaging memory limits and context window limitationsInternal and External Memory StoresHands-on: Build a Conversational Agentic AI Financial AssistantBonus: Using LangMem and Mem0 for advanced memory management"
+        },
+        {
+          "title": "Module 4: Building Advanced Agentic AI Systems",
+          "content": "This module will focus on how to leverage industry-standard Agentic AI Design patterns and build and architect more advanced Agentic AI Systems leveraging tool-use, planning, reflection and multi-agent systemsKey Design Patterns for Architecting Agentic AI Systems - Tool-Use, Planning, Reflection, Multi-Agent SystemHands-On: Build your own Deep Research Agentic AI System leveraging Planning, Tool-Use, Multi-AgentsHands-On: Build Multi-Agent Systems for analysis & research - Supervisor / Hierarchical Architectures"
+        },
+        {
+          "title": "Module 5: Building Agentic RAG Systems",
+          "content": "This module will focus on how to leverage your enterprise or private data using RAG along with the power of AI Agents to build Agentic RAG Systems using industry-standard Agentic RAG architecturesKey Design Patterns for Architecting Agentic RAG Systems - Router RAG, Adaptive RAG, Corrective RAG and moreHands-On: Build a Router RAG System for Customer Support Resolution"
+        },
+        {
+          "title": "Module 6: Deploying & Monitoring Agentic AI Systems",
+          "content": "This module will briefly cover the key steps involved in building and deploying a simple Agentic AI System using LangGraph, FastAPI on the cloud and monitoring and tracking the Agent execution using popular monitoring frameworks like LangFuse or Arize AI PhoenixKey workflow for Building → Deploying → Monitoring an end-to-end Agentic AI SystemHands-On: Build a simple LangGraph AI Agent (recap)Hands-On: Wrap AI Agent in a Web Service API using FastAPIHands-On: Deploy Agentic API in the CloudHands-On: Test & Monitor AI Agent execution and tracesFuture Scope: Next Steps and Best Practices"
+        }
+      ],
+      "workshop_url": "https://www.analyticsvidhya.com/datahacksummit-2025/workshops/mastering-intelligent-agents-a-deep-dive-into-agentic-ai-building-ai"
+    },
+    {
+      "title": "Mastering Real-World Multi-Agent Systems",
+      "instructor": "Alessandro Romano",
+      "instructor_designation": "Senior Data Scientist",
+      "instructor_company": "Kuehne+Nagel",
+      "description": "In this hands-on technical workshop, we’ll explore multi-agent orchestration using CrewAI, diving into how autonomous agents can collaborate to solve complex problems. You’ll learn how to define, configure, and coordinate agents using CrewAI’s core components, all in Python. We’ll walk through the main classes of problems this approach is suited for and guide you step by step through building real-world workflows. Topics include agent creation, orchestration strategies, tool integration (including custom tools), and LLM-agnostic setups. We’ll also look at how to connect CrewAI with external libraries such as Streamlit to bring your solutions to life. What You’ll Learn: Prerequisites:",
+      "date": "August 20-23, 2025",
+      "time": "09:30 AM - 05:30 PM",
+      "venue": "RENAISSANCE :- Race Course Rd, Madhava Nagar Extension",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to CrewAI and Multi-Agent Systems",
+          "content": "Kick off the workshop with a clear overview of what CrewAI is and why it's a game-changer in the realm of agent-based systems. We'll discuss the motivation behind multi-agent orchestration, walk through CrewAI’s core and advanced components (agents, tasks, tools, crews, flows), and map these to real-world business use cases such as content generation, fraud detection, customer service, and onboarding. You’ll also get an outline of the workshop structure and what to expect in each module.Why multi-agent systems?Core components: agents, tasks, crews, tools, flowsAdvanced features: conditional logic, async orchestration, LLM-agnostic setupsBusiness case examples and architectural patterns"
+        },
+        {
+          "title": "Module 2: Get Started with CrewAI – Hands-On Fundamentals",
+          "content": "In this hands-on session, you’ll set up your environment and build your very first CrewAI application. Learn by doing: define a basic agent, assign it a task, and compose a simple crew. This module ensures all participants are equipped with working installations and a clear understanding of the basics.Environment setup (virtualenv/conda, dependencies)Installing and configuring CrewAICreating your first agent and taskForming your first crew and running a workflow"
+        },
+        {
+          "title": "Module 3: Content Creation with Guardrails using Flows",
+          "content": "Here, you'll build a content creation application using agents and flows, with built-in \"guardrails\" for maintaining quality, relevance, or tone. Learn how to define conditional orchestration strategies to guide the process across multiple agents, each responsible for different steps in content generation.Using flow for conditional task executionImplementing content generation with validation stepsGuardrails through intermediate agentsReal-world use case: blog/social media content generation"
+        },
+        {
+          "title": "Module 4: Fraud Detection with Pattern Recognition Agents",
+          "content": "Design a fraud detection pipeline using agents trained to analyze transaction logs and behaviors. This scenario introduces a more data-driven approach, integrating tools and heuristics for pattern recognition and classification.Parsing and structuring transaction dataAgents for anomaly detection and classificationUsing external tools (e.g., regex, statistical tests)Workflow coordination and response generation"
+        },
+        {
+          "title": "Module 5: Intelligent Onboarding & Persistent Memory with Mem0",
+          "content": "Create an AI-powered onboarding system that adapts to users through personalized interactions. Leverage persistent memory (via mem0) to build context-aware conversations across sessions and allow agents to learn and recall user preferences.Designing agent memory with mem0Personalized task flow for onboardingIntegration with user input tools (forms, questionnaires)Memory persistence strategies for long-term agent behavior"
+        },
+        {
+          "title": "Module 6: Final Project – Conversational Agent with Streamlit and Voice I/O",
+          "content": "Wrap up the workshop with a capstone project: a multi-agent interview simulator with Streamlit. This end-to-end application connects CrewAI agents to a front-end UI and includes voice-to-text and text-to-speech capabilities for a seamless conversational experience. This module ties together everything learned so far and provides a production-style template for real-world applications.Creating an interactive front-end with StreamlitSetting up voice interfaces (text-to-speech, speech-to-text)Orchestrating a crew for mock interviewsConnecting UI, tools, and CrewAI agents into a coherent system"
+        }
+      ],
+      "workshop_url": "https://www.analyticsvidhya.com/datahacksummit-2025/workshops/build-a-production-ready-multi-agent-application-with-crewai"
+    },
+    {
+      "title": "Mastering Real-World Agentic AI Applications with AG2 (AutoGen)",
+      "instructor": "Qingyun Wu",
+      "instructor_designation": "Co-creator and Co-founder",
+      "instructor_company": "Atlan,Qingyun Wu",
+      "description": "In this hands-on technical workshop, you'll master the fundamentals of building production-grade AI agent applications with AG2 (formerly AutoGen), a lending  open-source AI Agent framework that is adopted by millions of users and downloaded over 700k times per month. You'll explore essential AI agent design patterns and discover how to customize agents for specific domains using reference implementations from the AG2 team. You'll also learn production deployment strategies using FastAgency and build complete agent solutions for real business scenarios. Through guided exercises, you'll develop AI agent systems that can tackle real-world applications like customer support, marketing research, and data analysis. By the end of the day, you'll have the knowledge to build specialized, scalable agent applications that deliver reliable results in production environments.",
+      "date": "August 20-23, 2025",
+      "time": "09:30 AM - 05:30 PM",
+      "venue": "RENAISSANCE :- Race Course Rd, Madhava Nagar Extension",
+      "modules": [
+        {
+          "title": "Module 1: Introduction & Foundations of AI Agents",
+          "content": "Kick things off with an overview of what AI agents are and why they matter. Understand the agent paradigm, its evolution, and its value in modern applications."
+        },
+        {
+          "title": "Module 2: Getting Started with AG2 Agents",
+          "content": "Learn how to install, set up, and run your first AG2-based agent. Get hands-on exposure to the AG2 interface and starter agent templates."
+        },
+        {
+          "title": "Module 3: Core AG2 Concepts & Architecture",
+          "content": "Dive into the AG2 framework’s architecture, from agent definitions to message routing. Explore the role of core components like GroupChat, ToolCall, and UserProxyAgent."
+        },
+        {
+          "title": "Module 4: Advanced Agent Design Patterns",
+          "content": "Discover reusable agent design strategies for tasks like tool orchestration and memory. Learn how to implement patterns for robustness, coordination, and decision-making."
+        },
+        {
+          "title": "Module 5: Building Custom Agents",
+          "content": "Create agents tailored to domain-specific workflows and user needs. Use AG2’s flexible config system to define logic, tools, and behaviors."
+        },
+        {
+          "title": "Module 6: Integration & External Tools",
+          "content": "Learn how to connect agents with APIs, databases, and services via the MCP layer. Understand plugin systems and dynamic tool usage in real-time agent tasks.Hands-On: Integrate your agent with external data sources and tools via MCP"
+        },
+        {
+          "title": "Module 7: Production Deployment",
+          "content": "Package and launch your agent using FastAgency’s deployment pipeline. Explore production-ready configurations, logging, and scalability tips.Hands-On: Prepare an agent application for production deployment"
+        },
+        {
+          "title": "Module 8: Real-World Applications",
+          "content": "Customer support automationMarket research and competitive analysisContent generation and marketingFinancial analysis and reportingHands-On: Build a complete agent solution for a business scenario"
+        },
+        {
+          "title": "Module 9: Best Practices & Future Directions",
+          "content": "Wrap up with proven strategies to ensure reliability, security, and maintainability. Look ahead at emerging trends and what’s next for agent ecosystems."
+        },
+        {
+          "title": "Module 10: Q&A and Workshop Wrap-up",
+          "content": "Open floor for questions, feedback, and discussion. Recap the day’s learnings and share resources for continued development."
+        }
+      ],
+      "workshop_url": "https://www.analyticsvidhya.com/datahacksummit-2025/workshops/mastering-real-world-agentic-ai-applications-with-ag2-autogen"
+    },
+    {
+      "title": "LLMOps – Productionalizing Real-World Applications with LLMs and Agents",
+      "instructor": "Kartik Nighania",
+      "instructor_designation": "MLOps Engineer",
+      "instructor_company": "Typewise",
+      "description": "Ready to go from experimentation to production with LLMs? This hands-on session will guide you through training language models using HuggingFace, building Retrieval Augmented Generation (RAG) pipelines with Qdrant, and deploying automated training workflows on Amazon SageMaker. You’ll also learn how to orchestrate multi-agent workflows using LangGraph and test, monitor, and evaluate your models with LangSmith. Through practical labs, participants will build end-to-end, production-ready GenAI systems that prioritize scalability, reliability, and real-world performance, equipping you with the tools to operationalize LLMs with confidence. Prerequisite:Basic Python programming skills, basic understanding of machine learning concepts, and familiarity with AWS services.",
+      "date": "August 20-23, 2025",
+      "time": "09:30 AM - 05:30 PM",
+      "venue": "La Marvella:- 2nd Block, Jayanagar, Bengaluru",
+      "modules": [
+        {
+          "title": "Module 1: Foundations of LLMOps",
+          "content": "Introduction to LLMOpsCI/CD Pipelines for LLMsAWS Services Overview"
+        },
+        {
+          "title": "Module 2: SageMaker Platform",
+          "content": "Introduction to SageMakerSageMaker Deep DiveLab: Setup SageMaker Notebooks"
+        },
+        {
+          "title": "Module 3: SageMaker Training and Deployment",
+          "content": "SageMaker Training Deep DiveModel Training on SageMaker with Hugging FaceSageMaker Pipeline DevelopmentLab: Model Training and End-to-End Pipelines with SageMakerCD Fundamentals for LLMsSageMaker for Continuous DeploymentMulti-LoRA Adapter Serving"
+        },
+        {
+          "title": "Module 4: RAG with Qdrant and LangChain",
+          "content": "LangChain FundamentalsRAG with Qdrant and LangChainLab: Experimenting with LangChain"
+        },
+        {
+          "title": "Module 5: Multi-Agent Workflows with LangGraph",
+          "content": "LangGraph FundamentalsMulti-Agent Workflows with LangGraphLab: Building Multi-Agent Workflows with LangGraph"
+        },
+        {
+          "title": "Module 6: Testing, Monitoring, and Evaluation with LangSmith",
+          "content": "Introduction to LangSmithMonitoring Traces, Cost and User BehaviorTest Suite Creation via LangSmith DatasetsReal-time Evaluation of LLMs in ProductionLab: Experimenting with LangSmith"
+        }
+      ],
+      "workshop_url": "https://www.analyticsvidhya.com/datahacksummit-2025/workshops/llmops-productionalizing-real-world-applications-with-llms-2"
+    },
+    {
+      "title": "Mastering LLMs: Training, Fine-Tuning, and Best Practices",
+      "instructor": "Raghav Bali",
+      "instructor_designation": "Principal Data Scientist",
+      "instructor_company": "Delivery Hero",
+      "description": "This workshop is designed to provide a comprehensive overview of LLMs, right from foundational NLP concepts to the latest in this domain. This workshop is aimed at working professionals but covers the required details to help beginners get started. You will gain valuable insights and hands-on experience to learn & adapt concepts to your professional lives. Key Takeaways: Prerequisites:",
+      "date": "August 20-23, 2025",
+      "time": "09:30 AM - 05:30 PM",
+      "venue": "La Marvella:- 2nd Block, Jayanagar, Bengaluru",
+      "modules": [
+        {
+          "title": "Module 1: Fundamentals of Language Modeling",
+          "content": "In this module, we will build an understanding of basic concepts such as text representation, NLP tasks such as classification, QA and language modeling"
+        },
+        {
+          "title": "Module 2: LLM Building Blocks",
+          "content": "This module's focus is the transformer architecture that not only disrupted the NLP space but also computer vision and more. We will cover multi-stage training steps like pre-training and fine-tuning through models likeBERT, GPT2, LLaMA3, Gemma, OpenAI models"
+        },
+        {
+          "title": "Module 3: Language Modeling at Scale",
+          "content": "In this module, we will cover the impact of scale on the training process along with advanced techniques like PEFT, LoRA and RLHF through hands-on examples"
+        },
+        {
+          "title": "Module 4: Operationalising LLMs",
+          "content": "This module covers real-world aspects of LLMs in production. Right from developing better prompts to developing RAGs and looking at frameworks like DSPy."
+        },
+        {
+          "title": "Module 5: LLMs beyond Language Modeling",
+          "content": "In this module, we will cover the latest frontiers like tool calling through MCP, agentic capabilities and what lies ahead of us."
+        }
+      ],
+      "workshop_url": "https://www.analyticsvidhya.com/datahacksummit-2025/workshops/mastering-llms-training-fine-tuning-and-best-practices-2"
+    },
+    {
+      "title": "AgentOps: Building and Deploying AI Agents",
+      "instructor": "Bhaskarjit Sarmah",
+      "instructor_designation": "Head of Financial Services AI Research",
+      "instructor_company": "Domyn",
+      "description": "This workshop introduces AgentOps, a subcategory of GenAIOps, which focuses on the operationalization of AI agents. It dives into how we can create, manage, and scale generative AI agents effectively within production environments. You’ll learn the essential principles of AgentOps, from external tool integration and memory management to task orchestration, multi-agent systems, and Agentic RAG. By the end of the workshop, participants will have the skills to build and deploy intelligent agents that can automate complex tasks, handle multi-step processes, and operate within enterprise environments. Prerequisites:",
+      "date": "August 20-23, 2025",
+      "time": "09:30 AM - 05:30 PM",
+      "venue": "La Marvella:- 2nd Block, Jayanagar, Bengaluru",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to AgentOps (Concepts and Principles)",
+          "content": "In this module, you’ll be introduced toAgentOps, its importance, and its relevance to modern enterprise AI systems. We will cover the basics ofAgent Architecture—the roles of the model, tools, and orchestration layer—and how these components come together to form autonomous agents. You’ll also learn how AgentOps fits into the larger ecosystem ofGenAIOps, and its dependency on frameworks likeMLOpsandDevOpsfor successful deployment.Key Topics:What is AgentOps and why is it important?Components of Agent Architecture: Model, Tools, and OrchestrationAgentOps vs. GenAIOps, MLOps, and DevOpsPractical examples of AgentOps in action"
+        },
+        {
+          "title": "Module 2: Building Agents with LangChain & LangGraph",
+          "content": "In this hands-on module, you will learn how to build intelligent agents usingLangChainandLangGraph. We will start by creating a basicQA Agent, where the agent uses external APIs to retrieve data and answer user queries. By the end of this module, you'll understand how to structure an agent’s tools, memory, and decision-making process.Key Topics:Introduction to LangChain & LangGraph frameworksCreating a basic agent with external tool integration (e.g., an API or database)Managing agent memory for multi-turn conversationsTask decomposition and reasoning loops (simple agents vs. complex multi-step workflows)"
+        },
+        {
+          "title": "Module 3: Memory Management and Orchestration Layer",
+          "content": "This module will focus on how agents manage context and memory, which is critical for more sophisticated interactions. You will also learn about theOrchestration Layer, which governs how an agent makes decisions, reasons through tasks, and interacts with the environment. Practical examples will showcase theChain-of-Thought (CoT)andReActreasoning techniques.Key Topics:Memory Management: short-term and long-term memoryOrchestrating complex workflows with agentsUsingChain-of-Thought (CoT)andReActreasoning frameworksExample: Building a travel assistant agent that remembers user preferences"
+        },
+        {
+          "title": "Module 4: Multi-Agent Systems and Collaboration",
+          "content": "In this module, you will learn how to set up multi-agent systems where agents collaborate to solve complex tasks. We will covermulti-agent design patternssuch ashierarchical,collaborative, andpeer-to-peerapproaches, and demonstrate how agents communicate and delegate tasks. You will build a small multi-agent environment using LangChain and LangGraph.Key Topics:Designing multi-agent systemsCollaborative and hierarchical agent patternsAgent-to-agent communication and task delegationExample: An automotive AI system where different agents (e.g., navigation, weather, entertainment) collaborate to assist a user"
+        },
+        {
+          "title": "Module 5: Agentic Retrieval-Augmented Generation (Agentic RAG)",
+          "content": "In this advanced module, you will learn aboutAgentic RAG, a cutting-edge approach to combining information retrieval with generative models. You will see how agents can dynamically retrieve relevant data, refine their search, and generate meaningful responses based on real-time context. This module includes a hands-on demo where you will build an agent capable of answering complex, multi-faceted queries by refining its information retrieval strategy.Key Topics:Introduction toAgentic RAGand its importanceBuilding a multi-step agent that adapts its query to improve the retrieval processExample: A research assistant agent that gathers relevant articles and synthesizes a report"
+        },
+        {
+          "title": "Module 6: Evaluating Agent Performance",
+          "content": "Evaluation is a crucial part of AgentOps to ensure agents perform effectively in real-world environments. In this module, you will learn how to evaluate your agents using various metrics, includinggoal completion,trajectory analysis, andfinal response quality. You will also explore the role ofHuman-in-the-Loop (HITL)evaluation to fine-tune agent behavior.Key Topics:Setting up agent evaluation metrics: success rates, trajectory evaluationUsing LLM-based evaluation methods (LLM-as-a-judge)Human-in-the-loop feedback and iterative improvementExample: Evaluating a financial agent’s task completion in real-time"
+        },
+        {
+          "title": "Module 7: End-to-End Project: Building a Financial Research Assistant",
+          "content": "In this capstone module, you will build a fully functioningFinancial Research Assistantthat integrates everything learned throughout the workshop. The agent will perform tasks like retrieving financial data, analyzing trends, and generating reports. This example will demonstrate the application of AgentOps principles for real-world enterprise use cases, showing you how agents can be deployed to solve specific business challenges.Key Topics:Integrating multiple tools and agents to solve complex business problemsUsing memory and task orchestration in real-world tasksFinal testing, evaluation, and deployment of an enterprise-grade agent"
+        }
+      ],
+      "workshop_url": "https://www.analyticsvidhya.com/datahacksummit-2025/workshops/agentops-building-and-deploying-ai-agents"
+    },
+    {
+      "title": "From Beginner to Expert: Learning LLMs, Reinforcement Learning & AI Agents",
+      "instructor": "Joshua Starmer",
+      "instructor_designation": "Founder and CEO",
+      "instructor_company": "StatQuest,Luis Serrano",
+      "description": "In this hands-on workshop, participants will explore the cutting-edge world of Large Language Models (LLMs), Reinforcement Learning (RL), and building autonomous AI agents. Combining theory with hands-on coding examples, this session is designed to bridge the gap between theoretical concepts and real-world applications. By the end of the workshop, participants will have a solid understanding of how to build, train, and fine-tune an LLM for specific applications as well as how to increase their utility with RAG and AI Agents. Prerequisites:Basic Python programming skills",
+      "date": "August 20-23, 2025",
+      "time": "09:30 AM - 05:30 PM",
+      "venue": "RENAISSANCE :- Race Course Rd, Madhava Nagar Extension",
+      "modules": [
+        {
+          "title": "Module 1: Introduction to Large Language Models",
+          "content": "In this module, we will review the structure and concepts behind Large Language Models (LLMs). Specifically, we'll focus on Decoder-Only Transformers, which serve as the backbone for generative AI models like ChatGPT and DeepSeek. We'll then review the mathematics required for LLMs and finish by coding a Decoder-Only Transformer from scratch in PyTorch."
+        },
+        {
+          "title": "Module 2: The Essential Concepts of Reinforcement Learning",
+          "content": "In this module, we will learn the essential concepts of Reinforcement Learning (RL), including environments, rewards, and policies. We'll then code an example of RL that can make optimal decisions in an environment with unknown outcomes."
+        },
+        {
+          "title": "Module 3: Adding Reinforcement Learning to Neural Networks",
+          "content": "Neural Networks trained with RL have become masters at playing games and can even drive cars. In this module, we will learn the details of how RL is applied to neural networks. Specifically, we'll learn the Policy Gradients algorithm for training a neural network with limited training data. We'll then code a neural network in PyTorch that is trained with Policy Gradients."
+        },
+        {
+          "title": "Module 4: Adding Reinforcement Learning with Human Feedback (RLHF) to LLMs",
+          "content": "In this module, we will learn how Reinforcement Learning can cost-effectively fine-tune an LLM. Specifically, we'll learn how a relatively small amount of human feedback can allow LLMs to train themselves to generate useful and helpful responses to prompts. We'll then use RLHF to train the decoder-only transformer that we coded in the first module."
+        },
+        {
+          "title": "Module 5: Advanced RL for LLMs",
+          "content": "This module dives into advanced alignment techniques for refining LLM behavior. We’ll implement Proximal Policy Optimization (PPO) to stabilize RL fine-tuning, explore Direct Preference Optimization (DPO)—a non-RL method using KL-divergence to control outputs—and analyze how systems like DeepSeek leverage frameworks like GRPO for efficiency."
+        },
+        {
+          "title": "Module 6: Retrieval-Augmented Generation (RAG)",
+          "content": "In this module, we will learn how to enhance LLMs with external knowledge using Retrieval-Augmented Generation (RAG). We’ll implement semantic search with transformer-based embeddings, use a vector database for efficient nearest-neighbor search (KNN), and refine results using the rerank tool. Finally, we’ll build a RAG pipeline that combines retrieval from a database and generation of a response."
+        },
+        {
+          "title": "Module 7: Agentic AI",
+          "content": "In this module, we will learn how Large Language Models can act as autonomous agents that plan, reason, and interact with tools. We’ll study architectures for breaking tasks into reasoning steps and explore how agents use memory (e.g., vector databases) and tools (APIs, code execution) to solve complex problems. We’ll then design a basic agent that chains LLM decisions into goal-driven workflows and analyze how it balances exploration vs. exploitation."
+        }
+      ],
+      "workshop_url": "https://www.analyticsvidhya.com/datahacksummit-2025/workshops/from-theory-to-practice-training-llms-reinforcement-learning-and-ai"
+    },
+    {
+      "title": "Building Intelligent Multimodal Agents: Integrating Vision, Speech & Language",
+      "instructor": "Miguel Otero Pedrido",
+      "instructor_designation": "ML Engineer|Founder",
+      "instructor_company": "The Neural Maze",
+      "description": "In this workshop, we’ll build a fully functional multimodal Telegram agent, putting into practice a wide range of concepts from the world of Agentic AI. This isn’t just another PoC — it's designed for those who are ready to level up and build complex, production-ready agentic applications. Throughout the session, you’ll learn how to build a Telegram agent you can chat with directly from your phone, master the creation and management of workflows with LangGraph, and set up a long-term memory system using Qdrant as a vector database. We’ll also leverage the fast LLMs served by Groq to power the agent’s responses, implement Speech-to-Text capabilities with Whisper, and integrate Text-to-Speech using ElevenLabs. Beyond language, you’ll learn to generate high-quality images using diffusion models, and process visual inputs with Vision-Language Models such as Llama 3.2 Vision. Finally, we’ll bring it all together by connecting the complete agentic application directly to Telegram, enabling a rich, multimodal user experience. Throughout the day, you will focus on the following key areas: In this workshop, participants will work hands-on with a cutting-edge stack of tools and technologies tailored for building multimodal, production-ready agentic applications. LangGraph serves as the backbone for orchestrating agent workflows, with LangGraph Studio enabling easy debugging and visualization. SQLite powers short-term memory within the agent, while Qdrant, a high-performance vector database, handles long-term memory for contextual awareness. Fast and efficient responses are delivered using Groq LLMs, complemented by natural voice interactions through Whisper for speech-to-text and ElevenLabs for text-to-speech synthesis. For visual intelligence, Llama 3.2 Vision interprets image inputs, and diffusion models are used to generate high-quality visuals. Finally, the complete system is integrated with the Telegram Bot API, allowing users to interact with the agent in real time via chat, voice, or image directly from their mobile devices. Prerequisites:",
+      "date": "August 20-23, 2025",
+      "time": "09:30 AM - 05:30 PM",
+      "venue": "RENAISSANCE :- Race Course Rd, Madhava Nagar Extension",
+      "modules": [
+        {
+          "title": "Module 1: Project Overview",
+          "content": "We'll start by reviewing the architecture and tech stack, setting up the repository, installing dependencies, and configuring environment variables."
+        },
+        {
+          "title": "Module 2: LangGraph Crash Course",
+          "content": "We'll dive into the basics ofLangGraph— nodes, edges, conditional edges, state — and break down how the agent’s \"brain\" works. You’ll also learn how to debug and test workflows usingLangGraph Studio."
+        },
+        {
+          "title": "Module 3: Building Agent Memory",
+          "content": "A deep dive into agent memory systems: usingSQLitefor short-term memory (LangGraph state) andQdrantfor long-term memory storage."
+        },
+        {
+          "title": "Module 4: Speech Systems (TTS and STT)",
+          "content": "We'll implementText-to-Speech(withElevenLabs) andSpeech-to-Text(withWhisper), giving your agent the ability to listen and speak naturally."
+        },
+        {
+          "title": "Module 5: Vision-Language Models and Image Generation",
+          "content": "We’ll integrate aVision-Language Modelto interpret images and aDiffusion Modelto generate realistic, high-quality images."
+        },
+        {
+          "title": "Module 6: Connecting to Telegram",
+          "content": "Finally, we'll connect the full agent backend to aTelegram Bot— enabling real-time conversations, image processing, and voice interactions directly on your phone.By the end of the module, I'll also share practical tips on how to improve the system further and specialize it for different business use cases."
+        }
+      ],
+      "workshop_url": "https://www.analyticsvidhya.com/datahacksummit-2025/workshops/building-a-multimodal-telegram-agent-that-sees-talks-and-thinks"
+    },
+    {
+      "title": "Agentic AI & Generative AI for Business Leaders",
+      "instructor": "David Zakkam",
+      "instructor_designation": "Data Science Director",
+      "instructor_company": "Uber",
+      "description": "This full-day workshop equips business and enterprise leaders with the essential knowledge to confidently navigate the AI revolution. Through simple explanations, real-world examples, and live demos, you'll demystify AI and ML concepts, uncover actionable GenAI use cases, and master the art of prompting for better business outcomes. From foundational techniques to strategic adoption roadmaps, this session will empower you to spot opportunities, manage risks, and build a future-ready GenAI strategy — without needing a technical background. Prerequisites:No technical expertise is necessary, but understanding basic business processes is important across functions.",
+      "date": "August 20-23, 2025",
+      "time": "09:30 AM - 05:30 PM",
+      "venue": "RENAISSANCE :- Race Course Rd, Madhava Nagar Extension",
+      "modules": [
+        {
+          "title": "Module 1: Opening Keynote: The Age of Intelligence",
+          "content": "Why GenAI is more than just a tech trend?The new strategic imperative for leadershipWhat we’ll cover today and why it mattersSet the tone with stories, industry shifts, and a bit of inspiration"
+        },
+        {
+          "title": "Module 2: Demystifying AI & ML – Techniques & Terminology",
+          "content": "Understanding AI, ML, and Deep Learning in business termsCommon techniques: prediction, classification, NLP, visionHow machines learn: A simple mental modelMyths, hype vs. realityAnalogies + real-life examples that leaders can relate to"
+        },
+        {
+          "title": "Module 3: AI in the Enterprise – Archetypes & Use Cases",
+          "content": "AI archetypes: recommendation engines, decision support, automation, etc.Where businesses are applying AI todayFunction-wise use cases (Marketing, HR, Ops, CX, Legal)Signals for identifying generative AI opportunities in your organisationMini case spotlights with commentary"
+        },
+        {
+          "title": "Module 4: Understanding Generative AI – Foundations & Capabilities",
+          "content": "What is generative AI and how it worksLLMs, transformers, diffusion models (explained simply)What can generative AI accomplish, and where does it fall short?Limitations, risks, hallucinationsLive generative AI demo: What’s possible with a great prompt?"
+        },
+        {
+          "title": "Module 5: Prompting 101 – The Business Leader’s Guide",
+          "content": "The power of the prompt: how to think, write, and iteratePrompt types: task, role, context, constraint-basedPrompting for insights, creativity, and operationsPrompt quality = Output qualityBefore-and-after prompt demos with commentary"
+        },
+        {
+          "title": "Module 6: Generative AI Applications – RAG, Agents & More",
+          "content": "Retrieval-Augmented Generation (RAG) explainedAgentic workflows and autonomous systemsKnowledge bots, copilots, smart email assistantsHow these systems are structured (non-technical view)Visual walkthroughs + mini case demos"
+        },
+        {
+          "title": "Module 7: Generative AI Use Cases in Practice – Enterprise Insights",
+          "content": "Industry-specific examples and storiesWhat’s working, what’s notSecurity, risks, compliance, and the role of human oversightFramework for evaluating Generative AI suitabilityUse case gallery with actionable insights"
+        },
+        {
+          "title": "Module 8: Strategic Considerations & The Generative AI Roadmap",
+          "content": "Building your Generative AI strategyAdoption models: build, buy, partnerTalent, tools, and governanceThe AI maturity curve for leaders"
+        }
+      ],
+      "workshop_url": "https://www.analyticsvidhya.com/datahacksummit-2025/workshops/generative-ai-for-business-leaders"
+    },
+    {
+      "title": "Agentic RAG Workshop: From Fundamentals to Real-World Implementations",
+      "instructor": "Arun Prakash Asokan",
+      "instructor_designation": "Associate Director Data Science",
+      "instructor_company": "Novartis",
+      "description": "Agentic RAG adds a “brain” to the RAG pipeline – bringing reasoning, tool use, and adaptiveness – which translates to tangible business value in accuracy, flexibility, and user trust This workshop is a deep dive intoAgentic RAG (Retrieval-Augmented Generation)– an emerging approach that combines the power of LLM-based agents with retrieval techniques to build smarter AI applications. Over an 8-hour session (of course including breaks in between), participants will explore how to move beyond “vanilla” RAG pipelines and infuse them with agentic behavior for greater flexibility and intelligence. The workshop ishands-on, using Google Colab notebooks for each module so attendees can practice concepts live. We’ll leverageLangGraph(a LangChain-based framework for agent orchestration) along with the LangChain ecosystem (vector stores, tools, etc.) to design and implement these systems. The theme is highly relevant in today’s AI landscape – many enterprises are already moving from basic RAG to agent-driven systems to power next-generation assistants. In fact, new frameworks like LangGraph have emerged to meet this need, making now the perfect time to master Agentic RAG development. The workshop will also cover practical tips for building enterprise-grade agentic RAG applications Agentic RAG empowers large-scale, enterprise-ready AI systems by combining retrieval-augmented generation with intelligent, decision-making agents. The result? Smarter, more reliable, and adaptable GenAI solutions. 💡Think of Agentic RAG as adding a decision-making brain to your RAG pipeline—boosting precision, flexibility, and business value. Prerequisite:",
+      "date": "August 20-23, 2025",
+      "time": "09:30 AM - 05:30 PM",
+      "venue": "La Marvella:- 2nd Block, Jayanagar, Bengaluru",
+      "modules": [
+        {
+          "title": "Module 1: Understand the Fundamentals of Retrieval-Augmented Generation (RAG)",
+          "content": "Gain a solid grasp of the RAG architecture and its value in grounding large language model outputs with factual, retrievable knowledge—critical for reducing hallucinations in enterprise GenAI systems."
+        },
+        {
+          "title": "Module 2: Apply Advanced Retrieval Techniques",
+          "content": "Learn practical methods to enhance retrieval quality, including hybrid search (semantic + keyword), metadata filtering, reranking, and multi-hop retrieval strategies, enabling more relevant and precise information access."
+        },
+        {
+          "title": "Module 3: Integrate AI Agents into RAG Pipelines",
+          "content": "Develop the ability to embed decision-making LLM agents into RAG workflows. Understand how agents use memory, tools, and multi-step reasoning to orchestrate complex information retrieval and response generation."
+        },
+        {
+          "title": "Module 4: Build and Visualize Agentic Workflows Using LangGraph",
+          "content": "Gain hands-on experience with LangGraph to construct modular, interpretable agent flows—complete with state transitions, loops, and conditional paths—using LangChain’s ecosystem as a foundation."
+        },
+        {
+          "title": "Module 5: Implement Proven Agent Design Patterns",
+          "content": "Explore reusable design patterns like retrieval routers, self-correcting agents, and tool-selecting agents. Learn to choose the right pattern based on task complexity, accuracy needs, and operational constraints."
+        },
+        {
+          "title": "Module 6: Build a Full-Scale Agentic RAG Application",
+          "content": "Work through an end-to-end use case (e.g., querying large annual reports) to build a robust Agentic RAG application that includes source validation, tool use, and intelligent retrieval orchestration."
+        },
+        {
+          "title": "Module 7: Compare Traditional vs. Agentic RAG Architectures",
+          "content": "Develop a clear understanding of when agentic RAG provides strategic advantage over traditional pipelines. Learn how to balance the benefits of reasoning and adaptability with considerations like latency and complexity."
+        },
+        {
+          "title": "Module 8: Apply Practical Tips for Enterprise-Grade Implementation",
+          "content": "Take away field-tested strategies for deploying Agentic RAG in real-world settings—modularize workflows, structure agent reasoning, handle failures gracefully, use smart caching, validate outputs, test comprehensively, and ensure governance and observability from day one."
+        }
+      ],
+      "workshop_url": "https://www.analyticsvidhya.com/datahacksummit-2025/workshops/agentic-rag-workshop-from-fundamentals-to-real-world-implemenno-title"
+    }
+  ]
+}

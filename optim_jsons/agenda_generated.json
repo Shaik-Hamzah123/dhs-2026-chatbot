@@ -1,0 +1,861 @@
+{
+  "days": [
+    {
+      "day": "Day 1",
+      "session_count": 4,
+      "sessions": [
+        {
+          "title": "Responsible AI in Medical Imaging – A Case Study",
+          "type": "Keynote",
+          "speakers": [
+            {
+              "name": "Dr. Geetha Manjunath",
+              "designation": "Founder and CEO"
+            }
+          ],
+          "time": "10:20AM - 11:20AM",
+          "location": "ChatGPT",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/responsible-ai-in-medical-imaging-a-case-study"
+        },
+        {
+          "title": "Onboarding AI Agents with Human Values",
+          "type": "PowerTalk",
+          "speakers": [
+            {
+              "name": "Syed Quiser Ahmed",
+              "designation": "AVP and Head of Infosys Responsible AI Office"
+            }
+          ],
+          "time": "12:00PM - 12:40PM",
+          "location": "Grok",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/onboarding-ai-agents-with-human-values"
+        },
+        {
+          "title": "Agentic Knowledge Augmented Generation: The Next Leap After RAG",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Arun Prakash Asokan",
+              "designation": "Associate Director Data Science"
+            }
+          ],
+          "time": "12:00PM - 12:50PM",
+          "location": "Gemini",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/agentic-knowledge-augmented-generation-the-next-leap-after-rag"
+        },
+        {
+          "title": "Agents at Scale: Engineering Reliable GenAI Systems for Production",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Kartik Nighania",
+              "designation": "MLOps Engineer"
+            }
+          ],
+          "time": "12:00PM - 12:50PM",
+          "location": "Claude",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/agents-at-scale-engineering-reliable-genai-systems-for-production"
+        }
+      ]
+    },
+    {
+      "day": "Day 2",
+      "session_count": 5,
+      "sessions": [
+        {
+          "title": "Inclusive AI and Open Challenges",
+          "type": "Keynote",
+          "speakers": [
+            {
+              "name": "Manish Gupta",
+              "designation": "Senior Director"
+            }
+          ],
+          "time": "10:40AM - 11:40AM",
+          "location": "ChatGPT",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/keynote-session"
+        },
+        {
+          "title": "Evaluating GenAI Models: Case Studies in Enterprise and Healthcare",
+          "type": "PowerTalk",
+          "speakers": [
+            {
+              "name": "Dr. Kiran R",
+              "designation": "Vice President of Engineering"
+            }
+          ],
+          "time": "09:30AM - 10:10AM",
+          "location": "Gemini",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/evaluating-genai-models-case-studies-in-enterprise-and-healthcare"
+        },
+        {
+          "title": "Quantifying Our Confidence in Neural Networks and AI",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Joshua Starmer",
+              "designation": "Founder and CEO"
+            }
+          ],
+          "time": "09:30AM - 10:20AM",
+          "location": "ChatGPT",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/quantifying-our-confidence-in-neural-networks-and-ai"
+        },
+        {
+          "title": "From Language to Robotics: Practical Lessons Bridging LLMs, RL, and AI",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Logesh Kumar Umapathi",
+              "designation": "Machine Learning Consultant"
+            }
+          ],
+          "time": "09:30AM - 10:20AM",
+          "location": "Claude",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/from-language-to-robotics-practical-lessons-bridging-llms-rl-and-ai"
+        },
+        {
+          "title": "Model Context Protocol in Media: Choosing the Right Metrics & Strategy",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Hitesh Nayak",
+              "designation": "Senior Director - Data Sciences"
+            }
+          ],
+          "time": "09:30AM - 10:20AM",
+          "location": "Grok",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/model-context-protocol-in-media-choosing-the-right-metrics-strategy"
+        }
+      ]
+    },
+    {
+      "day": "Day 3",
+      "session_count": 6,
+      "sessions": [
+        {
+          "title": "Building India’s AI Ecosystem: From Vision to Sovereignty",
+          "type": "Keynote",
+          "speakers": [
+            {
+              "name": "Pratyush Kumar",
+              "designation": "Co-Founder"
+            }
+          ],
+          "time": "11:35AM - 12:35PM",
+          "location": "ChatGPT",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/building-indias-ai-ecosystem-from-vision-to-sovereignty"
+        },
+        {
+          "title": "A Visual Guide to Attention Mechanism in LLMs",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Luis Serrano",
+              "designation": "Founder and Chief Education Officer"
+            }
+          ],
+          "time": "09:30AM - 10:20AM",
+          "location": "Claude",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/a-visual-guide-to-attention-mechanism-in-llms"
+        },
+        {
+          "title": "Why GenAI and LLMs Fail and How Fine-Tuning Helps Them",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Vijay Gabale",
+              "designation": "Co-Founder and CPO"
+            }
+          ],
+          "time": "09:30AM - 10:20AM",
+          "location": "Grok",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/why-genai-and-llms-fail-and-how-fine-tuning-helps-them"
+        },
+        {
+          "title": "Empowering Data Insights with Large Language Models",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Aditya Iyengar",
+              "designation": "Technology Lead"
+            }
+          ],
+          "time": "10:25AM - 11:15AM",
+          "location": "ChatGPT",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/empowering-data-insights-with-large-language-models"
+        },
+        {
+          "title": "Scaling Test-time Inference Compute & Advent of Reasoning Models",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Jayita Bhattacharyya",
+              "designation": "Data Scientist"
+            }
+          ],
+          "time": "09:30AM - 10:20AM",
+          "location": "Gemini",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/scaling-test-time-inference-compute-advent-of-reasoning-models"
+        },
+        {
+          "title": "Detecting and Mitigating Risks in Agentic AI",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Bhaskarjit Sarmah",
+              "designation": "Head of Financial Services AI Research"
+            }
+          ],
+          "time": "09:30AM - 10:20AM",
+          "location": "ChatGPT",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/detecting-and-mitigating-risks-in-agentic-aino-title"
+        }
+      ]
+    },
+    {
+      "day": "Unscheduled",
+      "session_count": 46,
+      "sessions": [
+        {
+          "title": "Keynote Session",
+          "type": "Keynote",
+          "speakers": [
+            {
+              "name": "Srikanth Velamakanni",
+              "designation": "Co-Founder, Group Chief Executive & Executive Vice-Chairman"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/keynote-session-2"
+        },
+        {
+          "title": "Zero to Million: How GenAI Agents are Changing Performance Marketing",
+          "type": "PowerTalk",
+          "speakers": [
+            {
+              "name": "Krishna Kumar Tiwari",
+              "designation": "Co-Founder & CTO"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/zero-to-million-how-genai-agents-are-changing-performance-marketing"
+        },
+        {
+          "title": "Building Effective Agentic AI Systems: Lessons from the Field",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Dipanjan Sarkar",
+              "designation": "Head of Artificial Intelligence & Community"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/building-effective-agentic-ai-systems-lessons-from-the-field"
+        },
+        {
+          "title": "Search Query Optimization Using Retrieval-Augmented Generation (RAG)",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Pankaj Agarwal",
+              "designation": "Senior Software Engineer - Machine Learning"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/search-query-optimization-using-retrieval-augmented-generation-rag"
+        },
+        {
+          "title": "RIP, Data Scientists",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Anand S",
+              "designation": "LLM Psychologist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/rip-data-scientists"
+        },
+        {
+          "title": "MassGen: Scaling AI Through Multi-Agent Collaboration",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Chi Wang",
+              "designation": "Co-creator and Co-founder"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/massgen-scaling-ai-through-multi-agent-collaboration"
+        },
+        {
+          "title": "Productionizing Agents : An Agent Factory Approach",
+          "type": "PowerTalk",
+          "speakers": [
+            {
+              "name": "Krishnakumar Menon",
+              "designation": "Technology Partner"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/productionizing-agents-an-agent-factory-approach"
+        },
+        {
+          "title": "Building Responsible AI Agents with Guardrails and Safety in Action",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Anuj Saini",
+              "designation": "Director Data Science"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/building-responsible-ai-agents-with-guardrails-and-safety-in-action"
+        },
+        {
+          "title": "Red Teaming GenAI: Securing Systems from the Inside Out",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Shivaraj Mulimani",
+              "designation": "Security Data Scientist"
+            },
+            {
+              "name": "Satnam Singh",
+              "designation": "Chief Data Scientist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/red-teaming-genai-securing-systems-from-the-inside-out"
+        },
+        {
+          "title": "Vibe Coding Showdown: Building Applications with AI Assistants",
+          "type": "Hack Panel",
+          "speakers": [
+            {
+              "name": "Kunal Jain",
+              "designation": "Founder & CEO"
+            },
+            {
+              "name": "Ravi RS Nadimpalli",
+              "designation": "Growth PM"
+            },
+            {
+              "name": "Anand S",
+              "designation": "LLM Psychologist"
+            },
+            {
+              "name": "Anuvrat Parashar",
+              "designation": "Founder"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/vibe-coding-showdown-building-applications-with-ai-assistants"
+        },
+        {
+          "title": "How GenAI is Being Leveraged in the Web3 Ecosystems",
+          "type": "PowerTalk",
+          "speakers": [
+            {
+              "name": "Rohan Rao",
+              "designation": "Gen AI Expert"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/how-genai-is-being-leveraged-in-the-web3-ecosystems"
+        },
+        {
+          "title": "Building Blocks of Successful AI",
+          "type": "PowerTalk",
+          "speakers": [
+            {
+              "name": "Abhishek Sharma",
+              "designation": "Principal AI Engineer"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/building-blocks-of-successful-ai"
+        },
+        {
+          "title": "Agentic AI Meets Responsible AI: Designing Safe Autonomous Systems",
+          "type": "PowerTalk",
+          "speakers": [
+            {
+              "name": "Praveen Kumar GS",
+              "designation": "Senior Director"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/agentic-ai-meets-responsible-ai-designing-safe-autonomous-systems"
+        },
+        {
+          "title": "Adaptive Email Agents with DSPy: From Static Prompts to Smart Learning",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Praneeth Paikray",
+              "designation": "Senior Generative AI Specialist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/adaptive-email-agents-with-dspy-from-static-prompts-to-smart-learning"
+        },
+        {
+          "title": "AutoGen vs CrewAI vs LangGraph: Battle of the Agent Frameworks",
+          "type": "Hack Panel",
+          "speakers": [
+            {
+              "name": "Dipanjan Sarkar",
+              "designation": "Head of Artificial Intelligence & Community"
+            },
+            {
+              "name": "Praneeth Paikray",
+              "designation": "Senior Generative AI Specialist"
+            },
+            {
+              "name": "Mayank Aggarwal",
+              "designation": "Co-Founder & CEO"
+            },
+            {
+              "name": "Sanathraj Narayan",
+              "designation": "Data Science Manager"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/autogen-vs-crewai-vs-langgraph-battle-of-the-agent-frameworks"
+        },
+        {
+          "title": "Automate Everything: Building Agentic AI Workflows with No-Code Tools",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Mayank Aggarwal",
+              "designation": "Co-Founder & CEO"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/automate-everything-building-agentic-ai-workflows-with-no-code-tools"
+        },
+        {
+          "title": "Saving Ananya: A Brand’s GenAI Playbook for Enhanced CX",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Pavak Biswal",
+              "designation": "Senior Manager - Insights & Analytics, Data Products"
+            },
+            {
+              "name": "Abhilash Kulkarni",
+              "designation": "Senior Analyst - Insights & Analytics, Data Products"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/saving-ananya-a-brands-genai-playbook-for-enhanced-cx"
+        },
+        {
+          "title": "From LLMs to Agentic AI: Solving New Problems with Multi-Agent Systems",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Alessandro Romano",
+              "designation": "Senior Data Scientist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/from-llms-to-agentic-ai-solving-new-problems-with-multi-agent-systems"
+        },
+        {
+          "title": "LLMs Are Boring. How Can We Make Them More Interesting?",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Harshad Khadilkar",
+              "designation": "Lead Data Scientist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/llms-are-boring-how-can-we-make-them-more-interesting"
+        },
+        {
+          "title": "Understanding AI Agents with MCP",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Nitin Agarwal",
+              "designation": "Principal Data Scientist"
+            },
+            {
+              "name": "Rutvik Acharya",
+              "designation": "Principal Data Scientist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/understanding-ai-agents-with-mcp"
+        },
+        {
+          "title": "AI Voice Agent: The Future of Human-Computer Interaction",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Manoranjan Rajguru",
+              "designation": "AI Architect"
+            },
+            {
+              "name": "Ranjani Mani",
+              "designation": "Director and Country Head, Generative AI, India and South Asia"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/ai-voice-agentfuture-of-human-computer-interaction"
+        },
+        {
+          "title": "Automating Vehicle Inspections with Multimodal AI and Gemini on GCP",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Vignesh Kumar",
+              "designation": "AI Engineering Manager"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/automating-vehicle-inspections-with-multimodal-ai-and-gemini-on-gcp"
+        },
+        {
+          "title": "Deploying GenAI Safely: Strategies for Trustworthy LLMs",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Gauri Kholkar",
+              "designation": "Machine Learning Engineer"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/deploying-genai-safely-strategies-for-trustworthy-llms"
+        },
+        {
+          "title": "Beyond PoCs: Building Real-World Agentic Systems",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Miguel Otero Pedrido",
+              "designation": "ML Engineer|Founder"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/beyond-pocs-building-real-world-agentic-systems"
+        },
+        {
+          "title": "Mastering Agentic Workflows with LangGraph",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Sanathraj Narayan",
+              "designation": "Data Science Manager"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/building-intelligent-workflows-with-langgraph-from-agent-fundamentals"
+        },
+        {
+          "title": "Towards Sustainable AI: Effective LLM Compression Techniques",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Ruchi Awasthi",
+              "designation": "Machine Learning Engineer, CTO Office"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/towards-sustainable-ai-effective-llm-compression-techniques"
+        },
+        {
+          "title": "Collaborative Multi-Agent Framework for Robust SEO Content Generation",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Anshu Kumar",
+              "designation": "Lead Data Scientist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/collaborative-multi-agent-framework-for-robust-seo-content-generation"
+        },
+        {
+          "title": "Fast and Accurate Conversational Agents: Beyond Function Calling",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Daksh Varshneya",
+              "designation": "Senior Product Manager"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/building-fast-and-accurate-llm-agents-with-the-calm-framework"
+        },
+        {
+          "title": "Vibe Coding in Action: Building Real Applications with AI Assistance",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Tanika Gupta",
+              "designation": "Director Data Science"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/vibe-coding-in-action-building-real-applications-with-ai-assistance"
+        },
+        {
+          "title": "Full-Stack Agentic AI: Build, Evaluate, and Scale with NVIDIA Tools",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Saurav Agarwal",
+              "designation": "Solutions Architecture and Engineering"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/full-stack-agentic-ai-build-evaluate-and-scale-with-nvidia-tools"
+        },
+        {
+          "title": "Measuring Uncertainty in LLMs and Optimal Use of SLMs",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Kuldeep Jiwani",
+              "designation": "VP, Head of AI Solutions"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/measuring-uncertainty-in-llms-and-optimal-use-of-slms"
+        },
+        {
+          "title": "Agent to Agent Protocol: Benefits and Workflows",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Avinash Pathak",
+              "designation": "Senior AI Engineer"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/agent-to-agent-protocol-benefits-and-workflows"
+        },
+        {
+          "title": "Bridging the AI Agent Gap: Interoperability with A2A and MCP Protocols",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Nikhil Rana",
+              "designation": "Senior Technical Solutions Consultant, AI"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/bridging-the-ai-agent-gap-interoperability-with-a2a-and-mcp-protocols"
+        },
+        {
+          "title": "Building Real-Time Multi-Agent AI for Public Travel Systems",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Manpreet Singh",
+              "designation": "Data & Applied Scientist II"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/building-real-time-multi-agent-ai-for-public-travel-systems"
+        },
+        {
+          "title": "The Promise and Pitfalls of Synthetic Data Generation",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Abhishek Divekar",
+              "designation": "Senior Applied Scientist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/the-promise-and-pitfalls-of-synthetic-data-generationno-title"
+        },
+        {
+          "title": "Creative AI Agents: Open Tools for Collaborative Media Creation",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Dhruv Nair",
+              "designation": "Machine Learning Engineer"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/creative-ai-agents-open-tools-for-collaborative-media-creation"
+        },
+        {
+          "title": "Architecting AI: Practical Patterns for Multi-Agentic Workflows",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Pranjal Singh",
+              "designation": "Staff Data Scientist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/architecting-ai-practical-patterns-for-multi-agentic-workflows"
+        },
+        {
+          "title": "Multi-Modal GenAI for Energy Infrastructure Inspection Reports",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Prakalp Somawanshi",
+              "designation": "Principal AI Engineer"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/multi-modal-genai-for-energy-infrastructure-inspection-reports"
+        },
+        {
+          "title": "From Vision to Action: Multi-Modal Agentic AI in Real-World Use",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Pradeep Kumar",
+              "designation": "Senior Software Engineer"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/from-vision-to-action-multi-modal-agentic-ai-in-real-world-use"
+        },
+        {
+          "title": "Aligning Responsible AI with Probabilistic World of LLMs & Agents",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Shubhradeep Nandi",
+              "designation": "Chief Data Scientist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/aligning-responsible-ai-with-probabilistic-world-of-llms-agents"
+        },
+        {
+          "title": "Post‑Training Is Back: From Prompts to Policies",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Aashay Sachdeva",
+              "designation": "Founding Team/ML"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/posttraining-is-back-from-prompts-to-policies"
+        },
+        {
+          "title": "Human-In-The-Loop Agentic Systems",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Deepak Sharma",
+              "designation": "Senior Machine Learning Engineer"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/human-in-the-loop-agentic-systems"
+        },
+        {
+          "title": "Building a Scalable Healthcare Voice AI Contact Center with Pipecat",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Ashish Tripathy",
+              "designation": "CTO and Co-Founder"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/building-a-scalable-healthcare-voice-ai-contact-center-with-pipecat"
+        },
+        {
+          "title": "The Missing Piece of AI Apps: Evaluation",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Ayush Thakur",
+              "designation": "Machine Learning Engineer"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/no-title-3"
+        },
+        {
+          "title": "Agentify Go-To-Market: Build Sales & Marketing AI Agents with MCP",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Qingyun Wu",
+              "designation": "Co-creator and Co-founder"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/agentify-go-to-market-build-sales-marketing-ai-agents-with-mcp"
+        },
+        {
+          "title": "From Idea to Production with GenAI : Realizing the Art of the Possible",
+          "type": "Hack Session",
+          "speakers": [
+            {
+              "name": "Karan Sindwani",
+              "designation": "Senior Applied Scientist"
+            }
+          ],
+          "time": "TBA",
+          "location": "TBA",
+          "url": "https://www.analyticsvidhya.com/datahacksummit-2025/sessions/from-idea-to-production-with-genai-realizing-the-art-of-the-possible"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from agent import run_conversation
 
@@ -14,7 +15,7 @@ class ChatRequest(BaseModel):
 async def root():
     return {"message": "Working..."}
 
-@app.post("/chat")
+@app.post("/chat", response_class=HTMLResponse)
 async def chat(request: ChatRequest):
     response = await run_conversation(
         request.user_input, 
@@ -22,10 +23,8 @@ async def chat(request: ChatRequest):
         request.mem0_session_id, 
         request.signed_in
     )
-    return {
-        "user_input": request.user_input,
-        "response": response
-    }
+    # Return the HTML response directly
+    return response
 
 if __name__ == "__main__":
     import uvicorn
