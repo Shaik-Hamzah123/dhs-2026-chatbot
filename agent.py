@@ -11,7 +11,14 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 # from helper import add_memory, search_memory
 from prompts import * 
 
-from agent_sdk import get_main_agent, Runner
+from agent_sdk import (
+    get_main_agent, 
+    Runner, 
+    get_agenda_information, 
+    get_session_information, 
+    get_speakers_information, 
+    get_workshop_information
+)
 import asyncio
 
 import logging
@@ -25,6 +32,7 @@ from logger import logger
 logger.setLevel(logging.INFO)
 
 client = MemoryClient(api_key=os.getenv("MEM0_API_KEY"))
+# client = Memory()
 
 class ChatbotState(TypedDict):
     memory: Dict[str, Any]
@@ -85,7 +93,8 @@ async def get_memories(state: ChatbotState):
             try:
                 global_memories = client.search(
                     search_query, 
-                    filters={"user_id": user_id, "limit": 10}
+                    filters={"user_id": user_id},
+                    limit=10
                 )
             except Exception as e:
                 logger.error(f"Error fetching global memories: {e}")
@@ -115,7 +124,28 @@ async def get_memories(state: ChatbotState):
             context += f"Global Memory of the User: {global_memory['memory']}\n"
 
     state['context'] = context + "</MEMORY>"
+
     logger.info("Memories Extracted")
+
+    # Parallel execution of tools
+    agenda, session, speakers, workshop = await asyncio.gather(
+        get_agenda_information(query),
+        get_session_information(query),
+        get_speakers_information(query),
+        get_workshop_information(query)
+    )
+
+    state['context'] += f"""This are some information which we have got from the tools.\n
+
+        REMEMBER SESSIONS AND WORKSHOPS ARE DIFFERENT
+
+        These are the Agenda Information ONLY {agenda}\n"
+        These are the Session Information ONLY {session}\n"
+        These are the speakers Infromation ONLY {speakers}\n
+        These are the Workshops Information ONLY {workshop}
+        """
+    
+    logger.info("Tools Information Extracted")
 
     return {"context": state['context']}
 
@@ -191,9 +221,22 @@ async def chatbot(state: ChatbotState):
         # Use get_main_agent to dynamically format instructions with context and history
         agent = get_main_agent(context, messages)
         
-        result = await Runner.run(agent, query, context=state['context'], input_guardrails=[dhs_guardrail])
-        response_content = result.final_output
-        guardrail_response = result.input_guardrail_results
+        # result = await Runner.run(agent, query, context=state['context'])
+        # response_content = result.final_output
+        # guardrail_response = result.input_guardrail_results
+
+        llm = init_chat_model(model="openai:gpt-4.1-mini", api_key=os.getenv("OPENAI_API_KEY")).with_fallbacks([init_chat_model(model="anthropic:claude-4-5-haiku-latest", api_key=os.getenv("ANTHROPIC_API_KEY"))])
+
+        # Serialize messages to string
+        # history_str = "\n".join([f"{msg.type}: {msg.content}" for msg in messages])
+        # query_with_context = context + "\n" + "<HISTORY>" + history_str + "\n" + "<QUERY>" + query
+
+        prompt = main_agent_prompt.format(memory_context=context, messages=messages)
+
+        response = llm.invoke(prompt)
+        response_content = response.content
+        # guardrail_response = None
+        guardrail_response = None
         
         # Store the interaction in Mem0
         try:
