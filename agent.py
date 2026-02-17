@@ -8,6 +8,10 @@ from langchain.chat_models import init_chat_model
 from mem0 import MemoryClient, Memory
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
+from pydantic import BaseModel
+from datetime import datetime
+import time
+
 # from helper import add_memory, search_memory
 from prompts import * 
 
@@ -31,8 +35,19 @@ load_dotenv()
 from logger import logger
 logger.setLevel(logging.INFO)
 
-client = MemoryClient(api_key=os.getenv("MEM0_API_KEY"))
-# client = Memory()
+config = {
+    "vector_store": {
+        "provider": "qdrant",
+        "config": {
+            "collection_name": "mem0-testing",
+            "url": "https://59620bcb-b9e8-44c6-abcb-9f3780002b11.eu-west-1-0.aws.cloud.qdrant.io",
+            "api_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.O6mSAhN3YrXwYoXgQz6TDCt20DjV8Ve_nHXyHr31uw0",
+        }
+    }
+}
+
+# client = MemoryClient(api_key=os.getenv("MEM0_API_KEY")).from_config(config)
+client = Memory().from_config(config)
 
 class ChatbotState(TypedDict):
     memory: Dict[str, Any]
@@ -44,6 +59,12 @@ class ChatbotState(TypedDict):
     image_data: str | None
     messages: Annotated[List[HumanMessage | AIMessage], add_messages]
 
+    start_time: float
+    end_time: float
+
+class GuardrailResponse(BaseModel):
+    guardrail_response: bool
+    reasoning: str
 
 # def get_memories(state: ChatbotState):
 #     messages = state["messages"]
@@ -76,6 +97,9 @@ async def get_memories(state: ChatbotState):
     user_id = state["mem0_user_id"]
     run_id = state["mem0_session_id"]  # Use as run_id instead
 
+    state['start_time'] = time.time()
+
+
     logger.info(f"User ID: {user_id}")
     logger.info(f"Run ID: {run_id}")
     logger.info(f"Signed In: {state['signed_in']}")
@@ -84,18 +108,36 @@ async def get_memories(state: ChatbotState):
         logger.info("Getting Session and Global Memories")
         try:
             # Session-based memories using run_id
+            # session_based_memories = client.search(
+            #     messages[-1].content, 
+            #     filters={"AND": [{"user_id": user_id}, {"run_id": run_id}]}
+            # )
             session_based_memories = client.search(
                 messages[-1].content, 
-                filters={"AND": [{"user_id": user_id}, {"run_id": run_id}]}
+                user_id=user_id,
+                run_id=run_id
             )
+
+            print("---Session Memories---")
+            print(session_based_memories)
+            print()
             # Global memories for user
-            search_query = "Retrieve all existing memories"
+            search_query = "Retrieve all existing memories related to this user query " + messages[-1].content + "or existing memories of previous conversations"
             try:
+                # global_memories = client.search(
+                #     search_query, 
+                #     filters={"user_id": user_id},
+                #     limit=10
+                # )
                 global_memories = client.search(
                     search_query, 
-                    filters={"user_id": user_id},
+                    user_id=user_id,
                     limit=10
                 )
+
+                print("---Global Memories---")
+                print(global_memories)
+                print()
             except Exception as e:
                 logger.error(f"Error fetching global memories: {e}")
                 global_memories = {'results': []}
@@ -106,27 +148,31 @@ async def get_memories(state: ChatbotState):
     else:
         logger.info("Getting Session Memories only")
         try:
+            # session_based_memories = client.search(
+            #     messages[-1].content, 
+            #     filters={"AND": [{"user_id": user_id}, {"run_id": run_id}]}
+            # )
             session_based_memories = client.search(
                 messages[-1].content, 
-                filters={"AND": [{"user_id": user_id}, {"run_id": run_id}]}
+                user_id=user_id,
+                run_id=run_id
             )
         except Exception as e:
             logger.error(f"Error fetching memories: {e}")
             session_based_memories = {'results': []}
 
-    context = "<MEMORY>Relevant information from previous conversations:\n"   
+    state['context'] = "PAST MEMORY \n The AHA moment we spoke about this Memories you have of the user from previous conversations:\n"   
 
     for session_memory in session_based_memories.get('results', []):
-        context += f"Session Memory: {session_memory['memory']}\n"
+        state['context'] += f"Session Memory: {session_memory['memory']}\n"
 
     if state["signed_in"] and 'global_memories' in locals():
         for global_memory in global_memories.get('results', []):
-            context += f"Global Memory of the User: {global_memory['memory']}\n"
-
-    state['context'] = context + "</MEMORY>"
+            state['context'] += f"Global Memory of the User: {global_memory['memory']}\n"
 
     logger.info("Memories Extracted")
 
+    query = messages[-1].content
     # Parallel execution of tools
     agenda, session, speakers, workshop = await asyncio.gather(
         get_agenda_information(query),
@@ -147,7 +193,7 @@ async def get_memories(state: ChatbotState):
     
     logger.info("Tools Information Extracted")
 
-    return {"context": state['context']}
+    return {"context": state['context'], "start_time": state['start_time']}
 
 # def chatbot(state: ChatbotState):
 #     messages = state["messages"]
@@ -216,69 +262,82 @@ async def chatbot(state: ChatbotState):
     run_id = state["mem0_session_id"]
     context = state.get("context", "")
 
+    query = messages[-1].content
+
+    # agent = get_main_agent(context, messages)
+    
+    guardrail_llm = init_chat_model(
+        model="openai:gpt-4.1-mini", 
+        api_key=os.getenv("OPENAI_API_KEY")
+    ).with_fallbacks([
+        init_chat_model(model="anthropic:claude-4-5-haiku-latest", api_key=os.getenv("ANTHROPIC_API_KEY"))
+    ])
+
+    llm = init_chat_model(
+        model="openai:gpt-4.1-mini", 
+        api_key=os.getenv("OPENAI_API_KEY")
+    ).with_fallbacks([
+        init_chat_model(model="anthropic:claude-4-5-haiku-latest", api_key=os.getenv("ANTHROPIC_API_KEY"))
+    ])
+
+    # Use the specific prompt templates
+    prompt, guardrail_prompt = main_agent_prompt.format(memory_context=context, messages=messages), guardrail_prompt_template.format(query=query, messages=messages)
+
     try:
-        query = messages[-1].content
-        # Use get_main_agent to dynamically format instructions with context and history
-        agent = get_main_agent(context, messages)
+        # Execute both LLM calls in parallel
+        response_task = llm.ainvoke(prompt)
+        # Use invoke instead of ainvoke if with_structured_output doesn't support ainvoke or for simpler call
+        # but better to use ainvoke if possible
+        guardrail_task = guardrail_llm.with_structured_output(GuardrailResponse).ainvoke(guardrail_prompt)
+
+        response, guardrail_response = await asyncio.gather(response_task, guardrail_task)
+
+        end_time = time.time()
+        state['end_time'] = end_time
+        logger.info(f"Time taken: {end_time - state['start_time']}")
         
-        # result = await Runner.run(agent, query, context=state['context'])
-        # response_content = result.final_output
-        # guardrail_response = result.input_guardrail_results
-
-        llm = init_chat_model(model="openai:gpt-4.1-mini", api_key=os.getenv("OPENAI_API_KEY")).with_fallbacks([init_chat_model(model="anthropic:claude-4-5-haiku-latest", api_key=os.getenv("ANTHROPIC_API_KEY"))])
-
-        # Serialize messages to string
-        # history_str = "\n".join([f"{msg.type}: {msg.content}" for msg in messages])
-        # query_with_context = context + "\n" + "<HISTORY>" + history_str + "\n" + "<QUERY>" + query
-
-        prompt = main_agent_prompt.format(memory_context=context, messages=messages)
-
-        response = llm.invoke(prompt)
         response_content = response.content
-        # guardrail_response = None
-        guardrail_response = None
-        
-        # Store the interaction in Mem0
-        try:
-            # Handle image storage if present
-            if state.get("image_data"):
-                image_message = {
-                    "role": "user",
-                    "content": {
-                        "type": "image_url",
-                        "image_url": {
-                            "url": f"data:image/jpeg;base64,{state['image_data']}"
+        guardrail_relevant = guardrail_response.guardrail_response
+
+        if guardrail_relevant:
+            # Store the interaction in Mem0
+            try:
+                if state.get("image_data"):
+                    image_message = {
+                        "role": "user",
+                        "content": {
+                            "type": "image_url",
+                            "image_url": { "url": f"data:image/jpeg;base64,{state['image_data']}" }
                         }
                     }
-                }
-                client.add([image_message], user_id=user_id, run_id=run_id)
-                logger.info("Image memory saved")
+                    client.add([image_message], user_id=user_id, run_id=run_id)
+                    logger.info("Image memory saved")
 
-            interaction = [
-                {
-                    "role": "user",
-                    "content": query
-                },
-                {
-                    "role": "assistant", 
-                    "content": response_content
-                }
-            ]
-            client.add(interaction, user_id=user_id, run_id=run_id)
-            logger.info("Interaction memory saved")
-        except Exception as e:
-            logger.error(f"Error saving memory: {e}")
+                # interaction = [
+                #     {"role": "user", "content": query},
+                #     {"role": "assistant", "content": response_content}
+                # ]
 
-        if guardrail_response:
-            response_content = guardrail_response.message
+                interaction = [
+                    {"role": "assistant", "content": response_content}
+                ]
 
-        response = AIMessage(content=response_content)
-        return {"messages": [response]}
+                client.add(interaction, user_id=user_id, run_id=run_id, infer=False)
+                logger.info("Interaction memory saved")
+
+            except Exception as e:
+                logger.error(f"Error saving image memory: {e}")
+
+            return {"messages": [AIMessage(content=response_content)], "end_time": state['end_time']}
+        
+        else:
+            # If not relevant, return the reasoning (the refusal message)
+            return {"messages": [AIMessage(content=guardrail_response.reasoning)], "end_time": state['end_time']}
 
     except Exception as e:
         logger.error(f"Error in chatbot: {e}")
         # Fallback
-        return {"messages": [AIMessage(content="I'm sorry, Could you please rephrase your query? I'm not able to process your request.")]}
+        return {"messages": [AIMessage(content="I'm sorry, I'm having trouble processing your request right now. Could you please rephrase your query?")]}
         
 
 
@@ -306,7 +365,9 @@ async def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: 
                 "mem0_session_id": mem0_session_id,
                 "signed_in": signed_in,
                 "image_data": image_data,
-                "context": ""
+                "context": "",
+                "start_time": 0.0,
+                "end_time": 0.0
             }
 
     async for event in compiled_graph.astream(state, config):
