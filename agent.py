@@ -30,7 +30,7 @@ import logging
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 from logger import logger
 logger.setLevel(logging.INFO)
@@ -39,9 +39,9 @@ config = {
     "vector_store": {
         "provider": "qdrant",
         "config": {
-            "collection_name": "mem0-testing",
-            "url": "https://59620bcb-b9e8-44c6-abcb-9f3780002b11.eu-west-1-0.aws.cloud.qdrant.io",
-            "api_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.O6mSAhN3YrXwYoXgQz6TDCt20DjV8Ve_nHXyHr31uw0",
+            "collection_name": os.getenv("MEM0_QDRANT_COLLECTION_NAME"),
+            "url": os.getenv("MEM0_QDRANT_URL"),
+            "api_key": os.getenv("MEM0_QDRANT_API_KEY"),
         }
     }
 }
