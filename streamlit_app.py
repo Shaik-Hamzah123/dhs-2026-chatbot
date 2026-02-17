@@ -4,6 +4,7 @@ from agent import run_conversation
 import base64
 from PIL import Image
 import io
+import time
 
 # Set page config for a premium look
 st.set_page_config(
@@ -95,6 +96,12 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
+# Helper function for fake streaming
+def stream_text(text, delay=0.03):
+    for word in text.split(" "):
+        yield word + " "
+        time.sleep(delay)
+
 # React to user input
 if prompt := st.chat_input("Ask me anything about DHS 2026..."):
     # Display user message in chat message container
@@ -116,11 +123,12 @@ if prompt := st.chat_input("Ask me anything about DHS 2026..."):
                 image_data=image_data
             ))
             
-            # Display assistant response in chat message container
+            # Display assistant response in chat message container with streaming
             with st.chat_message("assistant"):
-                st.markdown(response)
+                full_response = st.write_stream(stream_text(response))
+            
             # Add assistant response to chat history
-            st.session_state.messages.append({"role": "assistant", "content": response})
+            st.session_state.messages.append({"role": "assistant", "content": full_response})
             
         except Exception as e:
             st.error(f"An error occurred: {str(e)}")
