@@ -1,6 +1,6 @@
 import asyncio
 
-from agents import Agent, Runner, function_tool, SQLiteSession
+from agents import Agent, Runner, function_tool
 
 from agents import (
     GuardrailFunctionOutput,
@@ -19,8 +19,6 @@ import os
 from dotenv import load_dotenv
 
 from langchain_core.tools import tool
-
-from prompts import *
 
 load_dotenv()
 

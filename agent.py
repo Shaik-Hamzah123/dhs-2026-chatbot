@@ -12,6 +12,8 @@ from pydantic import BaseModel
 from datetime import datetime
 import time
 
+from config import *
+
 # from helper import add_memory, search_memory
 from prompts import * 
 
@@ -39,9 +41,9 @@ config = {
     "vector_store": {
         "provider": "qdrant",
         "config": {
-            "collection_name": os.getenv("MEM0_QDRANT_COLLECTION_NAME"),
-            "url": os.getenv("MEM0_QDRANT_URL"),
-            "api_key": os.getenv("MEM0_QDRANT_API_KEY"),
+            "collection_name": os.getenv("QDRANT_COLLECTION_NAME"),
+            "url": os.getenv("QDRANT_URL"),
+            "api_key": os.getenv("QDRANT_API_KEY"),
         }
     }
 }
