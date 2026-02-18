@@ -86,6 +86,7 @@ with st.sidebar:
 # Main UI
 st.title("🤖 DHS 2026 AI Assistant")
 st.markdown("*Your intelligent companion for everything Data Hack Summit 2026.*")
+st.markdown("*This is only trained on 2025 DHS Data for now*")
 
 # Initialize chat history
 if "messages" not in st.session_state:
