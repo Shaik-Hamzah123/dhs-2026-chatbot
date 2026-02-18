@@ -43,7 +43,7 @@ guardrail_prompt_template = """You are the DHS 2026 AI Assistant. Check if the u
     Also, he can ask for summarization and past conversations the user had with us
 
     The user query should revolve around the following topics:
-    - DHS 2026 overview and themes
+    - DHS (Data Hack Summit) overview and themes not just 2026
     - Schedule and agenda highlights
     - Speakers and Workshops
     - Registration, venue, and logistics

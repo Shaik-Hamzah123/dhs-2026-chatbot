@@ -35,7 +35,7 @@ guardrail_agent = Agent(
     Remember, salutations, grettings, of such conversation should be allowed
 
     The user query should revolve around the following topics:
-    - DHS 2026 overview and themes
+    - DHS (Data Hack Summit) overview and themes not just 2026
     - Schedule and agenda highlights
     - Speakers and Workshops
     - Registration, venue, and logistics
