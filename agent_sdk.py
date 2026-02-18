@@ -30,7 +30,7 @@ class IsDHSRelevant(BaseModel):
 
 guardrail_agent = Agent( 
     name="Guardrail Check",
-    instructions="""You are the DHS 2026 AI Assistant. Check if the user is asking you to do something related to DHS 2026.
+    instructions="""You are the DHS 2025 AI Assistant. Check if the user is asking you to do something related to DHS 2025.
 
     Remember, salutations, grettings, of such conversation should be allowed
 
