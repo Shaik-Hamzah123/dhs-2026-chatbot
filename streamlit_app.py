@@ -121,7 +121,8 @@ if prompt := st.chat_input("Ask me anything about DHS 2026..."):
                 mem0_user_id=mem0_user_id,
                 mem0_session_id=mem0_session_id,
                 signed_in=signed_in,
-                image_data=image_data
+                image_data=image_data,
+                history=st.session_state.messages
             ))
             
             # Display assistant response in chat message container with streaming

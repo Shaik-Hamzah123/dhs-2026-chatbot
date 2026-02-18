@@ -265,6 +265,7 @@ async def chatbot(state: ChatbotState):
     context = state.get("context", "")
 
     query = messages[-1].content
+    logger.info(f"Chatbot processing {len(messages)} messages")
 
     # agent = get_main_agent(context, messages)
     
@@ -303,6 +304,8 @@ async def chatbot(state: ChatbotState):
 
         if guardrail_relevant:
             # Store the interaction in Mem0
+
+            logger.info("--- Guardrail Passed ---")
             try:
                 if state.get("image_data"):
                     image_message = {
@@ -334,6 +337,7 @@ async def chatbot(state: ChatbotState):
         
         else:
             # If not relevant, return the reasoning (the refusal message)
+            logger.info("--- Guardrail Failed ---")
             return {"messages": [AIMessage(content=guardrail_response.reasoning)], "end_time": state['end_time']}
 
     except Exception as e:
@@ -355,14 +359,27 @@ graph_builder.add_edge("chatbot", "get_memories")
 
 compiled_graph = graph_builder.compile()
 
-async def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, signed_in: bool | None = None, image_data: str | None = None):
+async def run_conversation(user_input: str, mem0_user_id: str, mem0_session_id: str, signed_in: bool | None = None, image_data: str | None = None, history: List[Dict[str, str]] | None = None):
     # Derive signed_in from mem0_user_id if not provided
     # if signed_in is None:
     #     signed_in = bool(mem0_user_id and mem0_user_id.strip())
     
     config = {"configurable": {"thread_id": mem0_user_id}}
+    
+    # Initialize messages with history if provided
+    messages = []
+    if history:
+        for msg in history:
+            if msg["role"] == "user":
+                messages.append(HumanMessage(content=msg["content"]))
+            elif msg["role"] == "assistant":
+                messages.append(AIMessage(content=msg["content"]))
+    
+    # Add the current user input
+    messages.append(HumanMessage(content=user_input))
+
     state = {
-                "messages": [HumanMessage(content=user_input)], 
+                "messages": messages, 
                 "mem0_user_id": mem0_user_id,
                 "mem0_session_id": mem0_session_id,
                 "signed_in": signed_in,
@@ -382,13 +399,18 @@ async def main():
     mem0_user_id = "skh"  # You can generate or retrieve this based on your user management system
     mem0_session_id = "skh-001"  # You can generate or retrieve this based on your user management system
     signed_in = True
+    history = []
     while True:
         user_input = input("You: ")
         if user_input.lower() in ['quit', 'exit', 'bye']:
             print("Thank you for contacting us. Have a great day!")
             break
-        response = await run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in)
+        response = await run_conversation(user_input, mem0_user_id, mem0_session_id, signed_in, history=history)
         print("Customer Support:", response)
+        
+        # Append to history for the next turn
+        history.append({"role": "user", "content": user_input})
+        history.append({"role": "assistant", "content": response})
 
 if __name__ == "__main__":
     asyncio.run(main())
